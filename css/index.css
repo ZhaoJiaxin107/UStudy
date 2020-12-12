@@ -5,7 +5,7 @@
 .container{
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 .container .topnav{
     height: 60px;
@@ -77,4 +77,37 @@
 .container .topnav .ul_right li .font:hover{
     text-decoration: underline;
 }
+.container .classificationnav{
+    overflow: hidden;
+}
+.container .classificationnav .sidenav{
+    width: 240px;
+    height: 530px;
+    background-color:rgba(222,61,39,.7); 
+    border-right: 3px solid #ffd700;
+    padding-top: 15px;
+}
+.container .classificationnav .sidenav > dt,
+.container .classificationnav .sidenav > dd{
+    padding-left: 15px;
+}
+.container .classificationnav .sidenav > dt{
+    margin-top: 25px;
+}
+.container .classificationnav .sidenav > dt > a{
+    font: 18px/35px "微软雅黑";
+    color:#ffffff;
+    
+}
+.container .classificationnav .sidenav > dd > a{
+    font: 13px/24px "微软雅黑";
+    color:#ffffff;
+    margin-right: 16px;
+}
+.container .classificationnav .sidenav > dt > a:hover,
+.container .classificationnav .sidenav > dd > a:hover{
+    text-decoration: underline;
+}
+
+
 
