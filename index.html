@@ -6,21 +6,23 @@
     <title>UStudy_IT培训课程_2020版IT培训视频教程_IT技术在线教育机构_中公IT优学</title>
     <meta name="description" content="IT培训课程,视频教程,IT技术培训,IT在线教育,IT培训机构"/>
     <meta name="keywords" content="【中公IT优学-IT技术培训培优机构】提供多品类IT培训课程, 包括编程开发、UI设计、IT考证、互联网营销、Office、求职面试等精品视频。在线学IT，我推荐中公IT优学"/>
-    <!-- 1.加载网页小图标 -->
+    <!-- 1.onload small icon -->
     <link rel="icon" href="./img/favicon.ico">
-    <!-- 2.重置样式-->
+    <!-- 2.reset style sheet-->
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- 3.首页样式 -->
+    <!-- 3.index style sheet -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- 4.图标样式iconfont -->
+    <!-- 4.iconfont -->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_2265524_3wq212n22vt.css">
+    <!-- 5.dynamic events javascript -->
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="topnav clearfix">
-            <div class="logo fl">
+            <a class="logo fl" href="#">
                 <img src="./img/logo_it.jpg" alt="logo">
-            </div>
+            </a>
             <ul class = "ulleft fl">
                 <li class="active">
                     <a href="#">首页</a>
@@ -46,12 +48,23 @@
                     <a href="#">APP下载</a>
                 </li>
             </ul>
-            <ul class = "ul_right">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul class = "ul_right fr">
+                <li id = "search">
+                    <input type="text" name="searchCourse" id="searchCourse" placeholder="搜索课程" autofocus="autofocus">
+                    <a class = "iconfont icon-sousuo6" href="#" id = "searchIcon"></a>
+                </li>
+                <li>
+                    <a class = "iconfont icon-gouwuche6" href="#"></a>
+                </li>
+                <li>
+                    <a class = "iconfont icon-saoma3" href="#"></a>
+                </li>
+                <li>
+                    <a href="#" class = "font">登录</a>
+                </li>
+                <li>
+                    <a href="#" class = "font">注册</a>
+                </li>
             </ul>
         </div>
     </div>

@@ -43,6 +43,7 @@ body{
 button, input{
     border: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 
