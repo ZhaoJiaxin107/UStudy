@@ -112,7 +112,7 @@
     width: 955px;
     height: 393px;
     cursor: pointer;
-    /* overflow: hidden; */
+    overflow: hidden; 
     position: relative;
 }
 .container .classificationnav #banner .bannerlist{
@@ -121,7 +121,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    border: 1px solid #333;
 }
 .container .classificationnav #banner .bannerlist > li{
     width: 955px;
