@@ -1,12 +1,15 @@
 @charset 'utf-8';
 
-
+.background{
+    background-color: #F5F5F5;
+}
 /* 中心版面 */
 .container{
     width: 1200px;
     margin: 0 auto;
     /* border: 1px solid #333; */
 }
+
 .container .topnav{
     height: 60px;
     line-height: 60px; 
@@ -72,20 +75,19 @@
     font-size: 18px;
 }
 .container .topnav .ul_right li .font{
-    font-size: 14px;
+    font-size: 12px;
 }
 .container .topnav .ul_right li .font:hover{
     text-decoration: underline;
 }
 .container .classificationnav{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .container .classificationnav .sidenav{
     width: 240px;
     height: 530px;
     background-color:rgba(222,61,39,.7); 
     border-right: 3px solid #ffd700;
-    padding-top: 15px;
 }
 .container .classificationnav .sidenav > dt,
 .container .classificationnav .sidenav > dd{
@@ -164,4 +166,22 @@
 }
 .container .classificationnav #banner > .right{
     right: 0;
+}
+.container .classificationnav .study{
+    margin: 15px 0 0 10px;
+    /* border: 1px solid #333; */
+}
+.container .classificationnav .study > li{
+    float: left;
+    width: 235px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #ffffff;
+}
+.container .classificationnav .study > li > a > img{
+    width: 190px;
+    height: 82px;
+    vertical-align: middle;
+    padding: 0 8px 0 35px;
+    border-right: 1px dashed #cccccc;
 }
