@@ -78,7 +78,7 @@
     text-decoration: underline;
 }
 .container .classificationnav{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .container .classificationnav .sidenav{
     width: 240px;
@@ -108,6 +108,61 @@
 .container .classificationnav .sidenav > dd > a:hover{
     text-decoration: underline;
 }
-
-
-
+.container .classificationnav #banner{
+    width: 955px;
+    height: 393px;
+    cursor: pointer;
+    /* overflow: hidden; */
+    position: relative;
+}
+.container .classificationnav #banner .bannerlist{
+    width: 5730px;
+    height: 393px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #333;
+}
+.container .classificationnav #banner .bannerlist > li{
+    width: 955px;
+    height: 393px;
+    float: left;
+}
+.container .classificationnav #banner .bannerlist > li > img{
+    width: 955px;
+    height: 393px;
+}
+.container .classificationnav #banner .shiftlist{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+}
+.container .classificationnav #banner .shiftlist span{
+    width: 50px;
+    height: 100%;
+    background-color: #cccccc;
+    display: inline-block;
+    margin-right: 5px;
+}
+.container .classificationnav #banner .shiftlist span.active{
+    background-color: #ff4400;
+}
+.container .classificationnav #banner > button{
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgba(204, 204, 204, .7);
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.container .classificationnav #banner > .left{
+    left: 0;
+}
+.container .classificationnav #banner > .right{
+    right: 0;
+}
