@@ -247,6 +247,24 @@
     width: 620px;
     height: 349px;
 }
+.container .hotlive .hotcontent .notstart{
+    width: 130px;
+    height: 50px;
+    font: 18px/50px "微软雅黑";
+    border-radius: 25px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 245px;
+    top: 50%;
+    transform:translateY(-50%);
+    z-index: 20;
+    background-color: rgba(0,0,0,0.9);
+}
+.container .hotlive .hotcontent .notstart > i{
+    font-size: 20px;
+    vertical-align: top;
+}
 .container .hotlive .hotcontent .hotdesc{
     width: 580px;
     height: 339px;

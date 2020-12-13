@@ -179,7 +179,36 @@ window.onload = function(){
            h3[i].innerHTML = '<a href="#">' + hotUrl[i].name +'</a>';
         }
 
+        /* 
+            Tab function, click each li to get the content of corresponding payment, 
+            and the background color of li is programmed in pink
+        */
+        //  Get element li from father element hotDesc
+        var lis = hotDesc.getElementsByTagName('li');
+        // console.log(lis);
+        for(var i = 0; i < lis.length; i++){
+            // custom index to save index
+            lis[i].index = i;
+            // event: when mouse enter into li
+            lis[i].onmouseenter = function(){
+                this.style.backgroundColor = '#FFF7F3';
+                // console.log(this.index);
+                // exclusive
+                for(var j = 0; j < lis.length; j++){
+                    hotImage[j].className = 'hotimg';
+                    sequence[j].className = 'sequence';
+                }
+                // shift
+                hotImage[this.index].className = 'active hotimg';
+                sequence[this.index].className = 'active sequence';
+            }
+            // when mouse leave the li, background turn to white
+            lis[i].onmouseleave = function(){
+                this.style.backgroundColor = '#ffffff';
+            }
 
+
+        }
 
 
 
