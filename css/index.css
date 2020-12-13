@@ -198,10 +198,11 @@
 }
 .container .hotlive > h3,
 .container .onlinecourse > h3,
-.container .freecourse > h3{
-    font-size: 25px;
+.container .freecourse > h3,
+.container .jobcourse > h3{
+    font-size: 24px;
     font-weight: bold;
-    width: 100px;
+    width: 130px;
     height: 45px;
     cursor: pointer;
 }
@@ -210,19 +211,22 @@
 }
 .container .hotlive .more > a,
 .container .onlinecourse .more > a,
-.container .freecourse .more > a{
+.container .freecourse .more > a,
+.container .jobcourse .more > a{
     font: 13px/1 "微软雅黑";
     color:#A8A8A8;
 }
 .container .hotlive .more > a:hover,
 .container .onlinecourse .more > a:hover,
-.container .freecourse .more > a:hover{
+.container .freecourse .more > a:hover,
+.container .jobcourse .more > a:hover{
     color: #FB4B00;
     text-decoration: underline;
 }
 .container .hotlive .more > i,
 .container .onlinecourse .more > i,
-.container .freecourse .more > i{
+.container .freecourse .more > i,
+.container .jobcourse .more > i{
     font-size: 15px;
     font-weight: bold;
     color: #FB4B00;
@@ -239,7 +243,6 @@
     top: 0;
     display: none; 
 }
-
 .container .hotlive .hotcontent .sequence{
     width: 600px;
     height: 40px;
@@ -319,32 +322,38 @@
     color:#FF4D00;
 }
 .container .onlinecourse,
-.container .freecourse{
+.container .freecourse,
+.container .jobcourse{
     margin-top: 50px;
     position: relative;
     width: 100%;
     height: 566px;
 }
-.container .freecourse{
+.container .freecourse,
+.container .jobcourse{
     height: 280px;
 }
 .container .onlinecourse > h3,
-.container .freecourse > h3{
+.container .freecourse > h3,
+.container .jobcourse > h3{
     height: 25px;
 }
 .container .onlinecourse .type,
-.container .freecourse .type{
+.container .freecourse .type,
+.container .jobcourse .type{
     margin-left: 57px;
 }
 .container .onlinecourse .type li,
-.container .freecourse .type li{
+.container .freecourse .type li,
+.container .jobcourse .type li{
     float: left;
     margin: 5px 25px 0 0;
     padding-bottom: 5px;
     
 }
 .container .onlinecourse .type li > a,
-.container .freecourse .type li > a{
+.container .freecourse .type li > a,
+.container .jobcourse .type li > a{
     font: 16px/1 "微软雅黑";
     color: #333333;
     display: inline-block;
@@ -353,15 +362,18 @@
     border-bottom: 1px solid #FD5843;
 }*/
 .container .onlinecourse .type li:hover a,
-.container .freecourse .type li:hover a{
+.container .freecourse .type li:hover a,
+.container .jobcourse .type li:hover a{
     color: #FD5843;
 } 
 .container .onlinecourse .more,
-.container .freecourse .more{
+.container .freecourse .more,
+.container .jobcourse .more{
     margin-top: 8px;
 }
 .container .onlinecourse .onlinecontent,
-.container .freecourse .freecontent{
+.container .freecourse .freecontent,
+.container .jobcourse .jobcontent{
     width: 100%;
     height: 560px;
     position: absolute;
@@ -370,15 +382,18 @@
     /* border: 1px solid #333; */
     display: none;
 }
-.container .freecourse .freecontent{
+.container .freecourse .freecontent,
+.container .jobcourse .jobcontent{
     height: 280px;
 }
 .container .onlinecourse .active,
-.container .freecourse .active{
+.container .freecourse .active,
+.container .jobcourse .active{
     display: block;
 }
 .container .onlinecourse .onlinecontent li,
-.container .freecourse .freecontent li{
+.container .freecourse .freecontent li,
+.container .jobcourse .jobcontent li{
     width: 285px;
     height: 260px;
     background-color: #ffffff;
@@ -386,16 +401,19 @@
     float: left;
 }
 .container .onlinecourse .onlinecontent li:hover,
-.container .freecourse .freecontent li:hover{
+.container .freecourse .freecontent li:hover,
+.container .jobcourse .jobcontent li:hover{
     transform: translateY(-3px);
 }
 .container .onlinecourse .onlinecontent li a > img,
-.container .freecourse .freecontent li a > img{
+.container .freecourse .freecontent li a > img,
+.container .jobcourse .jobcontent li a > img{
     width: 285px;
     height: 161px;
 }
 .container .onlinecourse .onlinecontent li .desc,
-.container .freecourse .freecontent li .desc{
+.container .freecourse .freecontent li .desc,
+.container .jobcourse .jobcontent li .desc{
     display: block;
     margin: 15px 0 0 5px;
     text-indent: 3px;
@@ -406,24 +424,29 @@
     text-overflow: ellipsis;
 }
 .container .onlinecourse .onlinecontent li .desc:hover,
-.container .freecourse .freecontent li .desc:hover{
+.container .freecourse .freecontent li .desc:hover,
+.container .jobcourse .jobcontent li .desc:hover{
     text-decoration: underline;
 }
 .container .onlinecourse .onlinecontent li .detail,
-.container .freecourse .freecontent li .detail{
+.container .freecourse .freecontent li .detail,
+.container .jobcourse .jobcontent li .detail{
     margin: 23px  0 0 8px;
 }
 .container .onlinecourse .onlinecontent li .detail .price,
-.container .freecourse .freecontent li .detail .price{
+.container .freecourse .freecontent li .detail .price,
+.container .jobcourse .jobcontent li .detail .price{
     font: 20px/1 "微软雅黑";
     color: #FF4D00;
 }
 .container .onlinecourse .onlinecontent li .detail .price > b,
-.container .freecourse .freecontent li .detail .price > b{
+.container .freecourse .freecontent li .detail .price > b,
+.container .jobcourse .jobcontent li .detail .price > b{
     font-size: 15px;
 }
 .container .onlinecourse .onlinecontent li .detail .length,
-.container .freecourse .freecontent li .detail .length{
+.container .freecourse .freecontent li .detail .length,
+.container .jobcourse .jobcontent li .detail .length{
     width: 55px;
     height: 25px;
     text-align: center;
