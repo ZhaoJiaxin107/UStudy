@@ -341,13 +341,16 @@
     background-color: #ffffff;
     margin-right: 17px;
 }
+.container .onlinecourse .onlinecontent li:hover{
+    transform: translateY(5px);
+}
 .container .onlinecourse .onlinecontent li a > img{
     width: 285px;
     height: 161px;
 }
 .container .onlinecourse .onlinecontent li .desc{
     display: block;
-    margin: 10px 0 0 5px;
+    margin: 15px 0 0 5px;
     text-indent: 3px;
     font:14px/1 "微软雅黑";
     color: #333333;
@@ -357,4 +360,24 @@
 }
 .container .onlinecourse .onlinecontent li .desc:hover{
     text-decoration: underline;
+}
+.container .onlinecourse .onlinecontent li .detail{
+    margin: 23px  0 0 8px;
+}
+.container .onlinecourse .onlinecontent li .detail .price{
+    font: 20px/1 "微软雅黑";
+    color: #FF4D00;
+}
+.container .onlinecourse .onlinecontent li .detail .price > b{
+    font-size: 15px;
+}
+.container .onlinecourse .onlinecontent li .detail .length{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFEFE8;
+    font:14px/25px "微软雅黑";
+    color: #FB8C23;
+    margin-right: 12px;
 }
