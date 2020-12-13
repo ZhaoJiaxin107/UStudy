@@ -193,23 +193,28 @@
     width: 100%;
     height: 400px;
 }
-.container .hotlive > h3{
+.container .hotlive > h3,
+.container .onlinecourse > h3{
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 25px;
+    width: 100px;
+    height: 45px;
 }
 .container .hotlive .more{
     margin-top: 20px;
 }
-.container .hotlive .more > a{
-    font: 15px/1 "微软雅黑";
+.container .hotlive .more > a,
+.container .onlinecourse .more > a{
+    font: 13px/1 "微软雅黑";
     color:#A8A8A8;
 }
-.container .hotlive .more > a:hover{
+.container .hotlive .more > a:hover,
+.container .onlinecourse .more > a:hover{
     color: #FB4B00;
     text-decoration: underline;
 }
-.container .hotlive .more > i{
+.container .hotlive .more > i,
+.container .onlinecourse .more > i{
     font-size: 15px;
     font-weight: bold;
     color: #FB4B00;
@@ -304,4 +309,52 @@
 }
 .container .hotlive .hotcontent .hotdesc li h3 > a:hover{
     color:#FF4D00;
+}
+.container .onlinecourse{
+    margin-top: 50px;
+}
+.container .onlinecourse .type{
+    margin-left: 57px;
+}
+.container .onlinecourse .type li{
+    float: left;
+    margin: 5px 25px 0 0;
+    padding-bottom: 5px;
+    
+}
+.container .onlinecourse .type li > a{
+    font: 16px/1 "微软雅黑";
+    color: #333333;
+    display: inline-block;
+}.container .onlinecourse .type li:hover{
+    border-bottom: 1px solid #FD5843;
+}
+.container .onlinecourse .type li:hover a{
+    color: #FD5843;
+}
+.container .onlinecourse .more{
+    margin-top: 8px;
+}
+.container .onlinecourse .onlinecontent li{
+    width: 285px;
+    height: 260px;
+    background-color: #ffffff;
+    margin-right: 17px;
+}
+.container .onlinecourse .onlinecontent li a > img{
+    width: 285px;
+    height: 161px;
+}
+.container .onlinecourse .onlinecontent li .desc{
+    display: block;
+    margin: 10px 0 0 5px;
+    text-indent: 3px;
+    font:14px/1 "微软雅黑";
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.container .onlinecourse .onlinecontent li .desc:hover{
+    text-decoration: underline;
 }
