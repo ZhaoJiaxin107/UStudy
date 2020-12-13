@@ -222,7 +222,8 @@ window.onload = function(){
         var freeLesson = transRes.freeLesson;
         Tab(freeLesson, 'freetype', 'freecontent');
 
-        
+        var jobLesson = transRes.jobLesson;
+        Tab(jobLesson, 'jobtype', 'jobcontent')
     });
 
     function Tab(lesson, typeId, contentClass){
