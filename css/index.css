@@ -201,9 +201,6 @@
     height: 45px;
     cursor: pointer;
 }
-.container .onlinecourse > h3{
-    height: 25px;
-}
 .container .hotlive .more{
     margin-top: 20px;
 }
@@ -319,6 +316,9 @@
     position: relative;
     width: 100%;
     height: 566px;
+}
+.container .onlinecourse > h3{
+    height: 25px;
 }
 .container .onlinecourse .type{
     margin-left: 57px;

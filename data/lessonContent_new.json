@@ -236,154 +236,106 @@
     "freeLesson": {
         "onlineSell": [
             {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
+                "img": "./img/free-sell-1.jpg",
+                "title": "【基础】手把手教你开通淘宝店铺",
+                "price": 0.00,
+                "time": "7课时"
             },
             {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
+                "img": "./img/free-sell-2.jpg",
+                "title": "【基础】SEM账户数据精准分析推广优化",
+                "price": 0.00,
+                "time": "6课时"
             },
             {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
+                "img": "./img/free-sell-3.jpg",
+                "title": "【基础】5分钟带你玩转社群营销",
+                "price": 0.00,
+                "time": "5课时"
             },
             {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
+                "img": "./img/free-sell-4.jpg",
+                "title": "【基础】SEO基础入门-SEO概念与核心优化方式",
+                "price": 0.00,
+                "time": "22课时"
             }
         ],
         "styleDesign": [
             {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
+                "img": "./img/free-design-1.jpg",
+                "title": "PS基础图层样式养成记",
+                "price": 0.00,
+                "time": "7课时"
             },
             {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
+                "img": "./img/free-design-2.jpg",
+                "title": "UI界面网页设计之规范设计",
+                "price": 0.00,
+                "time": "7课时"
             },
             {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
+                "img": "./img/free-design-3.jpg",
+                "title": "PS技能学习训练营",
+                "price": 0.00,
+                "time": "5课时"
             },
             {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/sheji-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
+                "img": "./img/free-design-4.jpg",
+                "title": "AI软件之场景搭建",
+                "price": 0.00,
+                "time": "5课时"
             }
         ],
         "web": [
             {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-web-1.jpg",
+                "title": "【案例】前端经典案例-用HTML+CSS3制作跳动的心",
+                "price": 0.00,
+                "time": "7课时"
             },
             {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-web-2.jpg",
+                "title": "【基础】Web前端重点详解 彻底搞懂浮动布局、动画、定位技术",
+                "price": 0.00,
+                "time": "6课时"
             },
             {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-web-3.jpg",
+                "title": "【基础】Web前端的CSS3背景设置及布局",
+                "price": 0.00,
+                "time": "4课时"
             },
             {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-web-4.jpg",
+                "title": "【科普】Web前端基本概述及入门讲解",
+                "price": 0.00,
+                "time": "3课时"
             }
         ],
         "program": [
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-code-1.jpg",
+                "title": "【基础】Java开发基础值MySQL数据库的基础操作",
+                "price": 0.00,
+                "time": "9课时"
             },
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-code-2.jpg",
+                "title": "Python小讲堂--运算及循环",
+                "price": 0.00,
+                "time": "9课时"
             },
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-code-3.jpg",
+                "title": "【基础】Java开发基础之由HTML入门JavaWeb",
+                "price": 0.00,
+                "time": "8课时"
             },
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/free-code-4.jpg",
+                "title": "【基础】Java开发基础之领略数组的魅力",
+                "price": 0.00,
+                "time": "8课时"
             }
         ]
     },
@@ -618,3 +570,4 @@
         ]
     }
 }
+
