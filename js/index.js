@@ -206,13 +206,8 @@ window.onload = function(){
             lis[i].onmouseleave = function(){
                 this.style.backgroundColor = '#ffffff';
             }
-
-
         }
-
-
-
-
     });
 
+    
 }
