@@ -214,8 +214,13 @@ window.onload = function(){
     ajax('get','../data/lessonContent_new.json','',function(res){
         // console.log(res);
         var transRes = JSON.parse(res);
+        // goodLesson
         var goodLesson = transRes.goodLesson;
         Tab(goodLesson,'onlinetype','onlinecontent');
+
+        // freeLesson
+        var freeLesson = transRes.freeLesson;
+        Tab(freeLesson, 'freetype', 'freecontent');
     });
 
     function Tab(lesson, typeId, contentClass){
@@ -226,6 +231,7 @@ window.onload = function(){
         var type = document.getElementById(typeId);
         // console.log(type);
         var typeLis = type.getElementsByTagName('li');
+        var typeCon = type.getElementsByTagName('a');
         //console.log(typeLis);
         var content = document.getElementsByClassName(contentClass);
         // console.log(content);
@@ -237,8 +243,10 @@ window.onload = function(){
                 // Exclusive
                 for(var j = 0; j < typeLis.length;j++){
                      typeLis[j].style.borderBottom = 'none';
+                     typeCon[j].style.color = '#333333';
                 }
                 this.style.borderBottom = '1px solid #FD5843';
+                typeCon[this.index].style.color = '#FD5843';
                 // get attribute
                 var attr = this.getAttribute('attr');
                 // console.log(attr);

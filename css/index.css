@@ -42,8 +42,11 @@
 .container .topnav .ulleft > li > a > i{
     font-size: 12px;
 }
-.container .topnav .ulleft > li:hover{
+.container .topnav .ulleft .app{
     border: 1px solid #ff4905;
+}
+.container .topnav .ulleft .app > a{
+    color:#ff4905;
 }
 .container .topnav .ulleft > li:hover a{
     color:#ff4905;
@@ -194,7 +197,8 @@
     height: 400px;
 }
 .container .hotlive > h3,
-.container .onlinecourse > h3{
+.container .onlinecourse > h3,
+.container .freecourse > h3{
     font-size: 25px;
     font-weight: bold;
     width: 100px;
@@ -205,17 +209,20 @@
     margin-top: 20px;
 }
 .container .hotlive .more > a,
-.container .onlinecourse .more > a{
+.container .onlinecourse .more > a,
+.container .freecourse .more > a{
     font: 13px/1 "微软雅黑";
     color:#A8A8A8;
 }
 .container .hotlive .more > a:hover,
-.container .onlinecourse .more > a:hover{
+.container .onlinecourse .more > a:hover,
+.container .freecourse .more > a:hover{
     color: #FB4B00;
     text-decoration: underline;
 }
 .container .hotlive .more > i,
-.container .onlinecourse .more > i{
+.container .onlinecourse .more > i,
+.container .freecourse .more > i{
     font-size: 15px;
     font-weight: bold;
     color: #FB4B00;
@@ -311,25 +318,33 @@
 .container .hotlive .hotcontent .hotdesc li h3 > a:hover{
     color:#FF4D00;
 }
-.container .onlinecourse{
+.container .onlinecourse,
+.container .freecourse{
     margin-top: 50px;
     position: relative;
     width: 100%;
     height: 566px;
 }
-.container .onlinecourse > h3{
+.container .freecourse{
+    height: 280px;
+}
+.container .onlinecourse > h3,
+.container .freecourse > h3{
     height: 25px;
 }
-.container .onlinecourse .type{
+.container .onlinecourse .type,
+.container .freecourse .type{
     margin-left: 57px;
 }
-.container .onlinecourse .type li{
+.container .onlinecourse .type li,
+.container .freecourse .type li{
     float: left;
     margin: 5px 25px 0 0;
     padding-bottom: 5px;
     
 }
-.container .onlinecourse .type li > a{
+.container .onlinecourse .type li > a,
+.container .freecourse .type li > a{
     font: 16px/1 "微软雅黑";
     color: #333333;
     display: inline-block;
@@ -337,13 +352,16 @@
 /* .container .onlinecourse .type li:hover{
     border-bottom: 1px solid #FD5843;
 }*/
-.container .onlinecourse .type li:hover a{
+.container .onlinecourse .type li:hover a,
+.container .freecourse .type li:hover a{
     color: #FD5843;
 } 
-.container .onlinecourse .more{
+.container .onlinecourse .more,
+.container .freecourse .more{
     margin-top: 8px;
 }
-.container .onlinecourse .onlinecontent{
+.container .onlinecourse .onlinecontent,
+.container .freecourse .freecontent{
     width: 100%;
     height: 560px;
     position: absolute;
@@ -352,24 +370,32 @@
     /* border: 1px solid #333; */
     display: none;
 }
-.container .onlinecourse .active{
+.container .freecourse .freecontent{
+    height: 280px;
+}
+.container .onlinecourse .active,
+.container .freecourse .active{
     display: block;
 }
-.container .onlinecourse .onlinecontent li{
+.container .onlinecourse .onlinecontent li,
+.container .freecourse .freecontent li{
     width: 285px;
     height: 260px;
     background-color: #ffffff;
     margin: 20px 15px 0 0;
     float: left;
 }
-.container .onlinecourse .onlinecontent li:hover{
+.container .onlinecourse .onlinecontent li:hover,
+.container .freecourse .freecontent li:hover{
     transform: translateY(-3px);
 }
-.container .onlinecourse .onlinecontent li a > img{
+.container .onlinecourse .onlinecontent li a > img,
+.container .freecourse .freecontent li a > img{
     width: 285px;
     height: 161px;
 }
-.container .onlinecourse .onlinecontent li .desc{
+.container .onlinecourse .onlinecontent li .desc,
+.container .freecourse .freecontent li .desc{
     display: block;
     margin: 15px 0 0 5px;
     text-indent: 3px;
@@ -379,20 +405,25 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.container .onlinecourse .onlinecontent li .desc:hover{
+.container .onlinecourse .onlinecontent li .desc:hover,
+.container .freecourse .freecontent li .desc:hover{
     text-decoration: underline;
 }
-.container .onlinecourse .onlinecontent li .detail{
+.container .onlinecourse .onlinecontent li .detail,
+.container .freecourse .freecontent li .detail{
     margin: 23px  0 0 8px;
 }
-.container .onlinecourse .onlinecontent li .detail .price{
+.container .onlinecourse .onlinecontent li .detail .price,
+.container .freecourse .freecontent li .detail .price{
     font: 20px/1 "微软雅黑";
     color: #FF4D00;
 }
-.container .onlinecourse .onlinecontent li .detail .price > b{
+.container .onlinecourse .onlinecontent li .detail .price > b,
+.container .freecourse .freecontent li .detail .price > b{
     font-size: 15px;
 }
-.container .onlinecourse .onlinecontent li .detail .length{
+.container .onlinecourse .onlinecontent li .detail .length,
+.container .freecourse .freecontent li .detail .length{
     width: 55px;
     height: 25px;
     text-align: center;

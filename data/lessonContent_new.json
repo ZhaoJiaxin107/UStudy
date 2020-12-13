@@ -342,78 +342,18 @@
     "jobLesson": {
         "onlineSell": [
             {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/containe-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 1499,
-                "time": "15课时"
+                "img": "./img/job-sell-1.jpg",
+                "title": "【面授】电商运营学习计划",
+                "price": 16800,
+                "time": "面议"
             }
         ],
         "styleDesign": [
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 2499,
-                "time": "15课时"
+                "img": "./img/job-design-1.jpg",
+                "title": "【面授】电商运营学习计划",
+                "price": 16800,
+                "time": "面议"
             }
         ],
         "web": [
