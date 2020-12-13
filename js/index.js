@@ -238,8 +238,8 @@ window.onload = function(){
                 var attr = this.getAttribute('attr');
                 // console.log(attr);
 
-                // console.log(goodLesson[attr]);
-                // console.log(goodLesson[attr].length);
+                // console.log(lesson[attr]);
+                // console.log(typeof lesson[attr][0].price);
                 // record length
                 var length = lesson[attr].length;
                 //Rendering the page to corresponding content
@@ -254,7 +254,7 @@ window.onload = function(){
                        '+ lesson[attr][i].title +'\
                     </a>\
                     <p class = "detail clearfix">\
-                       <span class = "price"><b>￥</b>'+ lesson[attr][i].price +'</span>\
+                       <span class = "price"><b>￥</b>'+ parseFloat(lesson[attr][i].price) +'</span>\
                        <span class = "length fr">'+ lesson[attr][i].time +'</span>\
                     </p>\
                 </li>';

@@ -199,6 +199,7 @@
     font-weight: bold;
     width: 100px;
     height: 45px;
+    cursor: pointer;
 }
 .container .onlinecourse > h3{
     height: 25px;
