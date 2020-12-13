@@ -232,12 +232,12 @@
             <div class="onlinecourse clearfix">
                  <!-- title -->
                  <h3 class="fl">精品网课</h3>
-                 <ul class="type fl">
-                     <li><a href="#">互联网营销</a></li>
-                     <li><a href="#">设计</a></li>
-                     <li><a href="#">Web前端</a></li>
-                     <li><a href="#">程序开发</a></li>
-                     <li><a href="#">Office</a></li>
+                 <ul class="type fl" id = "type">
+                     <li attr = "onlineSell"><a href="#">互联网营销</a></li>
+                     <li attr = "styleDesign"><a href="#">设计</a></li>
+                     <li attr = "web"><a href="#">Web前端</a></li>
+                     <li attr = "program"><a href="#">程序开发</a></li>
+                     <li attr = "office"><a href="#">Office</a></li>
                  </ul>
                  <div class="more fr">
                      <a href="#" class = "fl">更多</a>
@@ -245,20 +245,25 @@
                  </div>
                  <div style="clear: both;"></div>
 
-                 <ul class="onlinecontent">
-                     <li>
-                         <a href="#">
-                             <img src="./img/online-sell-1.jpg" alt="">
-                         </a>
-                         <a href="#" class = "desc">
-                            【基础】微信视频号运营技巧, 短视频赚钱新风口
-                         </a>
-                         <p class = "detail clearfix">
-                            <span class = "price"><b>￥</b>1.00</span>
-                            <span class = "length fr">1课时</span>
-                         </p>
-                     </li>
-                 </ul>
+                <ul class="onlinecontent" attr = "onlineSell"></ul>
+                <ul class="onlinecontent" attr = "styleDesign"></ul>
+                <ul class="onlinecontent" attr = "web"></ul>
+                <ul class="onlinecontent" attr = "program"></ul>
+                <ul class="onlinecontent" attr = "office"></ul>
+                <ul class="onlinecontent active" attr = "default">
+                    <li>
+                        <a href="#">
+                            <img src="./img/online-code-1.jpg" alt="">
+                        </a>
+                        <a href="#" class = "desc">
+                           【基础】微信视频号运营技巧, 短视频赚钱新风口
+                        </a>
+                        <p class = "detail clearfix">
+                           <span class = "price"><b>￥</b>1.00</span>
+                           <span class = "length fr">1课时</span>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

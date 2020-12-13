@@ -200,6 +200,9 @@
     width: 100px;
     height: 45px;
 }
+.container .onlinecourse > h3{
+    height: 25px;
+}
 .container .hotlive .more{
     margin-top: 20px;
 }
@@ -312,6 +315,9 @@
 }
 .container .onlinecourse{
     margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 566px;
 }
 .container .onlinecourse .type{
     margin-left: 57px;
@@ -326,23 +332,37 @@
     font: 16px/1 "微软雅黑";
     color: #333333;
     display: inline-block;
-}.container .onlinecourse .type li:hover{
-    border-bottom: 1px solid #FD5843;
 }
+/* .container .onlinecourse .type li:hover{
+    border-bottom: 1px solid #FD5843;
+}*/
 .container .onlinecourse .type li:hover a{
     color: #FD5843;
-}
+} 
 .container .onlinecourse .more{
     margin-top: 8px;
+}
+.container .onlinecourse .onlinecontent{
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    left: 0;
+    top: 25px; 
+    /* border: 1px solid #333; */
+    display: none;
+}
+.container .onlinecourse .active{
+    display: block;
 }
 .container .onlinecourse .onlinecontent li{
     width: 285px;
     height: 260px;
     background-color: #ffffff;
-    margin-right: 17px;
+    margin: 20px 15px 0 0;
+    float: left;
 }
 .container .onlinecourse .onlinecontent li:hover{
-    transform: translateY(5px);
+    transform: translateY(-3px);
 }
 .container .onlinecourse .onlinecontent li a > img{
     width: 285px;
@@ -372,12 +392,12 @@
     font-size: 15px;
 }
 .container .onlinecourse .onlinecontent li .detail .length{
-    width: 50px;
+    width: 55px;
     height: 25px;
     text-align: center;
     display: inline-block;
     background-color: #FFEFE8;
-    font:14px/25px "微软雅黑";
+    font:12px/25px "微软雅黑";
     color: #FB8C23;
     margin-right: 12px;
 }

@@ -180,8 +180,8 @@ window.onload = function(){
         }
 
         /* 
-            Tab function, click each li to get the content of corresponding payment, 
-            and the background color of li is programmed in pink
+            Tab function, click each li to get the content of corresponding desc, 
+            and the background color of li is pink
         */
         //  Get element li from father element hotDesc
         var lis = hotDesc.getElementsByTagName('li');
@@ -208,6 +208,63 @@ window.onload = function(){
             }
         }
     });
-
     
+    // 4.Readlization of online courses
+    // 4.1 Ajax request data
+    ajax('get','../data/lessonContent_new.json','',function(res){
+        // console.log(res);
+        var transRes = JSON.parse(res);
+        var lesson = transRes.goodLesson;
+        console.log(lesson);
+
+        // Get father element type
+        var type = document.getElementById('type');
+        // console.log(type);
+        var typeLis = type.getElementsByTagName('li');
+        //console.log(typeLis);
+        var content = document.getElementsByClassName('onlinecontent');
+        // console.log(content);
+        // When mouse enter into each type, show corresponding content
+        for(var i = 0; i < typeLis.length; i++){
+            typeLis[i].index = i;
+            typeLis[i].onmouseenter = function(){
+                // set and border
+                // Exclusive
+                for(var j = 0; j < typeLis.length;j++){
+                     typeLis[j].style.borderBottom = 'none';
+                }
+                this.style.borderBottom = '1px solid #FD5843';
+                // get attribute
+                var attr = this.getAttribute('attr');
+                // console.log(attr);
+
+                // console.log(goodLesson[attr]);
+                // console.log(goodLesson[attr].length);
+                // record length
+                var length = lesson[attr].length;
+                //Rendering the page to corresponding content
+                // console.log(this.index);
+                content[this.index].innerHTML = '';
+                for(var i = 0; i < length; i++){
+                    content[this.index].innerHTML += '<li>\
+                    <a href="#">\
+                        <img src="'+ lesson[attr][i].img +'" alt="">\
+                    </a>\
+                    <a href="#" class = "desc">\
+                       '+ lesson[attr][i].title +'\
+                    </a>\
+                    <p class = "detail clearfix">\
+                       <span class = "price"><b>￥</b>'+ lesson[attr][i].price +'</span>\
+                       <span class = "length fr">'+ lesson[attr][i].time +'</span>\
+                    </p>\
+                </li>';
+                }
+                // exclusive
+                for(var k = 0; k < content.length; k++){
+                    content[k].className = 'onlinecontent';
+                }
+                content[this.index].className = 'onlinecontent active'; 
+            }
+        }
+    });
 }
