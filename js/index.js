@@ -214,15 +214,20 @@ window.onload = function(){
     ajax('get','../data/lessonContent_new.json','',function(res){
         // console.log(res);
         var transRes = JSON.parse(res);
-        var lesson = transRes.goodLesson;
-        console.log(lesson);
+        var goodLesson = transRes.goodLesson;
+        Tab(goodLesson,'onlinetype','onlinecontent');
+    });
 
+    function Tab(lesson, typeId, contentClass){
+        
+        console.log(lesson);
+ 
         // Get father element type
-        var type = document.getElementById('type');
+        var type = document.getElementById(typeId);
         // console.log(type);
         var typeLis = type.getElementsByTagName('li');
         //console.log(typeLis);
-        var content = document.getElementsByClassName('onlinecontent');
+        var content = document.getElementsByClassName(contentClass);
         // console.log(content);
         // When mouse enter into each type, show corresponding content
         for(var i = 0; i < typeLis.length; i++){
@@ -261,10 +266,10 @@ window.onload = function(){
                 }
                 // exclusive
                 for(var k = 0; k < content.length; k++){
-                    content[k].className = 'onlinecontent';
+                    content[k].className = contentClass;
                 }
-                content[this.index].className = 'onlinecontent active'; 
+                content[this.index].className = contentClass + ' active'; 
             }
         }
-    });
+    }
 }
