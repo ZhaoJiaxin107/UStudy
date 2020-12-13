@@ -1,23 +1,23 @@
 [
     {
-        "src": "./img/cont-1.jpg",
+        "src": "./img/hot-1.jpg",
         "name": "Web第一阶段直播答疑12.14",
         "time": "2020-12-23 19:00:00"
     },
     {
-        "src": "./img/cont-1.jpg",
+        "src": "./img/hot-1.jpg",
         "name": "Web第二阶段直播答疑12.14",
         "time": "2020-12-24 19:00:00"
     },{
-        "src": "./img/cont-2.jpg",
+        "src": "./img/hot-2.jpg",
         "name": "JavaWeb开发答疑5",
         "time": "2020-12-25 19:00:00"
     },{
-        "src": "./img/cont-3.jpg",
+        "src": "./img/hot-3.jpg",
         "name": "UI第三阶段直播答疑(七)",
         "time": "2020-12-26 19:00:00"
     },{
-        "src": "./img/cont-3.jpg",
+        "src": "./img/hot-3.jpg",
         "name": "UI第三阶段直播答疑(八)",
         "time": "2020-12-27 19:00:00"
     }

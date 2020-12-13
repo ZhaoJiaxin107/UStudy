@@ -143,4 +143,47 @@ window.onload = function(){
         }
     });
 
+    // 3.Realization of hot live list
+    // 3.1 Ajax request data (img/desc/time)
+    ajax('get','../data/hot.json','',function(res){
+        // console.log(res);
+        // Transform data
+        var hotUrl = JSON.parse(res);
+        console.log(hotUrl);
+
+        // Rendering the page, comment previous static data in html page
+        // Get father element
+        var hotContent = document.getElementById('hotcontent');
+        // console.log(hotContent);
+        var hotImage = hotContent.getElementsByClassName('hotimg');
+        var sequence = hotContent.getElementsByClassName('sequence');
+        // console.log(hotImage, sequence);
+        // Rendering image and sequence
+        for(var i = 0; i < hotUrl.length; i++){
+            hotImage[i].innerHTML = '<img src=' + hotUrl[i].src + ' alt="hot"></img>';
+            sequence[i].innerHTML = hotUrl[i].name;
+        }
+
+        // Rendering data to the right panel
+        // Get father element hotdesc
+        var hotDesc = document.getElementById('hotdesc');
+        // console.log(hotDesc);
+        // Get element time and h3
+        var time = hotDesc.getElementsByClassName('time');
+        var h3 = hotDesc.getElementsByTagName('h3');
+        // console.log(time, h3);
+
+        // Rendering time and desc into time and h3
+        for(var i = 0; i < hotUrl.length; i++){
+           time[i].innerHTML = '<span>'+ hotUrl[i].time +'</span>';
+           h3[i].innerHTML = '<a href="#">' + hotUrl[i].name +'</a>';
+        }
+
+
+
+
+
+
+    });
+
 }

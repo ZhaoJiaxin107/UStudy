@@ -218,18 +218,15 @@
 .container .hotlive .hotcontent{
     position: relative;
 }
-.container .hotlive .hotcontent .active{
-    display: block;
-}
-
-.container .hotlive .hotcontent > div{
+.container .hotlive .hotcontent .hotimg{
     width: 620px;
     height: 349px;
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+    display: none; 
 }
+
 .container .hotlive .hotcontent .sequence{
     width: 600px;
     height: 40px;
@@ -241,9 +238,12 @@
     font: 15px/40px "微软雅黑";
     color: #C9C9C9;
     padding-left: 20px;
-
+    display: none;
 }
-.container .hotlive .hotcontent > div > img{
+.container .hotlive .hotcontent .active{
+    display: block;
+}
+.container .hotlive .hotcontent > .hotimg > img{
     width: 620px;
     height: 349px;
 }
@@ -259,9 +259,9 @@
     height: 66px;
     cursor: pointer;
 }
-.container .hotlive .hotcontent .hotdesc li:hover{
+/* .container .hotlive .hotcontent .hotdesc li:hover{
     background-color: #FFF7F3;
-}
+} */
 .container .hotlive .hotcontent .hotdesc li .time{
     width: 112px;
     height: 66px;
