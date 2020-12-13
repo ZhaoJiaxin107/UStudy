@@ -344,168 +344,72 @@
             {
                 "img": "./img/job-sell-1.jpg",
                 "title": "【面授】电商运营学习计划",
-                "price": 16800,
+                "price": 16800.00,
                 "time": "面议"
             }
         ],
         "styleDesign": [
             {
                 "img": "./img/job-design-1.jpg",
-                "title": "【面授】电商运营学习计划",
-                "price": 16800,
+                "title": "【面授】UI交互设计学习班",
+                "price": 24300.00,
                 "time": "面议"
             }
         ],
         "web": [
             {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/web-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/job-web-1.jpg",
+                "title": "【面授】大前端 H5+小程序+APP",
+                "price": 22800.00,
+                "time": "面议"
             }
         ],
-        "program": [
+        "java": [
             {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/kaifa-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/job-java-1.jpg",
+                "title": "【面授】Java开发学习计划",
+                "price": 23800.00,
+                "time": "面议"
             }
         ],
-        "office": [
+        "game": [
             {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/office-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/job-AR-1.jpg",
+                "title": "【面授】VR/AR-Unity游戏开发班",
+                "price": 23800.00,
+                "time": "面议"
             }
         ],
-        "offer": [
+        "python": [
             {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
+                "img": "./img/job-python-1.jpg",
+                "title": "【面授】Python+人工智能",
+                "price": 23800.00,
+                "time": "面议"
+            }
+        ],
+        "linux": [
             {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
+                "img": "./img/job-linux-1.jpg",
+                "title": "【面授】Linux云计算+Python运维开发工程师",
+                "price": 21800.00,
+                "time": "面议"
+            }
+        ],
+        "bigdata": [
             {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
+                "img": "./img/job-bigdata-1.jpg",
+                "title": "【面授】Java大数据开发计划",
+                "price": 24800.00,
+                "time": "面议"
+            }
+        ],
+        "test": [
             {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
-            },
-            {
-                "img": "./img/qiuzhi-1.jpg",
-                "title": "【春节放价】【预售】抖音电商+双微社群流量运营",
-                "price": 9999,
-                "time": "15课时"
+                "img": "./img/job-test-1.jpg",
+                "title": "【面授】软件测试面授课程",
+                "price": 20800.00,
+                "time": "面议"
             }
         ]
     }
