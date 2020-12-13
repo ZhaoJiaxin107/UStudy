@@ -216,28 +216,34 @@ window.onload = function(){
         var transRes = JSON.parse(res);
         // goodLesson
         var goodLesson = transRes.goodLesson;
-        Tab(goodLesson,'onlinetype','onlinecontent');
+        Tab(goodLesson,'onlinecourse','onlinetype','onlinecontent');
 
         // freeLesson
         var freeLesson = transRes.freeLesson;
-        Tab(freeLesson, 'freetype', 'freecontent');
+        Tab(freeLesson, 'freecourse','freetype', 'freecontent');
 
         var jobLesson = transRes.jobLesson;
-        Tab(jobLesson, 'jobtype', 'jobcontent')
+        Tab(jobLesson, 'jobcourse', 'jobtype', 'jobcontent')
     });
 
-    function Tab(lesson, typeId, contentClass){
+    function Tab(lesson, courseId, typeId, contentClass){
         
-        console.log(lesson);
- 
+        // console.log(lesson);
+        var course = document.getElementById(courseId);
+        var title = course.querySelector('h3');
+        // console.log(title);
         // Get father element type
         var type = document.getElementById(typeId);
         // console.log(type);
         var typeLis = type.getElementsByTagName('li');
         var typeCon = type.getElementsByTagName('a');
-        //console.log(typeLis);
+        // console.log(typeLis);
         var content = document.getElementsByClassName(contentClass);
         // console.log(content);
+        // When mouse enter into h3, display default value
+        title.onmouseenter = function(){
+            content[content.length - 1].className = contentClass + ' active';
+        }
         // When mouse enter into each type, show corresponding content
         for(var i = 0; i < typeLis.length; i++){
             typeLis[i].index = i;
@@ -261,6 +267,7 @@ window.onload = function(){
                 //Rendering the page to corresponding content
                 // console.log(this.index);
                 content[this.index].innerHTML = '';
+                // append content
                 for(var i = 0; i < length; i++){
                     content[this.index].innerHTML += '<li>\
                     <a href="#">\
