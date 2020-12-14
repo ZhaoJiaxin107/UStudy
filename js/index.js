@@ -62,6 +62,22 @@ window.onload = function(){
 
     // console.log(options, paras);
     footLinkShift(options, paras);
+
+    // When click bottom up arrow, the page goes to the top
+    // Get top arrow element
+    var topArrow = document.getElementById('toparrow');
+    console.log(topArrow);
+    // Add click event in window onscroll function
+    window.onscroll = function(){
+        // Add click event to topArrow
+        topArrow.onclick = function(){
+            // Make the page back to the top
+            document.documentElement.scrollTop = 0;
+            // Consider compatible
+            document.body.scrollTop = 0;
+        }
+    }
+    
     
 
     // 2.Realization of rotation banners
