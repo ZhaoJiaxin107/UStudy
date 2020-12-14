@@ -35,6 +35,7 @@
     top: 60px;
     left: 30.2%;
     display: none;
+    background: #ffffff;
 }
 .topnav .container .coursetype > li{
     width: 85px;
@@ -96,4 +97,42 @@
 }
 .topnav .container .ulright li .font:hover{
     text-decoration: underline;
+}
+main{
+    width: 100%;
+    height: 410px;
+    background-color: aquamarine;
+}
+footer{
+    width: 100%;
+    height: 155px;
+    background-color: #404144;
+    color: #999999;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+footer p{
+    margin-top: 30px;
+    font: 13px/30px "宋体";
+}
+footer > p > a{
+    font: 13px/30px "宋体";
+    color: #999999;
+    padding: 0 2px;
+}
+footer > p > a:hover{
+    color: #FF4A00;
+}
+footer > p > img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+footer .verification{
+    position: absolute;
+    top: 70px;
+    right: 140px;
+    cursor: pointer;
 }
