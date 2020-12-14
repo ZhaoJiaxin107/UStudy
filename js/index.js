@@ -50,6 +50,25 @@ window.onload = function(){
         }
     }
 
+    /* Wechat, weibo and mobile phone 
+    
+    When mouse enter into three icons, background turns into 
+    green, red and blue, the color turns into white
+    */
+
+    //  Get three icons
+    var iconlist = document.getElementById('iconlist');
+    // console.log(iconlist);
+    var icons = iconlist.getElementsByTagName('li');
+    var iconcontent = iconlist.getElementsByTagName('a');
+    
+    // Revoke iconEnter and iconLeave function
+    var colorArr = ['#95D372', '#EF868B', '#74BDEE'];
+
+    for(var i = 0; i < icons.length; i++){
+        iconEnter(icons[i], iconcontent[i], colorArr[i]);
+        iconLeave(icons[i], iconcontent[i], colorArr[i]);
+    }
     /* 
         Footer link tab
     */
@@ -66,9 +85,18 @@ window.onload = function(){
     // When click bottom up arrow, the page goes to the top
     // Get top arrow element
     var topArrow = document.getElementById('toparrow');
-    console.log(topArrow);
+    //console.log(topArrow);
     // Add click event in window onscroll function
     window.onscroll = function(){
+        // Get the distance the mouse has scrolled
+        var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
+        // console.log(scrollDistance);
+        // When scroll distance > 500, display top arrow, else hide top arrow
+        if(scrollDistance >= 500){
+            topArrow.style.display = 'block';
+        }else{
+            topArrow.style.display = 'none';
+        }
         // Add click event to topArrow
         topArrow.onclick = function(){
             // Make the page back to the top
@@ -353,6 +381,19 @@ window.onload = function(){
         }
     }
 
+    function iconEnter(icon, content, color){
+        icon.onmouseenter = function(){
+            content.style.color = '#ffffff';
+            this.style.backgroundColor = color;
+        }
+    }
+
+    function iconLeave(icon, content, color){
+        icon.onmouseleave = function(){
+            content.style.color = color;
+            this.style.backgroundColor = '';
+        }
+    }
 
     function footLinkShift(options, paras){
         // Add mouse enter event to each option

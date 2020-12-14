@@ -37,7 +37,7 @@
 }
 .container .topnav .ulleft > li > a{
     color:#333333;
-    font-size: 14px;
+    font-size: 16px;
 }
 .container .topnav .ulleft > li > a > i{
     font-size: 12px;
@@ -562,13 +562,47 @@
     text-align: center;
     background-color: #FF4A00;
     position: fixed;
-    top:50%;
-    transform: translateY(-50%);
+    top: 145px;
     right: 0;
     color:#ffffff;
     font: 14px/18px "微软雅黑";
     padding-top: 17px;
     border-radius: 7px 0 0 7px;
+}
+.iconlist > li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position:fixed;
+}
+.iconlist > li:nth-of-type(1){
+    top: 320px;
+    right: 10px;
+    border: 1px solid #95D372;
+}
+.iconlist > li:nth-of-type(2){
+    top: 370px;
+    right: 10px;
+    border: 1px solid #EF868B;
+}
+.iconlist > li:nth-of-type(3){
+    top: 430px;
+    right: 10px;
+    border: 1px solid #74BDEE;
+}
+.iconlist > li > a{
+    font-size: 25px;
+}
+.iconlist > li:nth-child(1) > a{
+    color: #95D372;
+}
+.iconlist > li:nth-child(2) > a{
+    color: #EF868B;
+}
+.iconlist > li:nth-child(3) > a{
+    color:  #74BDEE;
 }
 footer{
     width: 100%;
@@ -604,9 +638,9 @@ footer .verification{
     cursor: pointer;
 }
 footer .toparrow{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 50%;
     color: #379CEE;
     border:1px solid #379CEE;
@@ -621,7 +655,7 @@ footer .toparrow:hover{
 }
 footer .toparrow > i{
     vertical-align: middle;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
