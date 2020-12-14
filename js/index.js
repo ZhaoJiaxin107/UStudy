@@ -1,6 +1,20 @@
 window.onload = function(){
+    
+    // Get goodCourse and course type in top nav
+    var goodCourse = document.getElementById('goodcourse');
+    // console.log(goodCourse);
+    var courseType = document.getElementById('coursetype');
+    // console.log(courseType);
+    // When mouse enter into goodCourse, display course type,
+    // Otherwise hide courseType
+    goodCourse.onmouseenter = function(){
+        courseType.style.display = 'block';
+    }
+    courseType.onmouseleave = function(){
+        this.style.display = 'none';
+    }
     /* 
-        1.1 Slide the mouse into the search icon to 
+        Slide the mouse into the search icon to 
         display the entire search box
     */
      // get the search icon, search course and search box element

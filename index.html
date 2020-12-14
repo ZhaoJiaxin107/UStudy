@@ -20,19 +20,18 @@
 
 <body>
 
-    <div class="container">
-        <!-- topnav -->
-        <header class="topnav clearfix">
+    <!-- topnav -->
+    <header class="topnav">
+        <div class="container clearfix">
             <a class="logo fl" href="#">
-                <img src="./img/logo_it.jpg" alt="logo">
+                <img src="../img/logo_it.jpg" alt="logo">
             </a>
             <ul class="ulleft fl">
                 <li class="active">
                     <a href="#">首页</a>
                 </li>
                 <li>
-                    <a href="#">精品课程
-                        <i class="iconfont icon-sanjiaodown"></i>
+                    <a href="#" id = "goodcourse">精品课程<i class="iconfont icon-sanjiaodown"></i>
                     </a>
                 </li>
                 <li>
@@ -51,7 +50,7 @@
                     <a href="#">APP下载</a>
                 </li>
             </ul>
-            <ul class="ul_right fr">
+            <ul class="ulright fr">
                 <li id="search">
                     <input type="text" name="searchCourse" id="searchCourse" placeholder="搜索课程" autofocus="autofocus">
                     <a class="iconfont icon-sousuo6" href="#" id="searchIcon"></a>
@@ -69,8 +68,14 @@
                     <a href="#" class="font">注册</a>
                 </li>
             </ul>
-        </header>
-    </div>
+            <div style="clear: both;"></div>
+            <ul class="coursetype" id = "coursetype">
+                <li><a href="#">免费课程</a></li>
+                <li><a href="#">精品网课</a></li>
+            </ul>
+        </div>
+    </header>
+
 
     <!-- classification nav -->
     <div class="classificationnav background clearfix">
