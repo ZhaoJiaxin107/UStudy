@@ -31,7 +31,7 @@ window.onload = function(){
         // search icon displays
         searchIcon.style.visibility = 'visible';
     }
-
+    
     // When mouse enter into banner, left/right button diaplay
     // Get banner, left/right button
     var banner = document.getElementById('banner');
@@ -50,8 +50,22 @@ window.onload = function(){
         }
     }
 
+    /* 
+        Footer link tab
+    */
+    // Get element footlink a p
+    var footlink = document.getElementById('footlink');
+    // console.log(footlink);
+    
+    var options = footlink.querySelectorAll('.option');
+    var paras = footlink.getElementsByTagName('p');
+
+    // console.log(options, paras);
+    footLinkShift(options, paras);
+    
+
     // 2.Realization of rotation banners
-    // 2.1 Ajax request image address data
+    // 2.1 Ajax request address data
     ajax('get', './data/banner.json','',function(res){
         // console.log(res);
         // transform data
@@ -319,6 +333,28 @@ window.onload = function(){
                     content[k].className = contentClass;
                 }
                 content[this.index].className = contentClass + ' active'; 
+            }
+        }
+    }
+
+
+    function footLinkShift(options, paras){
+        // Add mouse enter event to each option
+        for(var i = 0; i < options.length; i++){
+            // save index
+            options[i].index = i;
+            // add mouse enter event
+            options[i].onmouseenter = function(){
+                // console.log(this.index);
+                // exclusive
+                for(var j = 0; j < paras.length; j++){
+                    paras[j].className = '';
+                    options[j].style.color = '#666666';
+                }
+                // content shift to each para
+                paras[this.index].className = 'active';
+                // option color turns to red
+                this.style.color = '#FF0000';
             }
         }
     }
