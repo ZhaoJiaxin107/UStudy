@@ -1,0 +1,100 @@
+@charset 'utf-8';
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid #333; */
+}
+
+.topnav{
+    height: 60px;
+    line-height: 60px; 
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+.topnav .container .logo > img{
+    width: 220px;
+    height: 32px;
+    vertical-align: middle;
+}
+.topnav .container .ulleft{
+    margin-left: 30px;
+}
+.topnav .container .ulleft > li{
+    float: left;
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.topnav .container .coursetype{
+    width: 85px;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 30.2%;
+    display: none;
+}
+.topnav .container .coursetype > li{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.topnav .container .ulleft > li > a,
+.topnav .container .coursetype> li > a{
+    color:#333333;
+    font-size: 16px;
+}
+.topnav .container .coursetype> li > a:hover{
+    color:#ff4905;
+}
+.topnav .container .ulleft > li > a > i{
+    font-size: 12px;
+}
+.topnav .container .ulleft .app{
+    border: 1px solid #ff4905;
+}
+.topnav .container .ulleft .app > a{
+    color:#ff4905;
+}
+.topnav .container .ulleft > li:hover a{
+    color:#ff4905;
+}
+/* .container .topnav .ul_right{
+    margin-right: 5px;
+} */
+.topnav .container .ulright > li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin:20px 22px 0 0;
+}
+.topnav .container .ulright #search{
+    border:1px solid #E6E6E6;
+    width: 145px;
+    border-radius: 15px;
+    margin-top: 18px;
+    visibility: hidden; 
+}
+.topnav .container .ulright #search > input{
+    width: 120px;
+    height: 30px;
+    text-indent: 15px;
+    visibility: hidden; 
+}
+.topnav .container .ulright #search #searchIcon{
+    visibility:visible;
+} 
+.topnav .container .ulright li a{
+    color: #363636;
+    font-size: 18px;
+}
+.topnav .container .ulright li .font{
+    font-size: 12px;
+}
+.topnav .container .ulright li .font:hover{
+    text-decoration: underline;
+}
