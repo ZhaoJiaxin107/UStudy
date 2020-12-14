@@ -286,7 +286,7 @@ window.onload = function(){
                 // console.log(this.index);
                 content[this.index].innerHTML = '';
                 // append content
-                for(var i = 0; i < length; i++){
+               /*  for(var i = 0; i < length; i++){
                     content[this.index].innerHTML += '<li>\
                     <a href="#">\
                         <img src="'+ lesson[attr][i].img +'" alt="">\
@@ -299,6 +299,20 @@ window.onload = function(){
                        <span class = "length fr">'+ lesson[attr][i].time +'</span>\
                     </p>\
                 </li>';
+                } */
+                for(var i = 0; i < length; i++){
+                    content[this.index].innerHTML += `<li>
+                    <a href="#">
+                        <img src=" ${lesson[attr][i].img} " alt="">
+                    </a>
+                    <a href="#" class = "desc">
+                        ${lesson[attr][i].title} 
+                    </a>
+                    <p class = "detail clearfix">
+                       <span class = "price"><b>￥</b> ${parseFloat(lesson[attr][i].price)} </span>
+                       <span class = "length fr"> ${lesson[attr][i].time} </span>
+                    </p>
+                </li>`;
                 }
                 // exclusive
                 for(var k = 0; k < content.length; k++){
