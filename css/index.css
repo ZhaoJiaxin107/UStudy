@@ -518,4 +518,18 @@
     height: 196px;
     background: url(../img/ujyx_12.jpg) no-repeat left top;
 }
+.container .timebanner .QRCode{
+    width: 240px;
+    height: 110px;
+    margin: 50px 50px 0 0;
+}
+.container .timebanner .QRCode > img{
+    width: 110px;
+    height: 110px;
+}
+.container .timebanner .QRCode > h3{
+    display: inline-block;
+    font: 16px/30px "微软雅黑";
+    padding: 20px 0 0 10px;
+}
 
