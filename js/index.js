@@ -32,6 +32,24 @@ window.onload = function(){
         searchIcon.style.visibility = 'visible';
     }
 
+    // When mouse enter into banner, left/right button diaplay
+    // Get banner, left/right button
+    var banner = document.getElementById('banner');
+    var arrows = banner.getElementsByTagName('button');
+    // console.log(banner, arrows);
+    banner.onmouseover = function(){
+        // display arrow
+        for(var i = 0; i < arrows.length; i++){
+            arrows[i].style.display = 'block';
+        }
+    }
+    banner.onmouseout = function(){
+        // display arrow
+        for(var i = 0; i < arrows.length; i++){
+            arrows[i].style.display = 'none';
+        }
+    }
+
     // 2.Realization of rotation banners
     // 2.1 Ajax request image address data
     ajax('get', './data/banner.json','',function(res){

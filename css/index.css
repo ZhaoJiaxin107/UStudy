@@ -86,77 +86,83 @@
 .container .topnav .ul_right li .font:hover{
     text-decoration: underline;
 }
-.container .classificationnav{
+.classificationnav{
     overflow: hidden;
+    position: relative;
+    height: 530px;
 }
-.container .classificationnav .sidenav{
+.classificationnav .sidenav{
     width: 240px;
     height: 530px;
     background-color:rgba(222,61,39,.7); 
     border-right: 3px solid #ffd700;
+    position: absolute;
+    left: 83px;
+    top: 0;
+    z-index: 10;
 }
-.container .classificationnav .sidenav > dt,
-.container .classificationnav .sidenav > dd{
+.classificationnav .sidenav > dt,
+.classificationnav .sidenav > dd{
     padding-left: 15px;
 }
-.container .classificationnav .sidenav > dt{
+.classificationnav .sidenav > dt{
     margin-top: 25px;
 }
-.container .classificationnav .sidenav > dt > a{
+.classificationnav .sidenav > dt > a{
     font: 18px/35px "微软雅黑";
     color:#ffffff;
     
 }
-.container .classificationnav .sidenav > dd > a{
+.classificationnav .sidenav > dd > a{
     font: 13px/24px "微软雅黑";
     color:#ffffff;
     margin-right: 16px;
 }
-.container .classificationnav .sidenav > dt > a:hover,
-.container .classificationnav .sidenav > dd > a:hover{
+.classificationnav .sidenav > dt > a:hover,
+.classificationnav .sidenav > dd > a:hover{
     text-decoration: underline;
 }
-.container .classificationnav #banner{
-    width: 955px;
+.classificationnav #banner{
+    width: 1366px;
     height: 393px;
     cursor: pointer;
     overflow: hidden; 
     position: relative;
 }
-.container .classificationnav #banner .bannerlist{
-    width: 5730px;
+.classificationnav #banner .bannerlist{
+    width: 8196px;
     height: 393px;
     position: absolute;
     left: 0;
     top: 0;
 }
-.container .classificationnav #banner .bannerlist > li{
-    width: 955px;
+.classificationnav #banner .bannerlist > li{
+    width: 1366px;
     height: 393px;
     float: left;
 }
-.container .classificationnav #banner .bannerlist > li > img{
-    width: 955px;
+.classificationnav #banner .bannerlist > li > img{
+    width: 1366px;
     height: 393px;
 }
-.container .classificationnav #banner .shiftlist{
+.classificationnav #banner .shiftlist{
     width: 100%;
     height: 5px;
     position: absolute;
     bottom: 25px;
     text-align: center;
 }
-.container .classificationnav #banner .shiftlist span{
+.classificationnav #banner .shiftlist span{
     width: 50px;
     height: 100%;
     background-color: #cccccc;
     display: inline-block;
     margin-right: 5px;
 }
-.container .classificationnav #banner .shiftlist span.active{
+.classificationnav #banner .shiftlist span.active{
     background-color: #ff4400;
 }
-.container .classificationnav #banner > button{
+.classificationnav #banner > button{
     width: 50px;
     height: 100px;
     line-height: 100px;
@@ -166,25 +172,26 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    display: none; 
 }
-.container .classificationnav #banner > .left{
-    left: 0;
+.classificationnav #banner > .left{
+    left: 323px;
 }
-.container .classificationnav #banner > .right{
-    right: 0;
+.classificationnav #banner > .right{
+    right: 210px;
 }
-.container .classificationnav .study{
-    margin: 15px 0 0 10px;
+.classificationnav .study{
+    margin: 15px 0 0 350px;
     /* border: 1px solid #333; */
 }
-.container .classificationnav .study > li{
+.classificationnav .study > li{
     float: left;
     width: 235px;
     height: 120px;
     line-height: 120px;
     background-color: #ffffff;
 }
-.container .classificationnav .study > li > a > img{
+.classificationnav .study > li > a > img{
     width: 190px;
     height: 82px;
     vertical-align: middle;
@@ -192,7 +199,7 @@
     border-right: 1px dashed #cccccc;
 }
 .container .hotlive{
-    margin-top: 50px;
+    padding-top: 50px;
     width: 100%;
     height: 400px;
 }
@@ -504,5 +511,11 @@
 }
 .container .multiplatform .platform:nth-of-type(3):hover{
     border: 1px solid #9750F8;
+}
+.container .timebanner{
+    margin-top: 40px;
+    width: 100%;
+    height: 196px;
+    background: url(../img/ujyx_12.jpg) no-repeat left top;
 }
 
