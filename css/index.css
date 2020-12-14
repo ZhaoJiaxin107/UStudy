@@ -456,3 +456,53 @@
     color: #FB8C23;
     margin-right: 12px;
 }
+.container .multiplatform{
+    margin-top: 80px;
+}
+.container .multiplatform > h3{
+    background: url('../img/ujyx_11.jpg') no-repeat left -15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font:23px/50px "微软雅黑";
+}
+.container .multiplatform .platform{
+    width: 383px;
+    height: 136px;
+    background-color: #ffffff;
+    margin: 30px 13px 0 0;
+    overflow: hidden;
+}
+.container .multiplatform .platform .img > img{
+    width: 88px;
+    height: 88px;
+    padding: 20px 0 0 10px;
+}
+.container .multiplatform .platform .desc{
+    margin: 25px 0 0 12px;
+    font:14px/30px "微软雅黑";
+    color: #888888;
+}
+.container .multiplatform .platform .desc > h3{
+    font: 16px/1 "微软雅黑";
+    padding-bottom: 12px;
+}
+.container .multiplatform .platform:nth-of-type(1) .desc > h3{
+    color: #FB4E38;
+}
+.container .multiplatform .platform:nth-of-type(2) .desc > h3{
+    color: #1A84F0;
+}
+.container .multiplatform .platform:nth-of-type(3) .desc > h3{
+    color: #9750F8;
+}
+.container .multiplatform .platform:nth-of-type(1):hover{
+    border: 1px solid #FB4E38;
+}
+.container .multiplatform .platform:nth-of-type(2):hover{
+    border: 1px solid #1A84F0;
+}
+.container .multiplatform .platform:nth-of-type(3):hover{
+    border: 1px solid #9750F8;
+}
+

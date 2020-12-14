@@ -34,7 +34,7 @@ window.onload = function(){
 
     // 2.Realization of rotation banners
     // 2.1 Ajax request image address data
-    ajax('get', '../data/banner.json','',function(res){
+    ajax('get', './data/banner.json','',function(res){
         // console.log(res);
         // transform data
         var bannerUrl = JSON.parse(res);
@@ -145,7 +145,7 @@ window.onload = function(){
 
     // 3.Realization of hot live list
     // 3.1 Ajax request data (img/desc/time)
-    ajax('get','../data/hot.json','',function(res){
+    ajax('get','./data/hot.json','',function(res){
         // console.log(res);
         // Transform data
         var hotUrl = JSON.parse(res);
@@ -211,7 +211,7 @@ window.onload = function(){
     
     // 4.Readlization of online courses
     // 4.1 Ajax request data
-    ajax('get','../data/lessonContent_new.json','',function(res){
+    ajax('get','./data/lessonContent_new.json','',function(res){
         // console.log(res);
         var transRes = JSON.parse(res);
         // goodLesson
