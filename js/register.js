@@ -156,7 +156,7 @@ window.onload = function () {
     // Determine whether the user array exists in the current cache.
     // If there is no array, create an array to store the data source
 
-    var userArr = [];
+    var userArr = [{ username: '13322221111', password: '123456' }];
     if (!localStorage.userArr) {
         // use not exist, create userArr in cache
         localStorage.userArr = JSON.stringify(userArr);
@@ -172,14 +172,43 @@ window.onload = function () {
     // console.log(registerButton);
 
 
-    
-    // If all the verification passes, user info correct
-    // register user
-    var username = registerForm.username.value;
-    var password = registerForm.password.value;
-    console.log(username, password);
+    registerForm.onsubmit = function(){
+        // If all the verification passes, user info correct
+        // register user
+        var username = registerForm.username.value;
+        var password = registerForm.password.value;
+        // console.log(username, password);
 
-    return false;
+        // save data -- as array 
+        var userInfo = {
+            username: username,
+            password: password
+        }
+        // console.log(userInfo);
+
+        // judge whether the user has registered
+        // Traverse array to find whether to register
+        for(var i = 0; i < userArr.length; i++){
+            // console.log(userArr[i]);
+            if(userArr[i].username == userInfo.username){
+                alert('用户已注册, 请直接登录! 如果忘记密码, 请修改密码!');
+                // window.location = './login.html';
+                return false;
+            }else{
+                alert('用户未注册!');
+
+            }
+        }
+        // User has not been registered, register account
+        userArr.push(userInfo);
+        // console.log(userArr);
+
+        // Save userInfo into cache
+        localStorage.userArr = JSON.stringify(userArr);
+        // console.log(localStorage);
+
+        return false;
+    }
 
 
 
