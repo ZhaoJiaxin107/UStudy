@@ -130,6 +130,7 @@ main .leftpanel > form > div > input{
     border:.01rem solid #E7E7E7;
     margin: 0 .05rem;
     text-indent: .03rem;
+    color:#9999B3;
 }
 main .leftpanel > form > div > em{
     font: .12rem/1 "宋体";

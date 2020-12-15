@@ -45,4 +45,47 @@ window.onload = function(){
          searchIcon.style.visibility = 'visible';
      }
 
+     /* 
+        login verification
+     */
+    // Get form and em
+    var registerForm = document.getElementById('registerform');
+    var marks = registerForm.getElementsByTagName('em');
+    // console.log(marks);
+    // Get username 
+    var username = registerform.username;
+    // console.log(username);
+    // phone regExp
+    var userReg = /^1[3-9]\d{9}$/;
+    
+    judgeNull(username, marks[0], '请输入手机!');
+
+    username.onchange = function(){
+        // judge regExp
+        // if it is the wrong value
+        if(!userReg.test(this.value)){
+            marks[0].innerHTML = '账号格式不正确!';
+            marks[0].style.color = '#FF6600';
+        }
+        else{
+            marks[0].innerHTML = '<i class = "iconfont icon-dui1"></i>'
+        }
+    }
+
+    // Get password
+    var password = registerForm.password;
+    // console.log(password);
+
+
+    function judgeNull(name, mark, content){
+        name.onblur = function(){
+            // if the value is '' 
+            // console.log(username.value);
+            if(this.value == ''){
+                mark.innerHTML = content;
+                mark.style.color = '#999999';
+            }
+        }
+    }
+    
 }
