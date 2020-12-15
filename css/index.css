@@ -23,7 +23,7 @@
     vertical-align: middle;
 }
 .topnav .container .ulleft{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .topnav .container .ulleft > li{
     float: left;
@@ -96,10 +96,11 @@
     visibility:visible;
 } 
 .topnav .container .ulright li a{
-    color: #363636;
+    color: #AFAFAF;
     font-size: 18px;
 }
 .topnav .container .ulright li .font{
+    color: #666666;
     font-size: 12px;
 }
 .topnav .container .ulright li .font:hover{

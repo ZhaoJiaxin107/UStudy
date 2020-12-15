@@ -14,7 +14,25 @@ window.onload = function(){
     // generate template
     var html = template('login', localStorage);
 
-    
+    // append father element
+    var notLogin = document.getElementById('notlogin');
+    notLogin.innerHTML = html;
+
+    // click exit button
+    if(localStorage.loginState == 'true'){
+        // click exit button, log out
+        var logout = document.getElementById('logout');
+        // console.log(logout);
+        // add click event
+        logout.onclick = function(){
+            // logout
+            localStorage.username = '';
+            localStorage.password = '';
+            localStorage.loginState = false;
+            // Refresh
+            location.reload();
+        }
+    }
 
     // Get goodCourse and course type in top nav
     var goodCourse = document.getElementById('goodcourse');

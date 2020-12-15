@@ -61,11 +61,9 @@
                 <li>
                     <a class="iconfont icon-saoma3" href="#"></a>
                 </li>
-                <li>
-                    <a href="#" class="font">登录</a>
-                </li>
-                <li>
-                    <a href="#" class="font">注册</a>
+                <li id = "notlogin">
+                    <!-- <a href="#" class="font">登录</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="font">注册</a> -->
                 </li>
             </ul>
             <div style="clear: both;"></div>
@@ -620,11 +618,18 @@
             <i class = "iconfont icon-ico_back"></i>
         </div>
     </footer>
-
     <script src="./js/template-web.js"></script>
+        
     <script type = "text/html" id = "login">
-    </script>    
-
+        {{if loginState=='false'}}
+            <a href="./html/login.html" class="font">登录</a>&nbsp;&nbsp;&nbsp;
+            <a href="./html/register.html" class="font">注册</a>
+        {{/if}}
+        {{if loginState!='false'}}
+            <a href="javascript:;" class="font">个人中心</a>&nbsp;&nbsp;&nbsp;
+            <a href="javascript:;" class="font" id = "logout">退出</a>
+        {{/if}}
+    </script>
     <!-- link function.js -->
     <script src="./js/function.js"></script>
     <!-- dynamic events javascript -->
