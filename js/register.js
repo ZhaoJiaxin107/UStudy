@@ -61,11 +61,13 @@ window.onload = function(){
     judgeNull(username, marks[0], '请输入手机!');
 
     username.onchange = function(){
+        // change color
+        marks[0].style.color = '#FF6600';
         // judge regExp
         // if it is the wrong value
         if(!userReg.test(this.value)){
-            marks[0].innerHTML = '账号格式不正确!';
-            marks[0].style.color = '#FF6600';
+            marks[0].innerHTML = '账号格式不正确!'
+            return false;
         }
         else{
             marks[0].innerHTML = '<i class = "iconfont icon-dui1"></i>'
@@ -94,7 +96,7 @@ window.onload = function(){
             marks[1].innerHTML = '密码应该为6-20位之间!'
             return false;
         }
-        // if it is low version
+        // Judge three version of password
         if(lowReg.test(this.value)){
             marks[1].innerHTML = '低';
         }else if(mediumReg.test(this.value)){
@@ -103,11 +105,30 @@ window.onload = function(){
             marks[1].innerHTML = '高';
         }else{
             marks[1].innerHTML = '密码格式不正确!';
+            return false;
         }
     }
 
+    // Get confirmpassword
+    var confirmPassword = registerForm.confirmpassword;
+    // console.log(confirmPassword);
 
+    judgeNull(confirmPassword, marks[2], '请再次输入密码!')
 
+    // judge whether confirmPassword equals to password
+    confirmPassword.onchange = function(){
+        // change color
+        marks[2].style.color = '#ff6600';
+        
+        if(confirmPassword.value != password.value){
+            marks[2].innerHTML = '与原密码不一致!';
+            return false;
+        }
+        marks[2].innerHTML = '<i class = "iconfont icon-dui1"></i>'; 
+    }
+
+    // get verification
+    
 
 
 
@@ -119,6 +140,7 @@ window.onload = function(){
             if(this.value == ''){
                 mark.innerHTML = content;
                 mark.style.color = '#999999';
+                return false;
             }
         }
     }
