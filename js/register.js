@@ -209,18 +209,10 @@ window.onload = function () {
 
         // Save userInfo into cache
         localStorage.userArr = JSON.stringify(userArr);
-        console.log(localStorage);
+        // console.log(localStorage);
 
         return false;
     }
-
-
-
-
-
-
-
-
 
     function judgeNull(name, mark, content) {
         name.onblur = function () {
