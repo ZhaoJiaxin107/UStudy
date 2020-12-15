@@ -44,4 +44,88 @@ window.onload = function () {
         // search icon displays
         searchIcon.style.visibility = 'visible';
     }
+
+    /*
+        login localStorage
+    */
+    // When login, get userArr, verify if obj exists in userArr
+
+    // get localStorage
+    // console.log(localStorage.userArr);
+
+    // transform into JS data
+    var userArr = JSON.parse(localStorage.userArr);
+    // console.log(userArr);
+
+    // get form
+    var loginForm = document.getElementById('loginform');
+    // console.log(loginForm);
+
+    // click login button, onsubmit event
+    loginForm.onsubmit = function () {
+
+        // get input value
+        var username = loginForm.username.value;
+        var password = loginForm.password.value;
+        // console.log(username, password);
+
+        var loginInfo = {
+            'username': username,
+            'password': password
+        }
+
+        // console.log(username);
+
+        // Judge whether the user exists
+        if (localStorage.userArr.indexOf(username) == -1) {
+            // User does not exists
+            alert('用户未注册, 请先注册');
+            // Jump to the register page
+            location.href = './register.html';
+        } else {
+            // User exists
+            // if it is not exists, return -1, else return index
+            if (localStorage.userArr.indexOf(JSON.stringify(loginInfo)) == -1) {
+                alert('密码错误, 请重新输入');
+            } else {
+                // console.log('手机号和密码都正确 可以登录');
+                // Save username, password, loginState in localStorage
+                localStorage.username = username;
+                localStorage.password = password;
+                localStorage.loginState = true;
+
+                // Jump to the index page
+                window.location.href = '../index.html';
+            }
+        }
+
+        // Judge whether loginInfo exists by tranversing userArr
+        // Whether username and password match
+        /* for(var i = 0; i < userArr.length; i++){
+            if(userArr[i].username == username){
+                // has registered
+                if(userArr[i].password == password){
+                    // can login
+                    localStorage.username = username;
+                    localStorage.password = password;
+                    localStorage.loginState = true;
+
+                    // Jump to the index page
+                    window.location.href = '../index.html';
+                    return false;
+                }else{
+                    // incorrect password
+                    alert('用户密码错误, 请重新输入');
+                    return false;
+                }
+            }
+        }
+
+        // not register
+        alert('用户未注册,请先注册'); */
+
+        // prevent submit
+        return false;
+    }
+
 }

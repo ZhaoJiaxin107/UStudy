@@ -188,6 +188,7 @@ main .leftpanel > form > #register{
      background-color: #FF4A00;
      margin-left: .75rem;
      cursor: pointer;
+     font-weight: bold;
 }
 main .leftpanel > form > .hint{
     margin: .15rem 0 0 2.4rem;

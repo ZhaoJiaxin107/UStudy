@@ -199,7 +199,7 @@ window.onload = function () {
             // console.log(userArr[i]);
             if(userArr[i].username == userInfo.username){
                 alert('用户已注册, 请直接登录! 如果忘记密码, 请修改密码!');
-                // window.location = './login.html';
+                window.location = './login.html';
                 return false;
             }
         }

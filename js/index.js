@@ -1,5 +1,21 @@
 window.onload = function(){
+    // Get local storage
+    console.log(localStorage);
+
+
+    if(!localStorage.username && !localStorage.password){
+        console.log('未登录');
+        // save local storage status
+        localStorage.loginState = false;
+    }else{
+        console.log('已登录');
+        localStorage.loginState = true;
+    }
+    // generate template
+    var html = template('login', localStorage);
+
     
+
     // Get goodCourse and course type in top nav
     var goodCourse = document.getElementById('goodcourse');
     // console.log(goodCourse);
@@ -128,7 +144,7 @@ window.onload = function(){
         // console.log(res);
         // transform data
         var bannerUrl = JSON.parse(res);
-        console.log(bannerUrl);
+        // console.log(bannerUrl);
 
         // 2.2 Data rendering to the banner
         // Get banner ul span
@@ -239,7 +255,7 @@ window.onload = function(){
         // console.log(res);
         // Transform data
         var hotUrl = JSON.parse(res);
-        console.log(hotUrl);
+        // console.log(hotUrl);
 
         // Rendering the page, comment previous static data in html page
         // Get father element
