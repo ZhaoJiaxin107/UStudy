@@ -152,6 +152,50 @@ main .leftpanel > form .hint > a:hover{
     text-decoration: underline;
     color: #FF4A00;
 }
+main .desc{
+    font: .14rem/.3rem "宋体";
+    margin: .6rem 0 0 1.1rem;
+    color: #666666;
+}
+main .desc > h4{
+    color: #333333;
+}
+main .desc .iconlist li{
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    text-align: center;
+    border-radius: 50%;
+    border:.01rem solid #333;
+    margin: .2rem .35rem .3rem 0;
+    cursor: pointer;
+}
+main .desc .iconlist li:nth-of-type(1){
+    border:.01rem solid #39B8EF;
+    color: #39B8EF;
+}
+main .desc .iconlist li:nth-of-type(1):hover{
+    color: #ffffff;
+    background-color: #39B8EF;
+}
+main .desc .iconlist li:nth-of-type(2){
+    border:.01rem solid #71C50F;
+    color: #71C50F;
+}
+main .desc .iconlist li:nth-of-type(2):hover{
+    color: #ffffff;
+    background-color: #71C50F;
+}
+main .desc .iconlist li:nth-of-type(3){
+    border:.01rem solid #F77A66;
+    color: #F77A66;
+}
+main .desc .iconlist li:nth-of-type(3):hover{
+    color: #ffffff;
+    background-color: #F77A66;
+}
 footer{
     width: 100%;
     height: 1.55rem;
