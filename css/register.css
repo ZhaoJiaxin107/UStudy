@@ -146,7 +146,7 @@ main .leftpanel  form  .verify .verificationbox{
     height: .35rem;
     box-sizing: content-box;
     border:.01rem solid #E7E7E7;
-    margin-left: .04rem;
+    margin-left: .08rem;
     display: flex;
 }
 main .leftpanel  form  .verify .verificationbox > input{
