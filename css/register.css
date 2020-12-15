@@ -162,13 +162,17 @@ main .leftpanel  form  .verify .verificationbox #code{
     height: 100%;
     color: #2040A0;
     background-color: #ffffff;
-    font: .2rem/1 "Arial";
+    font: .2rem/.35rem "Arial";
+    padding:0 .1rem;
 }
 main .leftpanel  form  .verify .verificationbox #getmessage{
     flex: 2;
     height: 100%;
     color: #333333;
     font: .12rem/.35rem "宋体";
+}
+main .leftpanel  form  .verify .verificationbox #getmessage:hover{
+    color: #FF4A00;
 }
 main .leftpanel  form  .verify > em{
     display: inline-block;
@@ -183,9 +187,11 @@ main .leftpanel > form > #register{
      color: #ffffff;
      background-color: #FF4A00;
      margin-left: .75rem;
+     cursor: pointer;
 }
 main .leftpanel > form > .hint{
     margin: .15rem 0 0 2.4rem;
+    color: #666666;
 }
 main .leftpanel > form > .hint > a{
     color: #FF4A00;
