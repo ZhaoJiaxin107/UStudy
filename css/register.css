@@ -1,61 +1,64 @@
 @charset 'utf-8';
-
+body, html{
+    width: 100%;
+    height: 100%;
+}
 .container{
-    width: 1200px;
+    width: calc(100% - 83px * 2);
     margin: 0 auto;
-    /* border: 1px solid #333; */
+    /* border: 1rem solid #333; */
 }
 .topnav{
-    height: 60px;
-    line-height: 60px; 
+    height: .6rem;
+    line-height: .6rem; 
     width: 100%;
-    border: 1px solid #e6e6e6;
+    border: .01rem solid #e6e6e6;
 }
 .topnav .container .logo > img{
-    width: 220px;
-    height: 32px;
+    width: 2.2rem;
+    height: .32rem;
     vertical-align: middle;
 }
 .topnav .container .ulleft{
-    margin-left: 30px;
+    margin-left: .2em;
 }
 .topnav .container .ulleft > li{
     float: left;
-    width: 85px;
-    height: 30px;
-    line-height: 30px;
+    width: .85rem;
+    height: .3rem;
+    line-height: .3rem;
     text-align: center;
-    margin-top: 20px;
-    border-radius: 5px;
+    margin-top: .2rem;
+    border-radius: .05rem;
 }
 .topnav .container .coursetype{
-    width: 85px;
-    height: 60px;
+    width: .85rem;
+    height: .6rem;
     position: absolute;
-    top: 60px;
-    left: 30.2%;
+    top: .6rem;
+    left: 3.88rem;
     display: none;
     background: #ffffff;
 }
 .topnav .container .coursetype > li{
-    width: 85px;
-    height: 30px;
-    line-height: 30px;
+    width: .85rem;
+    height: .3rem;
+    line-height: .3rem;
     text-align: center;
 }
 .topnav .container .ulleft > li > a,
 .topnav .container .coursetype> li > a{
     color:#333333;
-    font-size: 16px;
+    font-size: .16rem;
 }
 .topnav .container .coursetype> li > a:hover{
     color:#ff4905;
 }
 .topnav .container .ulleft > li > a > i{
-    font-size: 12px;
+    font-size: .12rem;
 }
 .topnav .container .ulleft .app{
-    border: 1px solid #ff4905;
+    border: .01rem solid #ff4905;
 }
 .topnav .container .ulleft .app > a{
     color:#ff4905;
@@ -64,25 +67,25 @@
     color:#ff4905;
 }
 /* .container .topnav .ul_right{
-    margin-right: 5px;
+    margin-right: 5rem;
 } */
 .topnav .container .ulright > li{
     float: left;
-    height: 30px;
-    line-height: 30px;
-    margin:20px 22px 0 0;
+    height: .3rem;
+    line-height: .3rem;
+    margin:.2rem .2rem 0 0;
 }
 .topnav .container .ulright #search{
-    border:1px solid #E6E6E6;
-    width: 145px;
-    border-radius: 15px;
-    margin-top: 18px;
+    border:.01rem solid #E6E6E6;
+    width: 1.45rem;
+    border-radius: .15rem;
+    margin-top: .18rem;
     visibility: hidden; 
 }
 .topnav .container .ulright #search > input{
-    width: 120px;
-    height: 30px;
-    text-indent: 15px;
+    width: 1.2rem;
+    height: 0.3rem;
+    text-indent: .15rem;
     visibility: hidden; 
 }
 .topnav .container .ulright #search #searchIcon{
@@ -90,22 +93,106 @@
 } 
 .topnav .container .ulright li a{
     color: #363636;
-    font-size: 18px;
+    font-size: .18rem;
 }
 .topnav .container .ulright li .font{
-    font-size: 12px;
+    font-size: .12rem;
 }
-.topnav .container .ulright li .font:hover{
+/* .topnav .container .ulright li .font:hover{
     text-decoration: underline;
-}
+} */
 main{
     width: 100%;
-    height: 410px;
-    background-color: aquamarine;
+    height: calc(100% - 1.55rem - .6rem);
+    overflow: hidden;
+}
+main .leftpanel{
+    display: inline-block;
+    width: 5.3rem;
+    height: 3.5rem;
+    border-right: .01rem  solid #E7E7E7;
+    margin: .6rem 0 0 1.8rem;
+}
+main .leftpanel > form > div{
+    padding-bottom: .15rem;
+}
+main .leftpanel > form > div > span{
+    display: inline-block;
+    width: .7rem;
+    height: .16rem;
+    font:.14rem/.16rem "宋体";
+    text-align: right;
+}
+main .leftpanel > form > div > input{
+    width: 2.6rem;
+    height: .35rem;
+    box-sizing: border-box;
+    border:.01rem solid #E7E7E7;
+    margin: 0 .05rem;
+    text-indent: .03rem;
+}
+main .leftpanel > form > div > em{
+    font: .12rem/1 "宋体";
+}
+main .leftpanel  form  .verify .verifylabel{
+    width: .7rem;
+    height: .35rem;
+    font:.14rem/.35rem "宋体";
+    text-align: right;
+}
+
+main .leftpanel  form  .verify .verificationbox{
+    width: 2.6rem;
+    height: .35rem;
+    box-sizing: content-box;
+    border:.01rem solid #E7E7E7;
+    margin-left: .04rem;
+    display: flex;
+}
+main .leftpanel  form  .verify .verificationbox > input{
+    flex: 4;
+    height: 100%;
+    box-sizing: border-box;
+    text-indent: .03rem;
+}
+main .leftpanel  form  .verify .verificationbox #code{
+    flex: 1;
+    height: 100%;
+    color: #2040A0;
+    background-color: #ffffff;
+    font: .2rem/1 "Arial";
+}
+main .leftpanel  form  .verify .verificationbox #getmessage{
+    flex: 2;
+    height: 100%;
+    color: #333333;
+    font: .12rem/.35rem "宋体";
+}
+main .leftpanel > form > #register{
+     width: 2.6rem;
+     height: .4rem;
+     color: #ffffff;
+     background-color: #FF4A00;
+     margin-left: .75rem;
+}
+main .leftpanel > form > .hint{
+    margin: .15rem 0 0 2.4rem;
+}
+main .leftpanel > form > .hint > a{
+    color: #FF4A00;
+    text-decoration: underline;
+}
+main .desc{
+    font: 14px/30px "宋体";
+    margin: .6rem 0 0 1.1rem;
+    color: #666666;
+}
+main .desc > h4{
+    color: #333333;
 }
 footer{
     width: 100%;
-    height: 155px;
+    height: 1.55rem;
     background-color: #404144;
     color: #999999;
     text-align: center;
@@ -113,26 +200,30 @@ footer{
     position: relative;
 }
 footer p{
-    margin-top: 30px;
-    font: 13px/30px "宋体";
+    margin-top: .3rem;
+    font: .13rem/.3rem "宋体";
 }
 footer > p > a{
-    font: 13px/30px "宋体";
+    font: .13rem/.3rem "宋体";
     color: #999999;
-    padding: 0 2px;
+    padding: 0 .02rem;
 }
 footer > p > a:hover{
     color: #FF4A00;
 }
 footer > p > img{
-    width: 20px;
-    height: 20px;
+    width: .2rem;
+    height: .2rem;
     vertical-align: middle;
     cursor: pointer;
 }
 footer .verification{
     position: absolute;
-    top: 70px;
-    right: 140px;
+    top: .7rem;
+    right: 1.4rem;
     cursor: pointer;
+}
+footer .verification > a > img{
+    width: .83rem;
+    height: .3rem;
 }

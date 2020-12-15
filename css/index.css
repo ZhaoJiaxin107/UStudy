@@ -656,6 +656,10 @@ footer .verification{
     right: 250px;
     cursor: pointer;
 }
+footer .verification > a > img{
+    width: 83px;
+    height: 30px;
+}
 footer .toparrow{
     width: 40px;
     height: 40px;
