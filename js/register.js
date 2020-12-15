@@ -161,7 +161,7 @@ window.onload = function () {
     // Determine whether the user array exists in the current cache.
     // If there is no array, create an array to store the data source
 
-    var userArr = [{ username: '13322221111', password: '123456' }];
+    var userArr = [];
     if (!localStorage.userArr) {
         // use not exist, create userArr in cache
         localStorage.userArr = JSON.stringify(userArr);
@@ -179,12 +179,12 @@ window.onload = function () {
 
     registerForm.onsubmit = function(){
         // If all the verification passes, user info correct
-        console.log(flag);
+        // console.log(flag);
         if(!flag) return false;
         // register user
         var username = registerForm.username.value;
         var password = registerForm.password.value;
-        console.log(username, password);
+        // console.log(username, password);
 
         // save data -- as array 
         var userInfo = {

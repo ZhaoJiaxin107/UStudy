@@ -92,11 +92,12 @@ body, html{
     visibility:visible;
 } 
 .topnav .container .ulright li a{
-    color: #363636;
+    color: #AFAFAF;
     font-size: .18rem;
 }
 .topnav .container .ulright li .font{
     font-size: .12rem;
+    color: #666666;
 }
 /* .topnav .container .ulright li .font:hover{
     text-decoration: underline;
