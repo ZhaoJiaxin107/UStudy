@@ -155,6 +155,7 @@ main .leftpanel  form  .verify .verificationbox > input{
     height: 100%;
     box-sizing: border-box;
     text-indent: .03rem;
+    color:#9999B3;
 }
 main .leftpanel  form  .verify .verificationbox #code{
     flex: 1;
@@ -168,6 +169,13 @@ main .leftpanel  form  .verify .verificationbox #getmessage{
     height: 100%;
     color: #333333;
     font: .12rem/.35rem "宋体";
+}
+main .leftpanel  form  .verify > em{
+    display: inline-block;
+    /* width: .7rem; */
+    height: .35rem;
+    font:.12rem/.35rem "宋体";
+    padding-left: .08rem;
 }
 main .leftpanel > form > #register{
      width: 2.6rem;

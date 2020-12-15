@@ -116,22 +116,32 @@ window.onload = function(){
     judgeNull(confirmPassword, marks[2], '请再次输入密码!')
 
     // judge whether confirmPassword equals to password
-    confirmPassword.onchange = function(){
-        // change color
-        marks[2].style.color = '#ff6600';
-        
-        if(confirmPassword.value != password.value){
-            marks[2].innerHTML = '与原密码不一致!';
-            return false;
-        }
-        marks[2].innerHTML = '<i class = "iconfont icon-dui1"></i>'; 
-    }
-
+    judgeEqual(confirmPassword, password, marks[2], '与原密码不一致!');
     // get verification
+    var verification = registerForm.verification;
+    // console.log(verification);
+    // get random number button
+    var randomCode = document.getElementById('code');
+    // console.log(randomCode);
+    var newCode = getRandomCode(5);   
+    randomCode.innerHTML = newCode;
+    // When click the randomCode button, generate new code
+    randomCode.onclick = function(){
+        newCode = getRandomCode(5);   
+        this.innerHTML = newCode;
+    }
     
+    judgeNull(verification, marks[3],'请输入验证码!');
+    
+    resetNull(verification, marks[3]);
 
+    // get message
+    var message = document.getElementById('message');
+    console.log(message);
 
-
+    judgeNull(message, marks[4],'请输入验证码!');
+    
+    resetNull(message, marks[4]);
 
     function judgeNull(name, mark, content){
         name.onblur = function(){
@@ -143,6 +153,38 @@ window.onload = function(){
                 return false;
             }
         }
+    }
+
+    function judgeEqual(pre, next ,mark, content){
+        pre.onchange = function(){
+            // change color
+            mark.style.color = '#ff6600';
+            
+            if(this.value != next.value){
+                mark.innerHTML = content;
+            }else{
+                mark.innerHTML = '<i class = "iconfont icon-dui1"></i>'; 
+            }
+        }
+    }
+
+    function resetNull(name, mark){
+        name.onchange = function(){
+            mark.style.color = '#ff6600';
+            mark.innerHTML = '';
+        }
+    }
+
+    function getRandomCode(n){
+        // n: the digit that we want
+        var str = '0123456789';
+        // save random code
+        var s = '';
+        for (var i = 0; i < n; i++) {
+            var num = Math.floor(Math.random() * str.length);
+            s = s + str[num];
+        }
+        return s;
     }
     
 }
