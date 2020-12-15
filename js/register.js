@@ -76,6 +76,41 @@ window.onload = function(){
     var password = registerForm.password;
     // console.log(password);
 
+    judgeNull(password, marks[1], '请输入密码!');
+
+    // password reg can be classified into low medium and high
+    // low version: all number or all alphabets
+    var lowReg = /^\d{6,18}$|^[a-zA-Z]{6,18}$/;
+    // medium version: number + alphabets, first is letter
+    var mediumReg  = /(?!^[a-zA-Z]{6,18}$)^[a-zA-Z][0-9a-zA-Z]{5,17}$/;
+    // high version: number + alphabets + symbols, first is letter
+    var highReg = /(?!^[!@#$%^&*()_+-=]{6,18}$)(?!^\d{6,18}$)(?!^[a-zA-Z]{6,18}$)^[a-zA-Z][0-9a-zA-Z!@#$%^&*()_+-=]{5,17}$/;
+
+    password.onchange = function(){
+        // change color
+        marks[1].style.color = '#ff6600';
+        // first judge the length
+        if(password.value.length < 6 || password.value.length > 18){
+            marks[1].innerHTML = '密码应该为6-20位之间!'
+            return false;
+        }
+        // if it is low version
+        if(lowReg.test(this.value)){
+            marks[1].innerHTML = '低';
+        }else if(mediumReg.test(this.value)){
+            marks[1].innerHTML = '中';
+        }else if(highReg.test(this.value)){
+            marks[1].innerHTML = '高';
+        }else{
+            marks[1].innerHTML = '密码格式不正确!';
+        }
+    }
+
+
+
+
+
+
 
     function judgeNull(name, mark, content){
         name.onblur = function(){
