@@ -53,7 +53,8 @@ window.onload = function () {
     var registerForm = document.getElementById('registerform');
     var marks = registerForm.getElementsByTagName('em');
     // console.log(marks);
-
+    // flag: true info right, flag:false info wrong
+    var flag = true;
     // Get username 
     var username = registerform.username;
     // console.log(username);
@@ -69,10 +70,11 @@ window.onload = function () {
         // if it is the wrong value
         if (!userReg.test(this.value)) {
             marks[0].innerHTML = '账号格式不正确!'
-            return false;
+            flag = false;
         }
         else {
-            marks[0].innerHTML = '<i class = "iconfont icon-dui1"></i>'
+            marks[0].innerHTML = '<i class = "iconfont icon-dui1"></i>';
+            flag = true;
         }
     }
 
@@ -96,18 +98,21 @@ window.onload = function () {
         // first judge the length
         if (password.value.length < 6 || password.value.length > 18) {
             marks[1].innerHTML = '密码应该为6-20位之间!'
-            return false;
+            flag = false;
         }
         // Judge three version of password
         if (lowReg.test(this.value)) {
             marks[1].innerHTML = '低';
+            flag = true;
         } else if (mediumReg.test(this.value)) {
             marks[1].innerHTML = '中';
+            flag = true;
         } else if (highReg.test(this.value)) {
             marks[1].innerHTML = '高';
+            flag = true;
         } else {
             marks[1].innerHTML = '密码格式不正确!';
-            return false;
+            flag = false;
         }
     }
 
@@ -165,26 +170,28 @@ window.onload = function () {
         userArr = JSON.parse(localStorage.userArr);
     }
     // console.log(localStorage);
-    console.log(userArr);
+    // console.log(userArr);
 
     // Get register button
-    var registerButton = registerForm.register;
+    // var registerButton = registerForm.register;
     // console.log(registerButton);
 
 
     registerForm.onsubmit = function(){
         // If all the verification passes, user info correct
+        console.log(flag);
+        if(!flag) return false;
         // register user
         var username = registerForm.username.value;
         var password = registerForm.password.value;
-        // console.log(username, password);
+        console.log(username, password);
 
         // save data -- as array 
         var userInfo = {
             username: username,
             password: password
         }
-        // console.log(userInfo);
+        // console.log(userInfo.username);
 
         // judge whether the user has registered
         // Traverse array to find whether to register
@@ -194,9 +201,6 @@ window.onload = function () {
                 alert('用户已注册, 请直接登录! 如果忘记密码, 请修改密码!');
                 // window.location = './login.html';
                 return false;
-            }else{
-                alert('用户未注册!');
-
             }
         }
         // User has not been registered, register account
@@ -205,7 +209,7 @@ window.onload = function () {
 
         // Save userInfo into cache
         localStorage.userArr = JSON.stringify(userArr);
-        // console.log(localStorage);
+        console.log(localStorage);
 
         return false;
     }
@@ -225,7 +229,7 @@ window.onload = function () {
             if (this.value == '') {
                 mark.innerHTML = content;
                 mark.style.color = '#999999';
-                return false;
+                flag = false;
             }
         }
     }
@@ -248,17 +252,11 @@ window.onload = function () {
             mark.style.color = '#ff6600';
             if (this.value != next) {
                 mark.innerHTML = content;
-                return false;
+                flag = false;
             } else {
                 mark.innerHTML = '<i class = "iconfont icon-dui1"></i>';
+                flag = true;
             }
-        }
-    }
-
-    function resetNull(name, mark) {
-        name.onchange = function () {
-            mark.style.color = '#ff6600';
-            mark.innerHTML = '';
         }
     }
 
