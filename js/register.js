@@ -125,23 +125,61 @@ window.onload = function(){
     // console.log(randomCode);
     var newCode = getRandomCode(5);   
     randomCode.innerHTML = newCode;
+    verificationEqual(verification, newCode, marks[3], '验证码错误!');
     // When click the randomCode button, generate new code
     randomCode.onclick = function(){
         newCode = getRandomCode(5);   
         this.innerHTML = newCode;
+        verificationEqual(verification, newCode, marks[3], '验证码错误!');
     }
     
     judgeNull(verification, marks[3],'请输入验证码!');
     
     resetNull(verification, marks[3]);
 
-    // get message
+    // get message, getmessage
     var message = document.getElementById('message');
-    console.log(message);
-
+    var getMessage = document.getElementById('getmessage');
+    // console.log(message);
+    getMessage.onclick = function(){
+        // get random random code
+        var messageCode = getRandomCode(6);
+        alert(messageCode);
+        // judgeEqual(message, messageCode, marks[4],'验证码不正确!');
+        verificationEqual(message, messageCode,marks[4],'验证码错误!');
+    }
     judgeNull(message, marks[4],'请输入验证码!');
     
     resetNull(message, marks[4]);
+
+    /* 
+     Store user data into local storage
+    */
+    // Determine whether the user array exists in the current cache.
+    // If there is no array, create an array to store the data source
+
+    var userArr = [];
+    if(!localStorage.userArr){
+        // use not exist, create userArr in cache
+        localStorage.userArr = JSON.stringify(userArr);
+    }else{
+        // user exists, save existed user information
+        userArr = JSON.parse(localStorage.userArr);
+    }
+    // console.log(localStorage);
+    console.log(userArr);
+
+    // Get register button
+    var registerButton = registerForm.register;
+    console.log(registerButton);
+
+    
+
+    
+
+
+    
+
 
     function judgeNull(name, mark, content){
         name.onblur = function(){
@@ -162,6 +200,18 @@ window.onload = function(){
             
             if(this.value != next.value){
                 mark.innerHTML = content;
+            }else{
+                mark.innerHTML = '<i class = "iconfont icon-dui1"></i>'; 
+            }
+        }
+    }
+
+    function verificationEqual(pre, next, mark, content){
+        pre.onchange = function(){
+            mark.style.color = '#ff6600';
+            if(this.value != next){
+                mark.innerHTML = content;
+                return false;
             }else{
                 mark.innerHTML = '<i class = "iconfont icon-dui1"></i>'; 
             }
