@@ -37,8 +37,9 @@ body, html{
     position: absolute;
     top: .6rem;
     left: 3.75rem;
-    display: none;
+    /* display: none; */
     background: #ffffff;
+    z-index: 10;
 }
 .topnav .container .coursetype > li{
     width: .85rem;
@@ -216,19 +217,21 @@ main .uppanel .operation > a{
 main .uppanel .operation > a > img{
     vertical-align: bottom;
 }
-main .uppanel .container .ratechange{
+main .uppanel .container .ratechangelist{
     width: .7rem;
     height: 2.8rem;
     position: absolute;
-
     left:4.7rem;
     bottom: 0.18rem;
     cursor: pointer;
+    z-index: 20;
+    display: none;
+
 }
-main .uppanel .container .ratechange li:hover{
+main .uppanel .container .ratechangelist li:hover{
     background-color: #10D269;
 }
-main .uppanel .container .ratechange li{
+main .uppanel .container .ratechangelist li{
     width: .7rem;
     height: .35rem;
     font: .15rem/.35rem "微软雅黑";

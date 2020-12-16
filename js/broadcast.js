@@ -181,7 +181,21 @@ window.onload = function () {
             Rate change section, click rate. the broadcasting speed shift to 
             corresponding rate
         */
+       var rateChangeLink = document.getElementById('ratechangelink');
+       var rateChangeList = document.querySelector('.ratechangelist');
+        
        
+
+        //When mouse enter into ratechangelink, display 
+        //rateChangelist
+        rateChangeLink.onmouseenter = function(){
+            rateChangeList.style.display = 'block';
+        }
+        // When mouse leave, hide rate change list
+        rateChangeList.onmouseleave = function(){
+            this.style.display = 'none';
+        }
+
         
     });
 }
