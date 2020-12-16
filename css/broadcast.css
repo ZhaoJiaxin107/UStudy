@@ -116,15 +116,15 @@ main .downpanel{
 }
 main .downpanel .container{
     height: 100%;
-    border: .01rem solid #333;
 }
-main .downpanel .container h3{
+
+main .downpanel .container .relatedcourse{
+    width: 8.65rem;
+}
+main .downpanel .container .relatedcourse h3{
     font: .2rem/1 "微软雅黑";
     padding: .35rem 0;
     color: #333333;
-}
-main .downpanel .container .relatedcourse{
-    width: 8.65rem;
 }
 main .downpanel .container .relatedcourse li{
     width: 1.96rem;
@@ -157,6 +157,28 @@ main .downpanel .container .relatedcourse li .price .try{
 main .downpanel .container .relatedcourse li .title:hover,
 main .downpanel .container .relatedcourse li .price .try:hover{
     text-decoration: underline;
+}
+main .downpanel .container .comment{
+    width: 3.4rem;
+    height: 4.8rem;
+    border: 1px solid rebeccapurple;
+    padding-top: .45rem;
+}
+main .downpanel .container .comment > h3{
+    font:.2rem/.35rem "微软雅黑";
+    border-bottom: .01rem solid #cccccc;
+}
+main .downpanel .container .comment .commentlist > li{
+    width: 3.4rem;
+    height: .65rem;
+    border-bottom: .01rem solid #CCCCCC;
+}
+main .downpanel .container .comment .commentlist > li > img{
+    width: .4rem;
+    height: .4rem;
+}
+main .downpanel .container .comment .commentlist > li .avatar{
+    height: .4rem;
 }
 footer{
     width: 100%;
