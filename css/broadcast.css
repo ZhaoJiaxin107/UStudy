@@ -110,9 +110,6 @@ main .uppanel{
     height: 5.85rem;
     background-color: #2B2B2B;
 }
-main .uppanel .container{
-   
-}
 main .uppanel .container  h3{
     color: #9D9AC2;
     width: 100%;
@@ -121,7 +118,7 @@ main .uppanel .container  h3{
 }
 main .uppanel .container .videolist{
     width: 8.6rem;
-    height: 5.85rem;
+    height: 4.85rem;
 }
 
 main .uppanel .container .videolist > video{
@@ -134,7 +131,16 @@ main .uppanel .container .catalog{
     width: 3.39rem;
     height: .5rem;
     background-color: #3F3F3F;
-    
+}
+main .uppanel .container .catalog > a{
+    display: block;
+    width: 1.1rem; 
+    height: .45rem;
+    font:.15rem/.5rem "微软雅黑";
+    text-align: center;
+    background-color: #323232;
+    color: #999999;
+    font-weight: bold;
 }
 main .uppanel .container .playlist{
     width: 3.39rem;
@@ -145,15 +151,9 @@ main .uppanel .container .playlist{
     overflow-x: hidden;
 }
 
-main .uppanel .container .catalog > a{
-    display: block;
-    width: 1.1rem;
-    height: 100%;
-    font:.15rem/.5rem "微软雅黑";
-    text-align: center;
-    background-color: #323232;
-    color: #999999;
-    font-weight: bold;
+
+main .uppanel .container .playlist{
+    background-color: #333333;
 }
 main .uppanel .container .playlist > li{
     width: 3.3rem;
@@ -161,7 +161,7 @@ main .uppanel .container .playlist > li{
     line-height: .7rem;
     border-bottom: .01rem solid #AAAAAA;
     text-indent: .2rem;
-    background-color: #333333;
+    /* background-color: #333333; */
 }
 main .uppanel .container .playlist > li:hover{
     background-color: #000000;
@@ -176,7 +176,16 @@ main .uppanel .container .playlist > li > i{
     float: right;
     margin-right: .25rem;
     vertical-align: middle;
-
+}
+main .uppanel .operation{
+    margin-top: .2rem;
+}
+main .uppanel .operation > a{
+    padding-right: .2rem;
+    color: #999999;
+}
+main .uppanel .operation > a > img{
+    vertical-align: bottom;
 }
 
 main .downpanel{

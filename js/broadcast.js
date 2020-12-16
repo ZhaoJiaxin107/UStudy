@@ -34,31 +34,51 @@ window.onload = function(){
         var title = document.getElementById('title');
         // console.log(title);
         
+        // Change Mode
+        var mode = document.getElementById('mode');
+        // console.log(mode);
+
+        // Get catalog box
+        var catalog = document.getElementById('catalog');
+        var catalogCon = catalog.querySelector('a');
+
+        console.log(catalog, catalogCon);
+
+        // Get uppanel
+        var uppanel = document.querySelector('.uppanel');
+        // console.log(uppanel);
+        var tag = 0; // tag = 0 default night mode tag =1 day mode
+        
+
+        
+        NightMode();
         // When click every li, video shift to corresponding src
         // title changes as well
-        for(var i = 0; i < playlistLis.length; i++){
-            // save index
-            playlistLis[i].index = i;
-            // add click event
-            playlistLis[i].onclick = function(){
-                // console.log(this.index);
-                video.src = playList[this.index].src;
-                title.innerHTML = playList[this.index].title;
-                
-                // Exclusive
-                for(var j = 0; j < playlistLis.length; j++){
-                    playlistLis[j].style.backgroundColor = '';
-                    content[j].style.color = '';
-                    label[j].style.color = '';
+        function NightMode(){
+            for(var i = 0; i < playlistLis.length; i++){
+                // save index
+                playlistLis[i].index = i;
+                // add click event
+                playlistLis[i].onclick = function(){
+                    // console.log(this.index);
+                    video.src = playList[this.index].src;
+                    title.innerHTML = playList[this.index].title;
+                    
+                    // Exclusive
+                    for(var j = 0; j < playlistLis.length; j++){
+                        playlistLis[j].style.backgroundColor = '';
+                        content[j].style.color = '';
+                        label[j].style.color = '';
+                    }
+                    // Background turns to back
+                    this.style.backgroundColor = '#000000';
+                    // Color turns to orange
+                    content[this.index].style.color = '#EF7407';
+                    label[this.index].style.color = '#EF7407';
                 }
-                // Background turns to back
-                this.style.backgroundColor = '#000000';
-                // Color turns to orange
-                content[this.index].style.color = '#EF7407';
-                label[this.index].style.color = '#EF7407';
-                
             }
         }
+        
     });
 }
     
