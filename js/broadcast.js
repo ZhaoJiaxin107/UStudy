@@ -16,7 +16,8 @@ window.onload = function(){
 
         // Rendering playlist
         for(var i = 0; i < playlistLis.length; i++){
-            playlistLis[i].innerHTML = `<a href="#">${playList[i].title}</a>`;
+            playlistLis[i].innerHTML = `<a href="#">${playList[i].title}</a>
+                                        <i class="iconfont icon-bo_fang1"></i>`;
         }
 
         // Get video element
@@ -37,6 +38,13 @@ window.onload = function(){
                 // console.log(this.index);
                 video.src = playList[this.index].src;
                 title.innerHTML = playList[this.index].title;
+
+                // Exclusive
+                for(var j = 0; j < playlistLis.length; j++){
+                    playlistLis[j].style.backgroundColor = '';
+                }
+                // Background turns to back
+                this.style.backgroundColor = '#000000';
             }
         }
     });

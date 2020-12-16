@@ -156,7 +156,7 @@ main .uppanel .container .catalog > a{
     font-weight: bold;
 }
 main .uppanel .container .playlist > li{
-    width: 3.39rem;
+    width: 3.3rem;
     height: .7rem;
     line-height: .7rem;
     border-bottom: .01rem solid #AAAAAA;
@@ -169,6 +169,14 @@ main .uppanel .container .playlist > li:hover{
 main .uppanel .container .playlist > li > a{
   color: #999999;
   font-size: .15rem;
+}
+main .uppanel .container .playlist > li > i{
+    color: #999999;
+    font-size: .2rem;
+    float: right;
+    margin-right: .25rem;
+    vertical-align: middle;
+
 }
 
 main .downpanel{
