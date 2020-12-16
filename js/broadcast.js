@@ -6,12 +6,73 @@ window.onload = function () {
     // console.log(courseType);
     // When mouse enter into goodCourse, display course type,
     // Otherwise hide courseType
-    goodCourse.onmouseenter = function(){
+    goodCourse.onmouseenter = function () {
         courseType.style.display = 'block';
     }
-    courseType.onmouseleave = function(){
+    courseType.onmouseleave = function () {
         this.style.display = 'none';
     }
+
+    /* 
+            Rate change section, click rate. the broadcasting speed shift to 
+            corresponding rate
+        */
+    var rateChangeLink = document.getElementById('ratechangelink');
+    var rateChangeList = document.querySelector('.ratechangelist');
+
+
+
+    //When mouse enter into ratechangelink, display 
+    //rateChangelist
+    rateChangeLink.onmouseenter = function () {
+        rateChangeList.style.display = 'block';
+    }
+    // When mouse leave, hide rate change list
+    rateChangeList.onmouseleave = function () {
+        this.style.display = 'none';
+    }
+
+    // Get video element
+    var videoList = document.getElementById('videolist');
+    // console.log(videoList);
+    var video = videoList.getElementsByTagName('video')[0];
+    // canpplay event
+    video.oncanplay = function () {
+
+    }
+    // Get all rate button
+    var rates = rateChangeList.getElementsByTagName('li');
+    // console.log(rates[0]);
+
+    var times = [1, 1.2, 1.35, 1.5, 1.6, 1.8, 2.0];
+    var timesLabel = ['x 1倍', 'x 1.2倍', 'x 1.35倍', 'x 1.5倍',
+                        'x 1.6倍', 'x 1.8倍', 'x 2.0倍'];
+    // Give function to each rate
+    
+    for(var i = 0; i < rates.length; i++){
+        rateClick(rates[i], times[i]);
+    }
+
+    video.onratechange = function () {
+        // video.load(); //refresh
+        video.play();
+    }
+
+
+    function rateClick(ele, time) {
+        ele.onclick = function () {
+            video.playbackRate = time;
+            // exlusive
+            for (var k = 0; k < rates.length; k++) {
+                rates[k].style.backgroundColor = '';
+                rates[k].innerHTML = timesLabel[k];
+            }
+            this.style.backgroundColor = '#10D269';
+            rateChangeLink.innerHTML = this.innerHTML;
+            this.innerHTML = '<i class = "iconfont icon-dui2"></i> ' + this.innerHTML;
+        }
+    }
+
     // Get data from ajax (playlist)
     ajax('get', '../data/playList.json', '', function (res) {
         // console.log(res);
@@ -39,9 +100,9 @@ window.onload = function () {
         }
 
         // Get video element
-        var videoList = document.getElementById('videolist');
-        // console.log(videoList);
-        var video = videoList.getElementsByTagName('video')[0];
+        // var videoList = document.getElementById('videolist');
+        // // console.log(videoList);
+        // var video = videoList.getElementsByTagName('video')[0];
         // console.log(video);
         // Get title
         var title = document.getElementById('title');
@@ -61,21 +122,21 @@ window.onload = function () {
         var uppanel = document.querySelector('.uppanel');
         // console.log(uppanel);
         mode.tag = 0; // tag = 0 default night mode tag =1 day mode
-        NightMode();
+        nightMode();
 
-        mode.onclick = function(){
+        mode.onclick = function () {
             // if it is night mode, change to day mode
-            if(this.tag == 0){
+            if (this.tag == 0) {
                 // change to day mode
                 // label change
                 this.innerHTML = '<img src="../img/nightmode.png" alt=""> &nbsp;黑夜模式';
 
-                DayMode();
+                dayMode();
                 // change tag
                 this.tag = 1;
-            }else{
+            } else {
                 this.innerHTML = '<img src="../img/daymode.png" alt="">&nbsp;白天模式';
-                NightMode();
+                nightMode();
                 // change tag
                 this.tag = 0;
             }
@@ -84,7 +145,7 @@ window.onload = function () {
         // DayMode();
 
         // NightMode();
-        function DayMode() {
+        function dayMode() {
             // The background of uppanel is #F7F7F7
             uppanel.style.backgroundColor = '#F7F7F7';
             // The background of catlogbox is #ffffff
@@ -96,20 +157,20 @@ window.onload = function () {
             // Add border-bottom to the catalogCon
             catalogCon.style.borderBottom = ".03rem solid #65A0E7";
             // The background of playlist #FFFFFF
-            playListUl.style.background  = '#FFFFFF';
+            playListUl.style.background = '#FFFFFF';
 
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
                 playlistLis[i].index = i;
                 // add mouse enter event
-                playlistLis[i].onmouseenter = function(){
+                playlistLis[i].onmouseenter = function () {
                     this.style.background = '#ffffff';
                 }
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
-                    ShiftVideo(this.index);
-                    
+                    shiftVideo(this.index);
+
                     // Exclusive
                     for (var j = 0; j < playlistLis.length; j++) {
                         playlistLis[j].style.backgroundColor = '';
@@ -126,7 +187,7 @@ window.onload = function () {
         }
         // When click every li, video shift to corresponding src
         // title changes as well
-        function NightMode() {
+        function nightMode() {
             // The background of uppanel is #2B2B2B
             uppanel.style.backgroundColor = '#2B2B2B';
             // The background of catlogbox is #3f3f3f
@@ -136,10 +197,10 @@ window.onload = function () {
             // The color of catalog content is #999999
             catalogCon.style.color = '#999999'
             // The background of playlist #333333
-            playListUl.style.background  = '#333333';
+            playListUl.style.background = '#333333';
             // remove border-bottom
             catalogCon.style.borderBottom = "none";
-            
+
 
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
@@ -147,8 +208,8 @@ window.onload = function () {
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
-                    ShiftVideo(this.index);
-                    
+                    shiftVideo(this.index);
+
                     // Exclusive
                     for (var j = 0; j < playlistLis.length; j++) {
                         playlistLis[j].style.backgroundColor = '';
@@ -162,41 +223,19 @@ window.onload = function () {
                     label[this.index].style.color = '#EF7407';
                 }
 
-                playlistLis[i].onmouseenter = function(){
+                playlistLis[i].onmouseenter = function () {
                     this.style.background = '#000000';
                 }
-                playlistLis[i].onmouseleave = function(){
+                playlistLis[i].onmouseleave = function () {
                     this.style.background = '';
                 }
             }
         }
 
-        function ShiftVideo(index) {
+        function shiftVideo(index) {
             video.src = playList[index].src;
             title.innerHTML = playList[index].title;
         }
-
-
-        /* 
-            Rate change section, click rate. the broadcasting speed shift to 
-            corresponding rate
-        */
-       var rateChangeLink = document.getElementById('ratechangelink');
-       var rateChangeList = document.querySelector('.ratechangelist');
-        
-       
-
-        //When mouse enter into ratechangelink, display 
-        //rateChangelist
-        rateChangeLink.onmouseenter = function(){
-            rateChangeList.style.display = 'block';
-        }
-        // When mouse leave, hide rate change list
-        rateChangeList.onmouseleave = function(){
-            this.style.display = 'none';
-        }
-
-        
     });
 }
 

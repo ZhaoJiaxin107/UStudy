@@ -219,7 +219,7 @@ main .uppanel .operation > a > img{
 }
 main .uppanel .container .ratechangelist{
     width: .7rem;
-    height: 2.8rem;
+    height: 2.45rem;
     position: absolute;
     left:4.7rem;
     bottom: 0.18rem;
@@ -234,7 +234,7 @@ main .uppanel .container .ratechangelist li:hover{
 main .uppanel .container .ratechangelist li{
     width: .7rem;
     height: .35rem;
-    font: .15rem/.35rem "微软雅黑";
+    font: .13rem/.35rem "微软雅黑";
     text-align: center;
     color: #FFFFFF;
     background-color: #2B2B2B;
