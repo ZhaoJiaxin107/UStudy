@@ -180,7 +180,10 @@ window.onload = function () {
     registerForm.onsubmit = function(){
         // If all the verification passes, user info correct
         // console.log(flag);
-        if(!flag) return false;
+        if(!flag) {
+            alert('注册失败!');
+            return false;
+        }
         // register user
         var username = registerForm.username.value;
         var password = registerForm.password.value;
@@ -203,6 +206,8 @@ window.onload = function () {
                 return false;
             }
         }
+        // alert register succeed
+        alert('注册成功, 去登录');
         // User has not been registered, register account
         userArr.push(userInfo);
         // console.log(userArr);
@@ -210,7 +215,9 @@ window.onload = function () {
         // Save userInfo into cache
         localStorage.userArr = JSON.stringify(userArr);
         // console.log(localStorage);
-
+        // jump to login page
+        window.location = './login.html';
+        // prevent submit event
         return false;
     }
 
