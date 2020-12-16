@@ -46,7 +46,7 @@ window.onload = function () {
     }
 
     /* 
-       login verification
+       Register verification
     */
     // Get form and em
 
