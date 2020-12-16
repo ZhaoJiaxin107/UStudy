@@ -5,7 +5,7 @@ window.onload = function(){
         // Transform data
 
         var playList = JSON.parse(res);
-        // console.log(playList);
+        console.log(playList);
         // Rendering data into playlist
         var playListUl = document.getElementById('playlist');
         // console.log(playListUl);
@@ -19,8 +19,26 @@ window.onload = function(){
             playlistLis[i].innerHTML = `<a href="#">${playList[i].title}</a>`;
         }
 
+        // Get video element
+        var videoList = document.getElementById('videolist');
+        // console.log(videoList);
+        var video = videoList.getElementsByTagName('video')[0];
+        // console.log(video);
+        // Get title
+        var title = document.getElementById('title');
+        // console.log(title);
         // When click every li, video shift to corresponding src
-        
+        // title changes as well
+        for(var i = 0; i < playlistLis.length; i++){
+            // save index
+            playlistLis[i].index = i;
+            // add click event
+            playlistLis[i].onclick = function(){
+                // console.log(this.index);
+                video.src = playList[this.index].src;
+                title.innerHTML = playList[this.index].title;
+            }
+        }
     });
 }
     
