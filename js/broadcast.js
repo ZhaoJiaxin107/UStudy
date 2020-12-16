@@ -14,6 +14,11 @@ window.onload = function(){
         var playlistLis = playListUl.getElementsByTagName('li');
         // console.log(playlistLis);
 
+        // Get every a, i
+        // get content
+        var content = playListUl.getElementsByTagName('a');
+        var label = playListUl.getElementsByTagName('i');
+        // console.log(content, label);
         // Rendering playlist
         for(var i = 0; i < playlistLis.length; i++){
             playlistLis[i].innerHTML = `<a href="#">${playList[i].title}</a>
@@ -28,6 +33,7 @@ window.onload = function(){
         // Get title
         var title = document.getElementById('title');
         // console.log(title);
+        
         // When click every li, video shift to corresponding src
         // title changes as well
         for(var i = 0; i < playlistLis.length; i++){
@@ -38,13 +44,19 @@ window.onload = function(){
                 // console.log(this.index);
                 video.src = playList[this.index].src;
                 title.innerHTML = playList[this.index].title;
-
+                
                 // Exclusive
                 for(var j = 0; j < playlistLis.length; j++){
                     playlistLis[j].style.backgroundColor = '';
+                    content[j].style.color = '';
+                    label[j].style.color = '';
                 }
                 // Background turns to back
                 this.style.backgroundColor = '#000000';
+                // Color turns to orange
+                content[this.index].style.color = '#EF7407';
+                label[this.index].style.color = '#EF7407';
+                
             }
         }
     });
