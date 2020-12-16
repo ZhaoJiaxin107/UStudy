@@ -123,11 +123,14 @@ main .downpanel .container h3{
     padding: .35rem 0;
     color: #333333;
 }
+main .downpanel .container .relatedcourse{
+    width: 8.65rem;
+}
 main .downpanel .container .relatedcourse li{
     width: 1.96rem;
     height: 1.76rem;
     background-color: #F8F8F8;
-    margin-left: .15rem;
+    margin: 0 .15rem .2rem 0;
     float: left;
 }
 main .downpanel .container .relatedcourse li a img{
@@ -137,20 +140,23 @@ main .downpanel .container .relatedcourse li a img{
 }
 main .downpanel .container .relatedcourse li .title{
     display: block;
-    text-align: center;
     font:.14rem/1 "微软雅黑";
-    color: #9E91A9;
-    padding:.1rem 0;
+    color: #666666;
+    padding: .1rem 0 .1rem .08rem;
 }
 main .downpanel .container .relatedcourse li .price{
-    text-align: center;
     font:.14rem/1 "微软雅黑";
+    padding-left: .08rem;
 }
 main .downpanel .container .relatedcourse li .price b{
     color: #FD9C6D;
 }
-main .downpanel .container .relatedcourse li .price span{
+main .downpanel .container .relatedcourse li .price .try{
     color: #46BF80;
+}
+main .downpanel .container .relatedcourse li .title:hover,
+main .downpanel .container .relatedcourse li .price .try:hover{
+    text-decoration: underline;
 }
 footer{
     width: 100%;
