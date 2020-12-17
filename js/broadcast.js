@@ -46,10 +46,10 @@ window.onload = function () {
 
     var times = [1, 1.2, 1.35, 1.5, 1.6, 1.8, 2.0];
     var timesLabel = ['x 1倍', 'x 1.2倍', 'x 1.35倍', 'x 1.5倍',
-                        'x 1.6倍', 'x 1.8倍', 'x 2.0倍'];
+        'x 1.6倍', 'x 1.8倍', 'x 2.0倍'];
     // Give function to each rate
-    
-    for(var i = 0; i < rates.length; i++){
+
+    for (var i = 0; i < rates.length; i++) {
         rateClick(rates[i], times[i]);
     }
 
@@ -235,6 +235,91 @@ window.onload = function () {
             video.src = playList[index].src;
             title.innerHTML = playList[index].title;
         }
+    });
+
+
+    // Get data from ajax(comment)
+    ajax('get', '../data/comment.json', '', function (res) {
+        // console.log(res);
+        // Transform to js data
+        var commentUrl = JSON.parse(res);
+        console.log(commentUrl);
+
+        // Get comment length element
+        var commentLength = document.getElementById('commentlength');
+        // console.log(commentLength);
+        // Rendering data
+        commentLength.innerHTML = commentUrl.length;
+
+        // Rendering default page
+        // One page shows two comments
+        var pageNum = 0;
+        var len = 2;
+        // Get the data we want to rendering 0,1
+        // slice(startIndex, lastIndex)
+        // startIndex：pageNum * length
+        // lastIndex: (pageNum + 1) * length
+
+        var showComment = commentUrl.slice(pageNum * len, (pageNum + 1) * len);
+        console.log(showComment);
+
+        // Rendering comment to the commentlist
+        // Get element commentlist
+        var commentList = document.getElementById('commentlist');
+        // console.log(commentlist);
+
+        // Generating page fragments
+        var html = '';
+        for (var i = 0; i < showComment.length; i++) {   
+            var star = starNum();
+            html += `<li>
+                <div class="user">
+                    <img src="${showComment[i].src}" alt="">&nbsp;&nbsp;
+                    ${showComment[i].name}&nbsp;&nbsp;` + star +
+                    `</div>
+                    <p class="content">
+                        ${showComment[i].comment}
+                    </p>
+                    <p class="time fr">
+                        ${showComment[i].time}
+                    </p>
+                </li>`
+        }
+        commentList.innerHTML = html;
+
+        // Next Page function
+        // Get next page element
+        var shift = document.getElementById('shift');
+        // console.log(shift);
+        var previous = shift.getElementsByTagName('a')[0];
+        
+        var next = shift.getElementsByTagName('a')[1];
+        // console.log(previous, next);
+
+        // When click the next button, page number++
+        // Rendering the page
+        next.onclick = function(){
+            pageNum++;
+
+
+
+        }
+
+        function starNum(){
+            var star = '';
+            var starNum = Number(showComment[i].line);
+            // console.log(typeof Number(starNum));
+            for (var j = 0; j < starNum; j++) {
+                star += ' <i class="iconfont icon-xingxing1"></i>'
+            }
+            return star;
+        }
+
+        function getComment(){
+            
+        }
+
+
     });
 }
 

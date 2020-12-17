@@ -37,7 +37,7 @@ body, html{
     position: absolute;
     top: .6rem;
     left: 3.75rem;
-    /* display: none; */
+    display: none; 
     background: #ffffff;
     z-index: 10;
 }
@@ -317,6 +317,7 @@ main .downpanel .container .comment .commentlist > li{
     width: 3.4rem;
     height: 1.55rem;
     border-bottom: .01rem solid #CCCCCC;
+    position: relative;
 }
 main .downpanel .container .comment .commentlist > li .user{
     width: 3.4rem;
@@ -341,8 +342,10 @@ main .downpanel .container .comment .commentlist > li .content{
     margin:.1rem 0 0 .5rem;
 }
 main .downpanel .container .comment .commentlist > li .time{
-    margin: .2rem .05rem 0 0;
     color: #9788A7;
+    position: absolute;
+    right: .1rem;
+    bottom: .1rem;
 }
 main .downpanel .container .comment .shift{
     float:right;

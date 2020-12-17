@@ -84,7 +84,7 @@
                     <a href="../index.html">&lt;返回主页</a>
                 </h3>
                 <div class="videolist fl" id="videolist">
-                    <video src="../media/你的答案.mp4" controls class="active" autoplay>
+                    <video src="../media/你的答案.mp4" controls>
                     </video>
                 </div>
                 <div class="catalog fl" id = "catalog">
@@ -257,9 +257,9 @@
                 </ul>
 
                 <div class="comment fl">
-                    <h3>学员评价(2)</h3>
-                    <ul class="commentlist">
-                        <li>
+                    <h3>学员评价(<b id = "commentlength"></b>)</h3>
+                    <ul class="commentlist" id = "commentlist">
+                        <!-- <li>
                             <div class="user">
                                 <img src="../img/avatar-1.jpg" alt="">&nbsp;&nbsp;
                                 你是我的优乐美&nbsp;&nbsp;
@@ -293,9 +293,9 @@
                             <p class="time fr">
                                 2020-09-13
                             </p>
-                        </li>
+                        </li> -->
                     </ul>
-                    <div class="shift">
+                    <div class="shift" id = "shift">
                         <input type="text" name="pagenum" id="pagenum" value="1">
                         / <span>17</span>
                         <button>确定</button>
