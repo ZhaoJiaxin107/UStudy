@@ -166,6 +166,9 @@ window.onload = function () {
                 playlistLis[i].onmouseenter = function () {
                     this.style.background = '#ffffff';
                 }
+                playlistLis[i].onmouseleave = function () {
+                    this.style.background = '';
+                }
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
@@ -204,6 +207,12 @@ window.onload = function () {
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
                 playlistLis[i].index = i;
+                playlistLis[i].onmouseenter = function () {
+                    this.style.background = '#000000';
+                }
+                playlistLis[i].onmouseleave = function () {
+                    this.style.background = '';
+                }
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
@@ -222,12 +231,7 @@ window.onload = function () {
                     label[this.index].style.color = '#EF7407';
                 }
 
-                playlistLis[i].onmouseenter = function () {
-                    this.style.background = '#000000';
-                }
-                playlistLis[i].onmouseleave = function () {
-                    this.style.background = '';
-                }
+                
             }
         }
 
@@ -256,6 +260,8 @@ window.onload = function () {
         var pageNum = 0;
         var len = 2;
 
+        // Get maximum page
+        var maxPage = Math.ceil(commentUrl.length / len);
 
         // var showComment = commentUrl.slice(pageNum * len, (pageNum + 1) * len);
         // console.log(showComment);
@@ -301,8 +307,14 @@ window.onload = function () {
 
         // Click button, get input value, and shift page
         determine.onclick = function(){
-            // shift pageNum
-            pageNum = currentPage.value - 1;
+            // Get input value, judge first 
+            if(currentPage.value - 1 > maxPage || currentPage.value - 1 < 0){
+                alert("请输入正确的页数");
+                currentPage.value = pageNum + 1;
+                return;
+            }else{
+                pageNum = currentPage.value - 1;
+            }
             shiftPage();
         }
 
@@ -347,8 +359,7 @@ window.onload = function () {
 
         // ShiftPage()
         function shiftPage() {
-            // Get maximum page
-            var maxPage = Math.ceil(commentUrl.length / len);
+            
             // console.log(maxPage);
 
             // If pageNum arrives max page, alert and stay in the last page
