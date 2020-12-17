@@ -255,24 +255,72 @@ window.onload = function () {
         // One page shows two comments
         var pageNum = 0;
         var len = 2;
-        // Get the data we want to rendering 0,1
-        // slice(startIndex, lastIndex)
-        // startIndex：pageNum * length
-        // lastIndex: (pageNum + 1) * length
+        
 
-        var showComment = commentUrl.slice(pageNum * len, (pageNum + 1) * len);
-        console.log(showComment);
+        // var showComment = commentUrl.slice(pageNum * len, (pageNum + 1) * len);
+        // console.log(showComment);
 
         // Rendering comment to the commentlist
         // Get element commentlist
         var commentList = document.getElementById('commentlist');
         // console.log(commentlist);
 
+        getComment();
+        
+        // Next Page function
+        // Get next page element
+        var shift = document.getElementById('shift');
+        // console.log(shift);
+        var previous = shift.getElementsByTagName('span')[1];
+
+        var next = shift.getElementsByTagName('span')[2];
+        // console.log(previous, next);
+
+        
+
+
+        // When click the next button, page number++
+        // Rendering the page
+        next.onclick = function () {
+            pageNum++;
+
+            // Get maximum page
+            var maxPage = Math.ceil(commentUrl.length / len);
+            // console.log(maxPage);
+
+            // If pageNum arrives max page, alert and stay in the last page
+            if(pageNum >= maxPage){
+                alert('已经是最后一页');
+                // stay in the last page
+                pageNum = maxPage - 1;
+            }
+
+            // Rendering comment data
+            getComment();
+        }
+
+        function starNum(arr) {
+            
+            var star = '';
+            var starNum = Number(arr.line);
+            // console.log(typeof Number(starNum));
+            for (var j = 0; j < starNum; j++) {
+                star += ' <i class="iconfont icon-xingxing1"></i>'
+            }
+            return star;
+        }
+
         // Generating page fragments
-        var html = '';
-        for (var i = 0; i < showComment.length; i++) {   
-            var star = starNum();
-            html += `<li>
+        function getComment() {
+            // Get the data we want to rendering 0,1
+            // slice(startIndex, lastIndex)
+            // startIndex：pageNum * length
+            // lastIndex: (pageNum + 1) * length
+            var showComment = commentUrl.slice(pageNum * len, (pageNum + 1) * len);
+            var html = '';
+            for (var i = 0; i < showComment.length; i++) {
+                var star = starNum(showComment[i]);
+                html += `<li>
                 <div class="user">
                     <img src="${showComment[i].src}" alt="">&nbsp;&nbsp;
                     ${showComment[i].name}&nbsp;&nbsp;` + star +
@@ -284,39 +332,8 @@ window.onload = function () {
                         ${showComment[i].time}
                     </p>
                 </li>`
-        }
-        commentList.innerHTML = html;
-
-        // Next Page function
-        // Get next page element
-        var shift = document.getElementById('shift');
-        // console.log(shift);
-        var previous = shift.getElementsByTagName('a')[0];
-        
-        var next = shift.getElementsByTagName('a')[1];
-        // console.log(previous, next);
-
-        // When click the next button, page number++
-        // Rendering the page
-        next.onclick = function(){
-            pageNum++;
-
-
-
-        }
-
-        function starNum(){
-            var star = '';
-            var starNum = Number(showComment[i].line);
-            // console.log(typeof Number(starNum));
-            for (var j = 0; j < starNum; j++) {
-                star += ' <i class="iconfont icon-xingxing1"></i>'
             }
-            return star;
-        }
-
-        function getComment(){
-            
+            commentList.innerHTML = html;
         }
 
 

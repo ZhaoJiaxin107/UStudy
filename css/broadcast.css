@@ -362,8 +362,9 @@ main .downpanel .container .comment .shift > button{
     margin:0 .1rem;
     vertical-align: bottom;
 }
-main .downpanel .container .comment .shift > a{
+main .downpanel .container .comment .shift > span{
     color: #000000;
+    cursor: default;
 }
 footer{
     width: 100%;
