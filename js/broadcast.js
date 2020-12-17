@@ -118,6 +118,8 @@ window.onload = function () {
         var catalogBottom = catalog.querySelector('i');
         // console.log(catalog, catalogCon);
 
+        var num;
+
         // Get uppanel
         var uppanel = document.querySelector('.uppanel');
         // console.log(uppanel);
@@ -132,11 +134,13 @@ window.onload = function () {
                 this.innerHTML = '<img src="../img/nightmode.png" alt=""> &nbsp;黑夜模式';
 
                 dayMode();
+                playlistLis[num].style.backgroundColor = '#ffffff';
                 // change tag
                 this.tag = 1;
             } else {
                 this.innerHTML = '<img src="../img/daymode.png" alt="">&nbsp;白天模式';
                 nightMode();
+                playlistLis[num].style.background = '#333333';
                 // change tag
                 this.tag = 0;
             }
@@ -162,18 +166,12 @@ window.onload = function () {
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
                 playlistLis[i].index = i;
-                // add mouse enter event
-                playlistLis[i].onmouseenter = function () {
-                    this.style.background = '#ffffff';
-                }
-                playlistLis[i].onmouseleave = function () {
-                    this.style.background = '';
-                }
+                playlistLis[i].className = 'day';
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
                     shiftVideo(this.index);
-
+                    num = this.index;
                     // Exclusive
                     for (var j = 0; j < playlistLis.length; j++) {
                         playlistLis[j].style.backgroundColor = '';
@@ -207,17 +205,12 @@ window.onload = function () {
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
                 playlistLis[i].index = i;
-                playlistLis[i].onmouseenter = function () {
-                    this.style.background = '#000000';
-                }
-                playlistLis[i].onmouseleave = function () {
-                    this.style.background = '';
-                }
+                playlistLis[i].className = 'night';
                 // add click event
                 playlistLis[i].onclick = function () {
                     // console.log(this.index);
                     shiftVideo(this.index);
-
+                    num = this.index;
                     // Exclusive
                     for (var j = 0; j < playlistLis.length; j++) {
                         playlistLis[j].style.backgroundColor = '';
