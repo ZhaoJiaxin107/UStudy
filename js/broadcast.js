@@ -115,7 +115,7 @@ window.onload = function () {
         // Get catalog box
         var catalogBox = document.getElementById('catalog');
         var catalogCon = catalog.querySelector('a');
-
+        var catalogBottom = catalog.querySelector('i');
         // console.log(catalog, catalogCon);
 
         // Get uppanel
@@ -155,7 +155,7 @@ window.onload = function () {
             // The color of catalog content is #999999
             catalogCon.style.color = '#65A0E7';
             // Add border-bottom to the catalogCon
-            catalogCon.style.borderBottom = ".03rem solid #65A0E7";
+            catalogBottom.style.display = "block";
             // The background of playlist #FFFFFF
             playListUl.style.background = '#FFFFFF';
 
@@ -199,8 +199,7 @@ window.onload = function () {
             // The background of playlist #333333
             playListUl.style.background = '#333333';
             // remove border-bottom
-            catalogCon.style.borderBottom = "none";
-
+            catalogBottom.style.display = "none";
 
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index

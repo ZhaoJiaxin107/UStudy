@@ -135,6 +135,7 @@ main .uppanel .container .catalog{
     background-color: #3F3F3F;
     border-bottom: .01rem solid #AAAAAA;
     margin-left: -.01rem;
+    position: relative;
 }
 main .uppanel .container .catalog > a{
     display: block;
@@ -144,8 +145,17 @@ main .uppanel .container .catalog > a{
     text-align: center;
     background-color: #323232;
     color: #999999;
-    font-weight: bold;
-    
+    font-weight: bold;  
+}
+main .uppanel .container .catalog > i{
+    display: block;
+    width: .3rem;
+    height: .03rem;
+    background-color: #65A0E7;
+    position: absolute;
+    left: .4rem;
+    bottom: 0;
+    display: none;
 }
 main .uppanel .container .playlist{
     width: 3.39rem;

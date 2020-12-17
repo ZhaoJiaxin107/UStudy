@@ -99,9 +99,9 @@ body, html{
     font-size: .12rem;
     color: #666666;
 }
-/* .topnav .container .ulright li .font:hover{
+.topnav .container .ulright li .font:hover{
     text-decoration: underline;
-} */
+}
 main{
     width: 100%;
     height: calc(100% - 1.55rem - .6rem);
