@@ -286,52 +286,15 @@ window.onload = function () {
         // Rendering the page
         previous.onclick = function () {
             pageNum--;
-
-            // Get maximum page
-            var maxPage = Math.ceil(commentUrl.length / len);
-            // console.log(maxPage);
-
-            // If pageNum arrives max page, alert and stay in the last page
-            if(pageNum >= maxPage){
-                alert('已经是最后一页!');
-                // stay in the last page
-                pageNum = maxPage - 1;
-            }
-            // If pageNum arrives the first page, alert and stay in the first page
-            if(pageNum < 0){
-                alert('已经是第一页!');
-                pageNum = 0;
-            }
-
-            // Rendering comment data
-            getComment();
-            // Update currentPage and allPage
-            currentPage.value = pageNum + 1;
-            allPage.innerHTML = maxPage;
+            // Shift page
+            shiftPage();
         }
-
-
         // When click the next button, page number++
         // Rendering the page
         next.onclick = function () {
             pageNum++;
-
-            // Get maximum page
-            var maxPage = Math.ceil(commentUrl.length / len);
-            // console.log(maxPage);
-
-            // If pageNum arrives max page, alert and stay in the last page
-            if(pageNum >= maxPage){
-                alert('已经是最后一页');
-                // stay in the last page
-                pageNum = maxPage - 1;
-            }
-
-            // Rendering comment data
-            getComment();
-            // Update currentPage and allPage
-            currentPage.value = pageNum + 1;
-            allPage.innerHTML = maxPage;
+            // Shift page
+            shiftPage();
         }
 
         function starNum(arr) {
@@ -373,7 +336,30 @@ window.onload = function () {
 
         }
 
+        // ShiftPage()
+        function shiftPage(){
+            // Get maximum page
+            var maxPage = Math.ceil(commentUrl.length / len);
+            // console.log(maxPage);
 
+            // If pageNum arrives max page, alert and stay in the last page
+            if(pageNum >= maxPage){
+                alert('已经是最后一页!');
+                // stay in the last page
+                pageNum = maxPage - 1;
+            }
+            // If pageNum arrives the first page, alert and stay in the first page
+            if(pageNum < 0){
+                alert('已经是第一页!');
+                pageNum = 0;
+            }
+
+            // Rendering comment data
+            getComment();
+            // Update currentPage and allPage
+            currentPage.value = pageNum + 1;
+            allPage.innerHTML = maxPage;
+        }
     });
 }
 
