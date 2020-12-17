@@ -275,7 +275,7 @@ window.onload = function () {
         // Get allPage
         var allPage =shift.getElementsByTagName('span')[0];
 
-        console.log(currentPage, allPage);
+        // console.log(currentPage, allPage);
         // console.log(shift);
         var previous = shift.getElementsByTagName('span')[1];
 
@@ -297,8 +297,7 @@ window.onload = function () {
             shiftPage();
         }
 
-        function starNum(arr) {
-            
+        function starNum(arr) {  
             var star = '';
             var starNum = Number(arr.line);
             // console.log(typeof Number(starNum));
