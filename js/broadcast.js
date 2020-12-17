@@ -270,13 +270,45 @@ window.onload = function () {
         // Next Page function
         // Get next page element
         var shift = document.getElementById('shift');
+        // Get currenPage
+        var currentPage = shift.querySelector('input');
+        // Get allPage
+        var allPage =shift.getElementsByTagName('span')[0];
+
+        console.log(currentPage, allPage);
         // console.log(shift);
         var previous = shift.getElementsByTagName('span')[1];
 
         var next = shift.getElementsByTagName('span')[2];
         // console.log(previous, next);
 
-        
+        // When click the previous button, page number--
+        // Rendering the page
+        previous.onclick = function () {
+            pageNum--;
+
+            // Get maximum page
+            var maxPage = Math.ceil(commentUrl.length / len);
+            // console.log(maxPage);
+
+            // If pageNum arrives max page, alert and stay in the last page
+            if(pageNum >= maxPage){
+                alert('已经是最后一页!');
+                // stay in the last page
+                pageNum = maxPage - 1;
+            }
+            // If pageNum arrives the first page, alert and stay in the first page
+            if(pageNum < 0){
+                alert('已经是第一页!');
+                pageNum = 0;
+            }
+
+            // Rendering comment data
+            getComment();
+            // Update currentPage and allPage
+            currentPage.value = pageNum + 1;
+            allPage.innerHTML = maxPage;
+        }
 
 
         // When click the next button, page number++
@@ -297,6 +329,9 @@ window.onload = function () {
 
             // Rendering comment data
             getComment();
+            // Update currentPage and allPage
+            currentPage.value = pageNum + 1;
+            allPage.innerHTML = maxPage;
         }
 
         function starNum(arr) {
@@ -333,7 +368,9 @@ window.onload = function () {
                     </p>
                 </li>`
             }
+            // Append html to commetList
             commentList.innerHTML = html;
+
         }
 
 
