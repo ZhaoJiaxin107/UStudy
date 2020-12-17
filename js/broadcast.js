@@ -1,4 +1,40 @@
 window.onload = function () {
+    
+    // Get local storage
+    console.log(localStorage);
+
+    if(!localStorage.username && !localStorage.password){
+        console.log('未登录');
+        localStorage.loginState = false;
+    }else{
+        console.log('已登录');
+        localStorage.loginState = true;
+    }
+    // generate template
+    var html = template('login', localStorage);
+
+    // append father element
+    var notLogin = document.getElementById('notlogin');
+    notLogin.innerHTML = html;
+
+    // click exit button
+    if(localStorage.loginState == 'true'){
+        // click exit button, log out
+        var logout = document.getElementById('logout');
+        // console.log(logout);
+
+        // add click event
+        logout.onclick = function(){
+            // logout
+            localStorage.username = '';
+            localStorage.password = '';
+            localStorage.loginState = false;
+
+            // refresh
+            location.reload();
+        }
+
+    }
     // Get goodCourse and course type in top nav
     var goodCourse = document.getElementById('goodcourse');
     // console.log(goodCourse);
@@ -311,6 +347,28 @@ window.onload = function () {
             shiftPage();
         }
 
+
+        // Click publish button, publish comments
+        // User should login in first
+        var publishBox = document.getElementById('publish');
+        // console.log(publishBox); 
+        var publishBtn = publishBox.querySelector('button');
+        // console.log(publishBtn);
+        publishBtn.onclick = function(){
+            // whether user is login
+            console.log(localStorage);
+            
+            if(localStorage.loginState == 'false'){
+                // not login
+                // prompt to jump to login page
+                var message = confirm('请登录');
+                if(message){
+                    window.location = './login.html';
+                }
+            }
+
+
+        }
 
         function starNum(arr) {
             var star = '';

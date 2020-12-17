@@ -390,6 +390,9 @@ main .downpanel .container .comment .publish button{
     box-sizing: border-box;
     font-size: .16rem;
 }
+main .downpanel .container .comment .publish > input{
+    vertical-align: middle;
+}
 footer{
     width: 100%;
     height: 1.55rem;

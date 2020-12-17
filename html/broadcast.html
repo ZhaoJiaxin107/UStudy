@@ -60,10 +60,9 @@
                 <li>
                     <a class="iconfont icon-saoma3" href="#"></a>
                 </li>
-                <li>
+                <li id = "notlogin">
                     <a href="./login.html" class="font">登录</a>
-                <!-- </li>
-                <li> -->&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
                     <a href="./register.html" class="font">注册</a>
                 </li>
             </ul>
@@ -303,11 +302,14 @@
                         <span>下一页</span>
                     </div>
                     <div style="clear: both;"></div>
-                    <div class="publish">
+                    <div class="publish" id = "publish">
                         <h3>发表评价:</h3>
                         <textarea name="" id="" class="fl">我也说一句.....
                         </textarea>
                         <button class="fl">发表</button>
+                        <div style="clear: both;"></div>
+                        <br>
+                        <input type="checkbox">&nbsp;匿名评价
                     </div>
                 </div>
 
@@ -342,7 +344,23 @@
     <script src="../js/remScale.js"></script>
     <!-- 6.link function.js -->
     <script src="../js/function.js"></script>
-    <!-- 7.dynamic events javascript -->
+    <!-- 7.link arttemplate -->
+    <script src="../js/template-web.js"></script>
+
+    <script type="text/html" id = "login">
+        {{if loginState == 'false'}}
+            <a href="./login.html" class="font">登录</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="./register.html" class="font">注册</a>
+        {{/if}}
+
+        {{if loginState == 'true'}}
+            <a href="javascript:;" class="font">个人中心</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="javascript:;" class="font" id = "logout">退出</a>
+        {{/if}}
+    </script>
+    <!-- 8.dynamic events javascript -->
     <script src="../js/broadcast.js"></script>
 </body>
 
