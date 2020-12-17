@@ -305,18 +305,18 @@ main .downpanel .container .relatedcourse li .price .try:hover{
 }
 main .downpanel .container .comment{
     width: 3.4rem;
-    height: 4.8rem;
+    height: 100%;
     border: 1px solid rebeccapurple;
     padding-top: .2rem;
 }
 main .downpanel .container .comment > h3{
     font:.2rem/.35rem "微软雅黑";
-    
+    border-bottom: .01rem solid #CCCCCC;
 }
 main .downpanel .container .comment .commentlist > li{
     width: 3.4rem;
     height: 1.55rem;
-    border-top: .01rem solid #CCCCCC;
+    border-bottom: .01rem solid #CCCCCC;
 }
 main .downpanel .container .comment .commentlist > li .user{
     width: 3.4rem;
@@ -343,6 +343,24 @@ main .downpanel .container .comment .commentlist > li .content{
 main .downpanel .container .comment .commentlist > li .time{
     margin: .2rem .05rem 0 0;
     color: #9788A7;
+}
+main .downpanel .container .comment .shift{
+    float:right;
+    margin:.15rem .08rem 0 0;
+}
+main .downpanel .container .comment .shift input{
+    width: .35rem;
+    height: .2rem;
+    border:.01rem solid #cccccc;
+}
+main .downpanel .container .comment .shift > button{
+    cursor: pointer;
+    background-color: #AAAAAA;
+    margin:0 .1rem;
+    vertical-align: bottom;
+}
+main .downpanel .container .comment .shift > a{
+    color: #000000;
 }
 footer{
     width: 100%;
