@@ -1,12 +1,12 @@
 window.onload = function () {
-    
+
     // Get local storage
     console.log(localStorage);
 
-    if(!localStorage.username && !localStorage.password){
+    if (!localStorage.username && !localStorage.password) {
         console.log('未登录');
         localStorage.loginState = false;
-    }else{
+    } else {
         console.log('已登录');
         localStorage.loginState = true;
     }
@@ -18,13 +18,13 @@ window.onload = function () {
     notLogin.innerHTML = html;
 
     // click exit button
-    if(localStorage.loginState == 'true'){
+    if (localStorage.loginState == 'true') {
         // click exit button, log out
         var logout = document.getElementById('logout');
         // console.log(logout);
 
         // add click event
-        logout.onclick = function(){
+        logout.onclick = function () {
             // logout
             localStorage.username = '';
             localStorage.password = '';
@@ -115,7 +115,7 @@ window.onload = function () {
         // Transform data
 
         var playList = JSON.parse(res);
-        console.log(playList);
+        // console.log(playList);
         // Rendering data into playlist
         var playListUl = document.getElementById('playlist');
         // console.log(playListUl);
@@ -260,7 +260,7 @@ window.onload = function () {
                     label[this.index].style.color = '#EF7407';
                 }
 
-                
+
             }
         }
 
@@ -276,7 +276,7 @@ window.onload = function () {
         // console.log(res);
         // Transform to js data
         var commentUrl = JSON.parse(res);
-        console.log(commentUrl);
+        // console.log(commentUrl);
 
         // Get comment length element
         var commentLength = document.getElementById('commentlength');
@@ -335,13 +335,13 @@ window.onload = function () {
         }
 
         // Click button, get input value, and shift page
-        determine.onclick = function(){
+        determine.onclick = function () {
             // Get input value, judge first 
-            if(currentPage.value - 1 > maxPage || currentPage.value - 1 < 0){
+            if (currentPage.value - 1 > maxPage || currentPage.value - 1 < 0) {
                 alert("请输入正确的页数");
                 currentPage.value = pageNum + 1;
                 return;
-            }else{
+            } else {
                 pageNum = currentPage.value - 1;
             }
             shiftPage();
@@ -353,22 +353,52 @@ window.onload = function () {
         var publishBox = document.getElementById('publish');
         // console.log(publishBox); 
         var publishBtn = publishBox.querySelector('button');
+        // get textarea
+        var textarea = publishBox.querySelector('textarea');
+        // get checkbox
+        var anonymous = publishBox.querySelector('#anonymous');
+        // console.log(anonymous);
+        // console.log(textarea);
         // console.log(publishBtn);
-        publishBtn.onclick = function(){
+        publishBtn.onclick = function () {
             // whether user is login
-            console.log(localStorage);
-            
-            if(localStorage.loginState == 'false'){
+            // console.log(localStorage);
+
+            if (localStorage.loginState == 'false') {
                 // not login
                 // prompt to jump to login page
                 var message = confirm('请登录');
-                if(message){
+                if (message) {
                     window.location = './login.html';
                 }
+            } else {
+                // login
+                // get corresponding input userinfo avatar time
+                // console.log(anonymous.checked);
+                var newComment = {
+                        "name":anonymous.checked ? "匿名用户": localStorage.username,
+                        "time":new Date().toLocaleString(),
+                        "src":anonymous.checked ? "../img/avatar-7.jpg" :"../img/avatar-4.jpg",
+                        "comment":textarea.value,
+                        "line":"3"
+                };
+                console.log(newComment);
+                // put newObj into commentUrl
+                // put it at the first position
+                commentUrl.unshift(newComment);
+                // console.log(commentUrl);
+
+                // refresh page, first jump to the first page, refresh again
+                pageNum = 0;
+                maxPage = Math.ceil(commentUrl.length / len);
+                // Update commentLength and totalPage
+                commentLength.innerHTML = commentUrl.length;
+                totalPage.innerHTML = maxPage;
+
+                shiftPage();
             }
-
-
         }
+
 
         function starNum(arr) {
             var star = '';
@@ -410,7 +440,7 @@ window.onload = function () {
 
         // ShiftPage()
         function shiftPage() {
-            
+
             // console.log(maxPage);
 
             // If pageNum arrives max page, alert and stay in the last page
