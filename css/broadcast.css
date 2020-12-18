@@ -4,7 +4,7 @@ body, html{
     height: 100%;
 }
 .container{
-    width: calc(100% - 70px * 2);
+    width: calc(100% - .7rem * 2);
     margin: 0 auto;
     /* border: 1rem solid #333; */
 }
@@ -37,9 +37,11 @@ body, html{
     position: absolute;
     top: .6rem;
     left: 3.75rem;
-    display: none; 
+    /* display: none;  */
+    opacity: 0;
     background: #ffffff;
     z-index: 10;
+    transition: 2s linear;
 }
 .topnav .container .coursetype > li{
     width: .85rem;
@@ -114,7 +116,7 @@ main .uppanel{
 }
 main .uppanel .container  h3{
     color: #9D9AC2;
-    width: 100%;
+    width: 11.99rem;
     height: .45rem;
     font: .14rem/.45rem "微软雅黑";
     /* background-color: #10D269; */
@@ -130,7 +132,7 @@ main .uppanel .container .videolist{
 }
 
 main .uppanel .container .videolist > video{
-    width: 8.58rem;
+    width: 8.6rem;
     height: 4.85rem;
     border:none;
     outline: none;
@@ -173,17 +175,17 @@ main .uppanel .container .playlist{
 }
 main .uppanel .container .playlist::-webkit-scrollbar {/*滚动条整体样式*/
 
-    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    width: 0.1rem;     /*高宽分别对应横竖滚动条的尺寸*/
 
-    height: 1px;
+    height: 0.01rem;
 
 }
 
 main .uppanel .container .playlist::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
 
-    border-radius: 10px;
+    border-radius: .1rem;
 
-     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+     -webkit-box-shadow: inset 0 0 .05rem rgba(0,0,0,0.3);
 
     background: #535353;
 
@@ -191,9 +193,9 @@ main .uppanel .container .playlist::-webkit-scrollbar-thumb {/*滚动条里面�
 
 main .uppanel .container .playlist::-webkit-scrollbar-track {/*滚动条里面轨道*/
 
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 .05rem rgba(0,0,0,0.3);
 
-    border-radius: 10px;
+    border-radius: .1rem;
 
     background: #EDEDED;
 } 
