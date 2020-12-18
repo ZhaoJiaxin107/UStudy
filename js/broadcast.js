@@ -168,7 +168,7 @@ window.onload = function () {
                 // change to day mode
                 // label change
                 this.innerHTML = '<img src="../img/nightmode.png" alt=""> &nbsp;黑夜模式';
-
+                
                 dayMode();
                 playlistLis[num].style.backgroundColor = '#ffffff';
                 // change tag
@@ -198,6 +198,10 @@ window.onload = function () {
             catalogBottom.style.display = "block";
             // The background of playlist #FFFFFF
             playListUl.style.background = '#FFFFFF';
+            // the background of rateChangeList is  #ffffff
+            rateChangeList.style.backgroundColor = '#ffffff';
+            // The color of rateChangelist is #333333
+            rateChangeList.style.color = '#333333';
 
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
@@ -237,7 +241,10 @@ window.onload = function () {
             playListUl.style.background = '#333333';
             // remove border-bottom
             catalogBottom.style.display = "none";
-
+            // the background of rateChangeList is  
+            rateChangeList.style.backgroundColor = '#2B2B2B';
+            // The color of rateChangelist is #ffffff
+            rateChangeList.style.color = '#ffffff';
             for (var i = 0; i < playlistLis.length; i++) {
                 // save index
                 playlistLis[i].index = i;

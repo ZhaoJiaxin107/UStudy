@@ -187,7 +187,7 @@ main .uppanel .container .playlist::-webkit-scrollbar-thumb {/*滚动条里面�
 
     background: #535353;
 
-}
+ }
 
 main .uppanel .container .playlist::-webkit-scrollbar-track {/*滚动条里面轨道*/
 
@@ -196,8 +196,7 @@ main .uppanel .container .playlist::-webkit-scrollbar-track {/*滚动条里面�
     border-radius: 10px;
 
     background: #EDEDED;
-
-}
+} 
 main .uppanel .container .playlist{
     background-color: #333333;
 }
@@ -211,10 +210,12 @@ main .uppanel .container .playlist > li{
 }
 main .uppanel .container .playlist .night:hover{
     background-color: #000000;
-    color: #EF7407;
+    
 }
 main .uppanel .container .playlist .day:hover{
     background-color: #ffffff;
+}
+main .uppanel .container .playlist .day:hover a{
     color: #EF7407;
 }
 main .uppanel .container .playlist > li > a{
@@ -247,7 +248,8 @@ main .uppanel .container .ratechangelist{
     cursor: pointer;
     z-index: 20;
     display: none;
-
+    background-color: #2B2B2B;
+    color: #FFFFFF;
 }
 main .uppanel .container .ratechangelist li:hover{
     background-color: #10D269;
@@ -257,8 +259,7 @@ main .uppanel .container .ratechangelist li{
     height: .35rem;
     font: .13rem/.35rem "微软雅黑";
     text-align: center;
-    color: #FFFFFF;
-    background-color: #2B2B2B;
+    
 }
 main .downpanel{
     width: 100%;
