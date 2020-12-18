@@ -315,7 +315,7 @@ window.onload = function(){
             lis[i].index = i;
             // event: when mouse enter into li
             lis[i].onmouseenter = function(){
-                this.style.backgroundColor = '#FFF7F3';
+                this.style.background = 'url(../img/ujyx_24.jpg) #FFF7F3 repeat-y 43px top';
                 // console.log(this.index);
                 // exclusive
                 for(var j = 0; j < lis.length; j++){
