@@ -42,10 +42,12 @@ window.onload = function(){
     // When mouse enter into goodCourse, display course type,
     // Otherwise hide courseType
     goodCourse.onmouseenter = function(){
-        courseType.style.display = 'block';
+        buffMove(courseType, {'opacity' : 1})
+        // courseType.style.opacity = 1;
     }
     courseType.onmouseleave = function(){
-        this.style.display = 'none';
+        buffMove(this, {'opacity' : 0})
+        // this.style.opacity = 0;
     }
     /* 
         Slide the mouse into the search icon to 
