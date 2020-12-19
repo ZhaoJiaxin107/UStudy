@@ -243,6 +243,56 @@ main .container .optionnav label input[type="checkbox"]:checked {
     background: url("../img/checked.jpg") no-repeat center center;
 }
 
+main .container .courselist{
+    width: 1200px;
+    margin-top: 20px;
+}
+main .container .courselist li{
+    width: 300px;
+    height: 255px;
+    /* border: 1px solid #333; */
+    float: left;
+    overflow: hidden;
+}
+main .container .courselist li .img{
+    display: block;
+    width: 285px;
+    height: 161px;
+    margin: 10px 7.5px 15px 7.5px;
+    overflow: hidden;
+    
+}
+main .container .courselist li .img img{
+    width: 285px;
+    height: 161px;
+    transition: .3s linear;
+}
+main .container .courselist li:hover{
+    box-shadow: 0px 0px 10px #9377A9;
+}
+main .container .courselist li:hover .img img{
+    transform: scale(1.2);
+}
+main .container .courselist li h3{
+    width: 280px;
+    height: 35px;
+    padding-left: 7.5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+main .container .courselist li h3:hover{
+    text-decoration: underline;
+}
+main .container .courselist li p{
+    padding-left: 7.5px;
+    color: #999999;
+}
+main .container .courselist li p em{
+    color: #F0F3F8;
+}
+main .container .courselist li p span{
+    color: #FF6600;
+}
 .consult {
     display: block;
     width: 35px;

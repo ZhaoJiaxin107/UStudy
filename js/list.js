@@ -90,6 +90,8 @@ window.onload = function () {
         priceList.style.display = 'none';
     }
 
+    
+
 
 
 
