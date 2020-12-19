@@ -1,0 +1,171 @@
+[
+    {   
+        "number":"01",
+        "title":"计算机基础及编程入门优选课",
+        "img": "../img/list-1.jpg",
+        "num": 2988,
+        "price": 100
+    },
+    {   
+        "number":"02",
+        "title":"【直播】优学大咖讲堂 手把手带你做3个趣味案例",
+        "img": "../img/list-2.jpg",
+        "num": 46,
+        "price": 0
+    },
+    {   
+        "number":"03",
+        "title":"平面视觉设计",
+        "img": "../img/list-3.jpg",
+        "num": 489,
+        "price": 2399
+    },
+    {   
+        "number":"04",
+        "title":"【进阶】【直播+录播】电商运营与创业实战训练营",
+        "img": "../img/list-4.jpg",
+        "num": 102,
+        "price": 2999
+    },
+    {   
+        "number":"05",
+        "title":"【OAO训练营】Python开发+人工智能在线就业班",
+        "img": "../img/list-5.jpg",
+        "num": 10,
+        "price": 19800
+    },
+    {   
+        "number":"06",
+        "title":"【高级】AI深度学习",
+        "img": "../img/list-6.jpg",
+        "num": 15,
+        "price": 3999
+    },
+    {   
+        "number":"07",
+        "title":"【OAO训练营】软件测试工程师OAO训练营",
+        "img": "../img/list-7.jpg",
+        "num": 53,
+        "price": 16800
+    },
+    {   
+        "number":"08",
+        "title":"教你精准掌握PS修图与调色",
+        "img": "../img/list-8.jpg",
+        "num": 344,
+        "price": 0
+    },
+    {   
+        "number":"09",
+        "title":"【OAO训练营】大数据全栈开发工程师",
+        "img": "../img/list-9.jpg",
+        "num": 5,
+        "price": 20800
+    },
+    {   
+        "number":"10",
+        "title":"【OAO训练营】2020Unity+VR/AR游戏开发工程师",
+        "img": "../img/list-10.jpg",
+        "num": 23,
+        "price": 19800
+    },
+    {   
+        "number":"11",
+        "title":"AI软件之场景搭建",
+        "img": "../img/list-11.jpg",
+        "num": 566,
+        "price": 0
+    },
+    {   
+        "number":"12",
+        "title":"【培优】互联网营销之职业技能夯实",
+        "img": "../img/list-12.jpg",
+        "num": 3,
+        "price": 99
+    },
+    {   
+        "number":"13",
+        "title":"【基础】短视频运营商业实战精品课",
+        "img": "../img/list-13.jpg",
+        "num": 235,
+        "price": 680
+    },
+    {   
+        "number":"14",
+        "title":"【进阶】掌握Javascript、ES6和Jquery, 实现页面交互",
+        "img": "../img/list-14.jpg",
+        "num": 157,
+        "price": 1980
+    },
+    {   
+        "number":"15",
+        "title":"【进阶】Web小程序开发基础到项目搭建, 制作家常菜小程序",
+        "img": "../img/list-15.jpg",
+        "num": 436,
+        "price": 199
+    },
+    {   
+        "number":"16",
+        "title":"【基础】使用HTML+CSS3+H5开发企业官网项目",
+        "img": "../img/list-16.jpg",
+        "num": 145,
+        "price": 599
+    },
+    {   
+        "number":"17",
+        "title":"【高级】React16+Redux企业级实战项目",
+        "img": "../img/list-17.jpg",
+        "num": 95,
+        "price": 599
+    },
+    {   
+        "number":"18",
+        "title":"【进阶】Node.js+KOA+项目实战 搭建多人聊天室",
+        "img": "../img/list-18.jpg",
+        "num": 113,
+        "price": 199
+    },
+    {   
+        "number":"19",
+        "title":"【基础】Web前端重点详解 彻底搞懂浮动布局、动画、定位技术",
+        "img": "../img/list-19.jpg",
+        "num": 295,
+        "price": 0
+    },
+    {   
+        "number":"20",
+        "title":"【进阶】使用Node.js+MongoDB制作后台管理系统",
+        "img": "../img/list-20.jpg",
+        "num": 209,
+        "price": 599
+    },
+    {   
+        "number":"21",
+        "title":"【进阶】CSS3新增属性+过渡 教你做个小动画",
+        "img": "../img/list-21.jpg",
+        "num": 961,
+        "price": 0
+    },
+    {   
+        "number":"22",
+        "title":"【进阶】Canvas绘制基础 教你绘制表盘",
+        "img": "../img/list-22.jpg",
+        "num": 111,
+        "price": 99
+    },
+    {   
+        "number":"23",
+        "title":"【案列】用HTML+CSS制作“京东商城”页面",
+        "img": "../img/list-23.jpg",
+        "num": 657,
+        "price": 0
+    },
+    {   
+        "number":"24",
+        "title":"【基础】使用百度云+wordpress或H5-CSS3搭建博客平台",
+        "img": "../img/list-24.jpg",
+        "num": 534,
+        "price": 0
+    }
+    
+]
