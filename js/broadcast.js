@@ -43,12 +43,11 @@ window.onload = function () {
     // When mouse enter into goodCourse, display course type,
     // Otherwise hide courseType
     goodCourse.onmouseenter = function () {
-        //buffMove(courseType, {'opacity' : 1})
-        // courseType.style.display = 'block';
+        // buffMove(courseType, {'opacity' : 1})
         courseType.style.opacity = 1;
     }
     courseType.onmouseleave = function () {
-        // this.style.display = 'none';
+        
         this.style.opacity = 0;
     }
 

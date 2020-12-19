@@ -31,29 +31,32 @@ body, html{
     margin-top: .2rem;
     border-radius: .05rem;
 }
-.topnav .container .coursetype{
+.topnav .container .ulleft > li:nth-of-type(2){
+    position: relative;
+}
+.topnav .container .ulleft .coursetype{
     width: .85rem;
     height: .6rem;
     position: absolute;
-    top: .6rem;
-    left: 3.88rem;
-    display: none;
+    top: .4rem;
+    left: 0;
+    opacity: 0;
     background: #ffffff;
+    z-index: 10;
+    transition: 2s linear;
 }
-.topnav .container .coursetype > li{
+.topnav .container .ulleft .coursetype > li{
     width: .85rem;
     height: .3rem;
     line-height: .3rem;
     text-align: center;
 }
 .topnav .container .ulleft > li > a,
-.topnav .container .coursetype> li > a{
+.topnav .container .ulleft .coursetype> li > a{
     color:#333333;
     font-size: .16rem;
 }
-.topnav .container .coursetype> li > a:hover{
-    color:#ff4905;
-}
+
 .topnav .container .ulleft > li > a > i{
     font-size: .12rem;
 }
@@ -66,9 +69,12 @@ body, html{
 .topnav .container .ulleft > li:hover a{
     color:#ff4905;
 }
-/* .container .topnav .ul_right{
-    margin-right: 5rem;
-} */
+.topnav .container .ulleft li:nth-of-type(2):hover .coursetype li a{
+    color:#333333;
+}
+.topnav .container .ulleft li:nth-of-type(2) .coursetype> li:hover a{
+    color:#ff4905;
+}
 .topnav .container .ulright > li{
     float: left;
     height: .3rem;
@@ -101,7 +107,7 @@ body, html{
 }
 .topnav .container .ulright li .font:hover{
     text-decoration: underline;
-}
+} 
 main{
     width: 100%;
     height: calc(100% - 1.55rem - .6rem);
