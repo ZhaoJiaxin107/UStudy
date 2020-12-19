@@ -65,8 +65,8 @@
                     <a class="iconfont icon-saoma3" href="#"></a>
                 </li>
                 <li id = "notlogin">
-                    <a href="#" class="font">登录</a>&nbsp;&nbsp;&nbsp;
-                    <a href="#" class="font">注册</a>
+                    <!-- <a href="#" class="font">登录</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="font">注册</a> -->
                 </li>
             </ul>
             <div style="clear: both;"></div>
@@ -197,6 +197,21 @@
     </footer>
     <!-- link function -->
     <script src = "../js/function.js"></script>
+    <!-- link template -->
+    <script src = "../js/template-web.js"></script>
+    <script type="text/html" id="login">
+        {{if loginState == 'false'}}
+            <a href="./login.html" class="font">登录</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="./register.html" class="font">注册</a>
+        {{/if}}
+
+        {{if loginState == 'true'}}
+            <a href="javascript:;" class="font">个人中心</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="javascript:;" class="font" id = "logout">退出</a>
+        {{/if}}
+    </script>
     <!-- link list.js -->
     <script src = "../js/list.js"></script>
 </body>

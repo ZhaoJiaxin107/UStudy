@@ -1,4 +1,38 @@
 window.onload = function () {
+    // Get local storage
+    //console.log(localStorage);
+
+    if (!localStorage.username && !localStorage.password) {
+        console.log('未登录');
+        localStorage.loginState = false;
+    } else {
+        console.log('已登录');
+        localStorage.loginState = true;
+    }
+    // generate template
+    var html = template('login', localStorage);
+
+    // append father element
+    var notLogin = document.getElementById('notlogin');
+    notLogin.innerHTML = html;
+
+    // click exit button
+    if (localStorage.loginState == 'true') {
+        // click exit button, log out
+        var logout = document.getElementById('logout');
+        // console.log(logout);
+
+        // add click event
+        logout.onclick = function () {
+            // logout
+            localStorage.username = '';
+            localStorage.password = '';
+            localStorage.loginState = false;
+
+            // refresh
+            location.reload();
+        }
+    }
     // Get goodCourse and course type in top nav
     var goodCourse = document.getElementById('goodcourse');
     // console.log(goodCourse);
@@ -117,7 +151,7 @@ window.onload = function () {
         // Geting element pagenav, span page
         var pageNav = document.getElementById('pagenav');
         var pageSeq = pageNav.getElementsByClassName('pagesequence')[0];
-       
+
         // console.log(pageNav, pageSeq);
         var pageSpan;
         // get firstPage and last page
@@ -125,7 +159,7 @@ window.onload = function () {
         var lastBtn = pageNav.querySelector('#last');
         // console.log(firstBtn, lastBtn);
         createPageSeq();
-        
+
         // Rendering course to the page
         getCourse();
 
@@ -152,11 +186,11 @@ window.onload = function () {
         /* 
             Click firstBtn and lastBtn, the page jumps to first page and last page
         */
-        firstBtn.onclick = function(){
+        firstBtn.onclick = function () {
             pageNum = 0;
             shiftPage();
         }
-        lastBtn.onclick = function(){
+        lastBtn.onclick = function () {
             pageNum = maxPage - 1;
             shiftPage();
         }
@@ -164,10 +198,10 @@ window.onload = function () {
         /* 
             Click page number, jump to corresponding page
         */
-        for(var i = 0; i < pageSpan.length; i++){
+        for (var i = 0; i < pageSpan.length; i++) {
             // save index
             pageSpan[i].index = i;
-            pageSpan[i].onclick = function(){
+            pageSpan[i].onclick = function () {
                 pageNum = this.index;
                 shiftPage();
             }
@@ -228,7 +262,7 @@ window.onload = function () {
             }
 
             getCourse();
-            
+
             for (var k = 0; k < pageSpan.length; k++) {
                 pageSpan[k].className = '';
             }
