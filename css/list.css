@@ -39,34 +39,31 @@
     margin-top: 20px;
     border-radius: 5px;
 }
-
-.topnav .container .coursetype {
+.topnav .container .ulleft>li:nth-of-type(2){
+    position: relative;
+}
+.topnav .container .ulleft .coursetype {
     width: 85px;
     height: 60px;
     position: absolute;
-    top: 60px;
-    left: 405px;
+    top: 40px;
+    left: 0;
     opacity: 0;
     z-index: 20;
     background: #ffffff;
 }
 
-.topnav .container .coursetype>li {
+.topnav .container .ulleft .coursetype>li {
     width: 85px;
     height: 30px;
     line-height: 30px;
     text-align: center;
 }
 
-.topnav .container .ulleft>li>a, .topnav .container .coursetype>li>a {
+.topnav .container .ulleft>li>a, .topnav .container .ulleft .coursetype>li>a {
     color: #333333;
     font-size: 16px;
 }
-
-.topnav .container .coursetype>li>a:hover {
-    color: #ff4905;
-}
-
 .topnav .container .ulleft>li>a>i {
     font-size: 12px;
 }
@@ -82,11 +79,12 @@
 .topnav .container .ulleft>li:hover a {
     color: #ff4905;
 }
-
-/* .container .topnav .ul_right{
-    margin-right: 5px;
-} */
-
+.topnav .container .ulleft>li:nth-of-type(2):hover .coursetype li a{
+    color: #333333;
+} 
+.topnav .container .ulleft li:nth-of-type(2) .coursetype li a:hover{
+    color: #ff4905;
+}
 .topnav .container .ulright>li {
     float: left;
     height: 30px;
