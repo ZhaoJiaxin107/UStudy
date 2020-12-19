@@ -1,7 +1,7 @@
 window.onload = function () {
 
     // Get local storage
-    console.log(localStorage);
+    //console.log(localStorage);
 
     if (!localStorage.username && !localStorage.password) {
         console.log('未登录');
@@ -190,7 +190,7 @@ window.onload = function () {
         var catalogBottom = catalog.querySelector('i');
         // console.log(catalog, catalogCon);
 
-        var num;
+        var num = 0;
 
         // Get uppanel
         var uppanel = document.querySelector('.uppanel');
@@ -206,13 +206,16 @@ window.onload = function () {
                 this.innerHTML = '<img src="../img/nightmode.png" alt=""> &nbsp;黑夜模式';
                 
                 dayMode();
+                // console.log(num);
                 playlistLis[num].style.backgroundColor = '#ffffff';
                 // change tag
                 this.tag = 1;
             } else {
                 this.innerHTML = '<img src="../img/daymode.png" alt="">&nbsp;白天模式';
+                
                 nightMode();
-                playlistLis[num].style.background = '#333333';
+                // console.log(num);
+                playlistLis[num].style.backgroundColor = '#333333';
                 // change tag
                 this.tag = 0;
             }
@@ -423,7 +426,7 @@ window.onload = function () {
                         "comment":textarea.value,
                         "line":"3"
                 };
-                console.log(newComment);
+                //console.log(newComment);
                 // put newObj into commentUrl
                 // put it at the first position
                 commentUrl.unshift(newComment);
