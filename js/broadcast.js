@@ -302,8 +302,6 @@ window.onload = function () {
                     content[this.index].style.color = '#EF7407';
                     label[this.index].style.color = '#EF7407';
                 }
-
-
             }
         }
 
