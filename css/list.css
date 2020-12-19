@@ -3,10 +3,6 @@
     background-color: #F5F5F5;
 }
 
-.mt5 {
-    margin-top: 5px;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -39,9 +35,11 @@
     margin-top: 20px;
     border-radius: 5px;
 }
-.topnav .container .ulleft>li:nth-of-type(2){
+
+.topnav .container .ulleft>li:nth-of-type(2) {
     position: relative;
 }
+
 .topnav .container .ulleft .coursetype {
     width: 85px;
     height: 60px;
@@ -64,6 +62,7 @@
     color: #333333;
     font-size: 16px;
 }
+
 .topnav .container .ulleft>li>a>i {
     font-size: 12px;
 }
@@ -79,12 +78,15 @@
 .topnav .container .ulleft>li:hover a {
     color: #ff4905;
 }
-.topnav .container .ulleft>li:nth-of-type(2):hover .coursetype li a{
+
+.topnav .container .ulleft>li:nth-of-type(2):hover .coursetype li a {
     color: #333333;
-} 
-.topnav .container .ulleft li:nth-of-type(2) .coursetype li a:hover{
+}
+
+.topnav .container .ulleft li:nth-of-type(2) .coursetype li a:hover {
     color: #ff4905;
 }
+
 .topnav .container .ulright>li {
     float: left;
     height: 30px;
@@ -124,106 +126,121 @@
 .topnav .container .ulright li .font:hover {
     text-decoration: underline;
 }
-main{
+
+main {
     width: 100%;
     height: 1800px;
 }
-main .container > h3{
+
+main .container>h3 {
     width: 1200px;
     padding: 17px 0 25px 0;
-    font:14px/1 "微软雅黑";
+    font: 14px/1 "微软雅黑";
 }
-main .container > h3 > a{
+
+main .container>h3>a {
     color: #B1B3B4;
 }
-main .container > h3 > a:hover{
+
+main .container>h3>a:hover {
     color: #FF4A00;
     text-decoration: underline;
 }
-main .container .teachingmethod{
+
+main .container .teachingmethod {
     margin-top: 30px;
 }
-main .container .classification > dt,
-main .container .teachingmethod > dt{
+
+main .container .classification>dt, main .container .teachingmethod>dt {
     width: 70px;
     height: 20px;
-    font:14px/20px "微软雅黑";
+    font: 14px/20px "微软雅黑";
     color: #B6B6B5;
 }
-main .container .classification > dd > a,
-main .container .teachingmethod > dd > a{
-    font:15px/20px "微软雅黑";
+
+main .container .classification>dd>a, main .container .teachingmethod>dd>a {
+    font: 15px/20px "微软雅黑";
     color: #555555;
     padding: 5px 14px;
 }
-main .container .classification > dd > a:nth-of-type(n+2):hover,
-main .container .teachingmethod > dd > a:nth-of-type(n+2):hover{
-   color: #FF4A00;
+
+main .container .classification>dd>a:nth-of-type(n+2):hover, main .container .teachingmethod>dd>a:nth-of-type(n+2):hover {
+    color: #FF4A00;
 }
-main .container .classification > dd > .active,
-main .container .teachingmethod > dd > .active{
+
+main .container .classification>dd>.active, main .container .teachingmethod>dd>.active {
     color: #ffffff;
     background-color: #FF4A00;
 }
-main .container .optionnav{
+
+main .container .optionnav {
     width: 1200px;
     height: 45px;
-    margin-top:25px;
+    margin-top: 25px;
     border: 1px solid #F0F0F0;
     background-color: #F8F8F8;
 }
-main .container .optionnav span,
-main .container .optionnav .pricerange a{
+
+main .container .optionnav span, main .container .optionnav .pricerange a {
     display: inline-block;
     width: 100px;
     height: 45px;
     border-right: 1px solid #F0F0F0;
     text-align: center;
-    font:16px/45px "微软雅黑";
+    font: 16px/45px "微软雅黑";
     color: #7B7B7B;
 }
-main .container .optionnav span.active{
+
+main .container .optionnav span.active {
     color: #FF5003;
 }
-main .container .optionnav .pricerange{
+
+main .container .optionnav .pricerange {
     display: inline-block;
     position: relative;
 }
-main .container .optionnav .pricerange ul{
+
+main .container .optionnav .pricerange ul {
     position: absolute;
     left: 0;
     top: 45px;
     width: 190px;
     height: 180px;
-    border:1px solid #F0F0F0;
+    border: 1px solid #F0F0F0;
     z-index: 10;
     display: none;
 }
-main .container .optionnav .pricerange ul li{
+
+main .container .optionnav .pricerange ul li {
     width: 190px;
     height: 30px;
     cursor: pointer;
-    font:15px/30px "微软雅黑";
+    font: 15px/30px "微软雅黑";
     margin-left: 10px;
     color: #7B7B7B;
 }
-main .container .optionnav .pricerange ul li:hover{
+
+main .container .optionnav .pricerange ul li:hover {
     color: #FF4A00;
 }
-main .container .optionnav label{
+
+main .container .optionnav label {
     margin-left: 40px;
     font-size: 14px;
     color: #7B7B7B;
 }
-main .container .optionnav label input[type = "checkbox"]{
+
+main .container .optionnav label input[type="checkbox"] {
     width: 16px;
     height: 16px;
     vertical-align: middle;
-    -webkit-appearance: none; /*清除默认样式*/
+    -webkit-appearance: none;
+    /*清除默认样式*/
     border: 1px solid #D1D1D1;
 }
-main .container .optionnav label input[type = "checkbox"]:checked{
-    background:url("../img/checked.jpg") no-repeat center center;
+
+main .container .optionnav label input[type="checkbox"]:checked {
+    background: url("../img/checked.jpg") no-repeat center center;
 }
 
 .consult {
@@ -283,24 +300,31 @@ main .container .optionnav label input[type = "checkbox"]:checked{
 .iconlist>li:nth-child(3)>a {
     color: #74BDEE;
 }
-.iconlist > li:nth-child(1):hover > a{
+
+.iconlist>li:nth-child(1):hover>a {
     color: #E6E6E6;
 }
-.iconlist > li:nth-child(1):hover{
+
+.iconlist>li:nth-child(1):hover {
     background-color: #95D372;
 }
-.iconlist > li:nth-child(2):hover > a{
+
+.iconlist>li:nth-child(2):hover>a {
     color: #E6E6E6;
 }
-.iconlist > li:nth-child(2):hover{
+
+.iconlist>li:nth-child(2):hover {
     background-color: #EF868B;
 }
-.iconlist > li:nth-child(3):hover > a{
+
+.iconlist>li:nth-child(3):hover>a {
     color: #E6E6E6;
 }
-.iconlist > li:nth-child(3):hover{
+
+.iconlist>li:nth-child(3):hover {
     background-color: #74BDEE;
 }
+
 footer {
     width: 100%;
     height: 155px;
