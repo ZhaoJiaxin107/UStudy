@@ -126,7 +126,47 @@
 .topnav .container .ulright li .font:hover {
     text-decoration: underline;
 }
-
+main{
+    width: 100%;
+    height: 1800px;
+}
+main .container > h3{
+    width: 1200px;
+    padding: 17px 0 25px 0;
+    font:14px/1 "微软雅黑";
+}
+main .container > h3 > a{
+    color: #B1B3B4;
+}
+main .container > h3 > a:hover{
+    color: #FF4A00;
+    text-decoration: underline;
+}
+main .container .teachingmethod{
+    margin-top: 30px;
+}
+main .container .classification > dt,
+main .container .teachingmethod > dt{
+    width: 70px;
+    height: 20px;
+    font:14px/20px "微软雅黑";
+    color: #B6B6B5;
+}
+main .container .classification > dd > a,
+main .container .teachingmethod > dd > a{
+    font:15px/20px "微软雅黑";
+    color: #555555;
+    padding: 5px 14px;
+}
+main .container .classification > dd > a:nth-of-type(n+2):hover,
+main .container .teachingmethod > dd > a:nth-of-type(n+2):hover{
+   color: #FF4A00;
+}
+main .container .classification > dd > .active,
+main .container .teachingmethod > dd > .active{
+    color: #ffffff;
+    background-color: #FF4A00;
+}
 .consult {
     display: block;
     width: 35px;
