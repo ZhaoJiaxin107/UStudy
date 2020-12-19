@@ -293,6 +293,28 @@ main .container .courselist li p em{
 main .container .courselist li p span{
     color: #FF6600;
 }
+main .container .pagenav{
+    margin-top: 40px;
+}
+main .container .pagenav span{
+    padding: 12px 15px;
+    color: #9999B3; 
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+main .container .pagenav span.active{
+    color: #ffffff;
+    background-color: #188EEE;
+    box-sizing: border-box;
+}
+main .container .pagenav span:hover{
+    color: #ffffff;
+    background-color: #188EEE;
+    box-sizing: border-box;
+}
 .consult {
     display: block;
     width: 35px;
