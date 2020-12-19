@@ -166,6 +166,118 @@
         "img": "../img/list-24.jpg",
         "num": 534,
         "price": 0
+    },
+    {   
+        "number":"25",
+        "title":"【进阶】Selenium3与Python3实战Web自动化测试框架讲解",
+        "img": "../img/list-25.jpg",
+        "num": 26,
+        "price": 199
+    },
+    {   
+        "number":"26",
+        "title":"【基础】大数据开发 指引初学者掌握MySQL数据库",
+        "img": "../img/list-26.jpg",
+        "num": 35,
+        "price": 0
+    },
+    {   
+        "number":"27",
+        "title":"【案列】可视化Shader 实现游戏绚丽效果",
+        "img": "../img/list-27.jpg",
+        "num": 36,
+        "price": 9.9
+    },
+    {   
+        "number":"28",
+        "title":"【案例】Unity3D游戏“秘密行动”开发案例详解",
+        "img": "../img/list-28.jpg",
+        "num": 23,
+        "price":399
+    },
+    {   
+        "number":"29",
+        "title":"【培优】Java基础开发 理论实践结合",
+        "img": "../img/list-29.jpg",
+        "num": 629,
+        "price":1999
+    },
+    {   
+        "number":"30",
+        "title":"【基础】基于Python多因子选股量化交易项目实战",
+        "img": "../img/list-30.jpg",
+        "num": 251,
+        "price":9.9
+    },
+    {   
+        "number":"31",
+        "title":"【基础】快速了解Go语言及并发生态",
+        "img": "../img/list-31.jpg",
+        "num": 144,
+        "price":399
+    },
+    {   
+        "number":"32",
+        "title":"【基础】数据结构与算法",
+        "img": "../img/list-32.jpg",
+        "num": 56,
+        "price":159
+    },
+    {   
+        "number":"33",
+        "title":"【进阶】Python机器学习入门及模型",
+        "img": "../img/list-33.jpg",
+        "num": 159,
+        "price":199
+    },
+    {   
+        "number":"34",
+        "title":"【进阶】Java开发高级 SpringBoot2.0核心技术",
+        "img": "../img/list-34.jpg",
+        "num": 313,
+        "price":399
+    },
+    {   
+        "number":"35",
+        "title":"【进阶】微服务架构-Spring Boot+Spring Cloud+Docker技术",
+        "img": "../img/list-35.jpg",
+        "num": 277,
+        "price":39
+    },
+    {   
+        "number":"36",
+        "title":"【基础】Linux云计算之操作系统安装及思想与学习方法详解",
+        "img": "../img/list-36.jpg",
+        "num": 299,
+        "price":0
+    },
+    {   
+        "number":"37",
+        "title":"【基础】Linux云计算之计算机网络通信原理",
+        "img": "../img/list-37.jpg",
+        "num": 322,
+        "price":299
+    },
+    {   
+        "number":"38",
+        "title":"【进阶】Docker实战应用详解",
+        "img": "../img/list-38.jpg",
+        "num": 467,
+        "price":59
+    },
+    {   
+        "number":"39",
+        "title":"【进阶】软件测试必备工具:Loadrunner详解",
+        "img": "../img/list-39.jpg",
+        "num": 7,
+        "price":299
+    },
+    {   
+        "number":"40",
+        "title":"【基础】Java开发基础之领略面向对象思想的魅力",
+        "img": "../img/list-40.jpg",
+        "num": 722,
+        "price":0
     }
     
 ]
