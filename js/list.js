@@ -98,7 +98,8 @@ window.onload = function () {
         // Transform to js data
         var courseUrl = JSON.parse(res);
         // console.log(courseUrl);
-
+        // get element courselist
+        var courseList = document.getElementById('courselist');
         // calculate number of course 
         var total = courseUrl.length;
         // console.log(total);
@@ -110,19 +111,21 @@ window.onload = function () {
 
         // Get maximum page
         var maxPage = Math.ceil(total / lenPerPage);
-        console.log(maxPage);
+        // console.log(maxPage);
 
         // Rendering page nav
         // Geting element pagenav, span page
         var pageNav = document.getElementById('pagenav');
         var pageSeq = pageNav.getElementsByClassName('pagesequence')[0];
+       
         // console.log(pageNav, pageSeq);
+        var pageSpan;
+        // get firstPage and last page
+        var firstBtn = pageNav.querySelector('#first');
+        var lastBtn = pageNav.querySelector('#last');
+        // console.log(firstBtn, lastBtn);
         createPageSeq();
-        // The default page is one
-        // give current page active class
-        var pageSpan = pageSeq.getElementsByTagName('span');
-        var currentPage = pageSpan[pageNum];
-        currentPage.className = 'active';
+        
         // Rendering course to the page
         getCourse();
 
@@ -137,16 +140,38 @@ window.onload = function () {
         var next = pageNav.querySelector('#next');
         // console.log(previous, next);
 
-        next.onclick = function(){
+        next.onclick = function () {
             pageNum++;
-            shiftPage();     
+            shiftPage();
         }
 
-        previous.onclick = function(){
+        previous.onclick = function () {
             pageNum--;
-            shiftPage(); 
+            shiftPage();
         }
-        
+        /* 
+            Click firstBtn and lastBtn, the page jumps to first page and last page
+        */
+        firstBtn.onclick = function(){
+            pageNum = 0;
+            shiftPage();
+        }
+        lastBtn.onclick = function(){
+            pageNum = maxPage - 1;
+            shiftPage();
+        }
+
+        /* 
+            Click page number, jump to corresponding page
+        */
+        for(var i = 0; i < pageSpan.length; i++){
+            // save index
+            pageSpan[i].index = i;
+            pageSpan[i].onclick = function(){
+                pageNum = this.index;
+                shiftPage();
+            }
+        }
         function createPageSeq() {
             var sequence = '';
             for (var i = 0; i < maxPage; i++) {
@@ -154,20 +179,22 @@ window.onload = function () {
             }
             // give content to the pageSeq
             pageSeq.innerHTML = sequence;
+            // The default page is one
+            pageSpan = pageSeq.getElementsByTagName('span');
+            // console.log(pageSpan);
+            // give current page active class
+            var currentPage = pageSpan[pageNum];
+            currentPage.className = 'active';
         }
         function getCourse() {
             // Rendering data to course list
-            // get element courselist
-            var courseList = document.getElementById('courselist');
-            // console.log(courseList);
-
             // show data we want to 
             // slice(startIndex, lastIndex)
             // 0 - 15  16- 31 32 - 48
             // startIndex: pageNum * lenPerPage
             // lastIndex: (pageNum+1) * lenPerPage
             var showCourse = courseUrl.slice(pageNum * lenPerPage, (pageNum + 1) * lenPerPage);
-            console.log(showCourse);
+            // console.log(showCourse);
             var html = '';
             for (var i = 0; i < showCourse.length; i++) {
                 html += `<li>
@@ -186,34 +213,27 @@ window.onload = function () {
             courseList.innerHTML = html;
         }
 
-        function shiftPage(){
+        function shiftPage() {
             // if page arrives at max page, stay in the max page
-            if(pageNum >= maxPage){
+            if (pageNum >= maxPage) {
                 alert('已经到达最后一页');
                 // stay in the last page
                 pageNum = maxPage - 1;
             }
 
             // if page arrives at the first page. stay in the first page
-            if(pageNum < 0){
+            if (pageNum < 0) {
                 alert('已经是第一页!');
                 pageNum = 0;
             }
+
             getCourse();
-            for(var k = 0; k < pageSpan.length; k++){
+            
+            for (var k = 0; k < pageSpan.length; k++) {
                 pageSpan[k].className = '';
             }
             currentPage = pageSpan[pageNum];
             currentPage.className = 'active';
         }
-        
-
-
-
-
     });
-
-
-
-
 }
