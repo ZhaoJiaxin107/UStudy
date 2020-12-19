@@ -167,6 +167,67 @@ main .container .teachingmethod > dd > .active{
     color: #ffffff;
     background-color: #FF4A00;
 }
+main .container .optionnav{
+    width: 1200px;
+    height: 45px;
+    margin-top:25px;
+    border: 1px solid #F0F0F0;
+    background-color: #F8F8F8;
+}
+main .container .optionnav span,
+main .container .optionnav .pricerange a{
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    border-right: 1px solid #F0F0F0;
+    text-align: center;
+    font:16px/45px "微软雅黑";
+    color: #7B7B7B;
+}
+main .container .optionnav span.active{
+    color: #FF5003;
+}
+main .container .optionnav .pricerange{
+    display: inline-block;
+    position: relative;
+}
+main .container .optionnav .pricerange ul{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 190px;
+    height: 180px;
+    border:1px solid #F0F0F0;
+    z-index: 10;
+    display: none;
+}
+main .container .optionnav .pricerange ul li{
+    width: 190px;
+    height: 30px;
+    cursor: pointer;
+    font:15px/30px "微软雅黑";
+    margin-left: 10px;
+    color: #7B7B7B;
+}
+main .container .optionnav .pricerange ul li:hover{
+    color: #FF4A00;
+}
+main .container .optionnav label{
+    margin-left: 40px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+main .container .optionnav label input[type = "checkbox"]{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    -webkit-appearance: none; /*清除默认样式*/
+    border: 1px solid #D1D1D1;
+}
+main .container .optionnav label input[type = "checkbox"]:checked{
+    background:url("../img/checked.jpg") no-repeat center center;
+}
+
 .consult {
     display: block;
     width: 35px;
