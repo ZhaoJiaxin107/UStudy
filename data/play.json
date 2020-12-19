@@ -1,200 +1,338 @@
 [
     {   
         "number":"01",
-        "title":"课程大纲简介和编辑器和浏览器安装和使用",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
+        "title":"计算机基础及编程入门优选课",
+        "img": "../img/list-1.jpg",
+        "num": 2988,
         "price": 100
     },
-    {
+    {   
+        "number":"02",
+        "title":"【直播】优学大咖讲堂 手把手带你做3个趣味案例",
+        "img": "../img/list-2.jpg",
+        "num": 46,
+        "price": 0
+    },
+    {   
         "number":"03",
-        "title":"你好！ 世界",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-2.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
+        "title":"平面视觉设计",
+        "img": "../img/list-3.jpg",
+        "num": 489,
+        "price": 2399
     },
-    {
+    {   
         "number":"04",
-        "title":"哎呦，你咋这么黑",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-3.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 1000
+        "title":"【进阶】【直播+录播】电商运营与创业实战训练营",
+        "img": "../img/list-4.jpg",
+        "num": 102,
+        "price": 2999
     },
-    {
+    {   
         "number":"05",
-        "title":"念吾名，轮回路上得永生",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-4.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
+        "title":"【OAO训练营】Python开发+人工智能在线就业班",
+        "img": "../img/list-5.jpg",
+        "num": 10,
+        "price": 19800
     },
-    {
+    {   
         "number":"06",
-        "title":"骑猪去旅游",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
+        "title":"【高级】AI深度学习",
+        "img": "../img/list-6.jpg",
+        "num": 15,
+        "price": 3999
     },
-    {
+    {   
         "number":"07",
-        "title":"骑驴去相亲",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 100000
+        "title":"【OAO训练营】软件测试工程师OAO训练营",
+        "img": "../img/list-7.jpg",
+        "num": 53,
+        "price": 16800
     },
-    {
+    {   
         "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
+        "title":"教你精准掌握PS修图与调色",
+        "img": "../img/list-8.jpg",
+        "num": 344,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
+    {   
+        "number":"09",
+        "title":"【OAO训练营】大数据全栈开发工程师",
+        "img": "../img/list-9.jpg",
+        "num": 5,
+        "price": 20800
+    },
+    {   
+        "number":"10",
+        "title":"【OAO训练营】2020Unity+VR/AR游戏开发工程师",
+        "img": "../img/list-10.jpg",
+        "num": 23,
+        "price": 19800
+    },
+    {   
+        "number":"11",
+        "title":"AI软件之场景搭建",
+        "img": "../img/list-11.jpg",
+        "num": 566,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-1.jpg",
-        "tag": "web",
-        "num": 33,
+    {   
+        "number":"12",
+        "title":"【培优】互联网营销之职业技能夯实",
+        "img": "../img/list-12.jpg",
+        "num": 3,
+        "price": 99
+    },
+    {   
+        "number":"13",
+        "title":"【基础】短视频运营商业实战精品课",
+        "img": "../img/list-13.jpg",
+        "num": 235,
+        "price": 680
+    },
+    {   
+        "number":"14",
+        "title":"【进阶】掌握Javascript、ES6和Jquery, 实现页面交互",
+        "img": "../img/list-14.jpg",
+        "num": 157,
+        "price": 1980
+    },
+    {   
+        "number":"15",
+        "title":"【进阶】Web小程序开发基础到项目搭建, 制作家常菜小程序",
+        "img": "../img/list-15.jpg",
+        "num": 436,
+        "price": 199
+    },
+    {   
+        "number":"16",
+        "title":"【基础】使用HTML+CSS3+H5开发企业官网项目",
+        "img": "../img/list-16.jpg",
+        "num": 145,
+        "price": 599
+    },
+    {   
+        "number":"17",
+        "title":"【高级】React16+Redux企业级实战项目",
+        "img": "../img/list-17.jpg",
+        "num": 95,
+        "price": 599
+    },
+    {   
+        "number":"18",
+        "title":"【进阶】Node.js+KOA+项目实战 搭建多人聊天室",
+        "img": "../img/list-18.jpg",
+        "num": 113,
+        "price": 199
+    },
+    {   
+        "number":"19",
+        "title":"【基础】Web前端重点详解 彻底搞懂浮动布局、动画、定位技术",
+        "img": "../img/list-19.jpg",
+        "num": 295,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-1.jpg",
-        "tag": "web",
-        "num": 33,
+    {   
+        "number":"20",
+        "title":"【进阶】使用Node.js+MongoDB制作后台管理系统",
+        "img": "../img/list-20.jpg",
+        "num": 209,
+        "price": 599
+    },
+    {   
+        "number":"21",
+        "title":"【进阶】CSS3新增属性+过渡 教你做个小动画",
+        "img": "../img/list-21.jpg",
+        "num": 961,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-4.jpg",
-        "tag": "web",
-        "num": 33,
+    {   
+        "number":"22",
+        "title":"【进阶】Canvas绘制基础 教你绘制表盘",
+        "img": "../img/list-22.jpg",
+        "num": 111,
+        "price": 99
+    },
+    {   
+        "number":"23",
+        "title":"【案列】用HTML+CSS制作“京东商城”页面",
+        "img": "../img/list-23.jpg",
+        "num": 657,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-1.jpg",
-        "tag": "web",
-        "num": 33,
+    {   
+        "number":"24",
+        "title":"【基础】使用百度云+wordpress或H5-CSS3搭建博客平台",
+        "img": "../img/list-24.jpg",
+        "num": 534,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-2.jpg",
-        "tag": "web",
-        "num": 33,
+    {   
+        "number":"25",
+        "title":"【进阶】Selenium3与Python3实战Web自动化测试框架讲解",
+        "img": "../img/list-25.jpg",
+        "num": 26,
+        "price": 199
+    },
+    {   
+        "number":"26",
+        "title":"【基础】大数据开发 指引初学者掌握MySQL数据库",
+        "img": "../img/list-26.jpg",
+        "num": 35,
         "price": 0
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/study-3.jpg",
-        "tag": "web",
-        "num": 33,
-        "price": 0
+    {   
+        "number":"27",
+        "title":"【案列】可视化Shader 实现游戏绚丽效果",
+        "img": "../img/list-27.jpg",
+        "num": 36,
+        "price": 9.9
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/sheji-1.jpg",
-        "tag": "styleDesign",
-        "num": 10,
-        "price": 0
+    {   
+        "number":"28",
+        "title":"【案例】Unity3D游戏“秘密行动”开发案例详解",
+        "img": "../img/list-28.jpg",
+        "num": 23,
+        "price":399
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/sheji-2.jpg",
-        "tag": "styleDesign",
-        "num": 10,
-        "price": 0
+    {   
+        "number":"29",
+        "title":"【培优】Java基础开发 理论实践结合",
+        "img": "../img/list-29.jpg",
+        "num": 629,
+        "price":1999
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/sheji-3.jpg",
-        "tag": "styleDesign",
-        "num": 10,
-        "price": 0
+    {   
+        "number":"30",
+        "title":"【基础】基于Python多因子选股量化交易项目实战",
+        "img": "../img/list-30.jpg",
+        "num": 251,
+        "price":9.9
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/sheji-4.jpg",
-        "tag": "styleDesign",
-        "num": 10,
-        "price": 0
+    {   
+        "number":"31",
+        "title":"【基础】快速了解Go语言及并发生态",
+        "img": "../img/list-31.jpg",
+        "num": 144,
+        "price":399
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/sheji-1.jpg",
-        "tag": "styleDesign",
-        "num": 10,
-        "price": 0
+    {   
+        "number":"32",
+        "title":"【基础】数据结构与算法",
+        "img": "../img/list-32.jpg",
+        "num": 56,
+        "price":159
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
+    {   
+        "number":"33",
+        "title":"【进阶】Python机器学习入门及模型",
+        "img": "../img/list-33.jpg",
+        "num": 159,
+        "price":199
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
+    {   
+        "number":"34",
+        "title":"【进阶】Java开发高级 SpringBoot2.0核心技术",
+        "img": "../img/list-34.jpg",
+        "num": 313,
+        "price":399
     },
-    {
-        "number":"08",
-        "title":"骑狗去打劫",
-        "media":"media/1、动画.50.mp4",
-        "img": "./img/cont-1.jpg",
-        "tag": "onLineSell",
-        "num": 20,
-        "price": 0
-    }
+    {   
+        "number":"35",
+        "title":"【进阶】微服务架构-Spring Boot+Spring Cloud+Docker技术",
+        "img": "../img/list-35.jpg",
+        "num": 277,
+        "price":39
+    },
+    {   
+        "number":"36",
+        "title":"【基础】Linux云计算之操作系统安装及思想与学习方法详解",
+        "img": "../img/list-36.jpg",
+        "num": 299,
+        "price":0
+    },
+    {   
+        "number":"37",
+        "title":"【基础】Linux云计算之计算机网络通信原理",
+        "img": "../img/list-37.jpg",
+        "num": 322,
+        "price":299
+    },
+    {   
+        "number":"38",
+        "title":"【进阶】Docker实战应用详解",
+        "img": "../img/list-38.jpg",
+        "num": 467,
+        "price":59
+    },
+    {   
+        "number":"39",
+        "title":"【进阶】软件测试必备工具:Loadrunner详解",
+        "img": "../img/list-39.jpg",
+        "num": 7,
+        "price":299
+    },
+    {   
+        "number":"40",
+        "title":"【基础】Java开发基础之领略面向对象思想的魅力",
+        "img": "../img/list-40.jpg",
+        "num": 722,
+        "price":0
+    },
+    {   
+        "number":"41",
+        "title":"【进阶】走进大数据之HDFS概述及实战操作",
+        "img": "../img/list-41.jpg",
+        "num": 343,
+        "price":0
+    },
+    {   
+        "number":"42",
+        "title":"【面授】VR/AR-Unity游戏开发班",
+        "img": "../img/list-42.jpg",
+        "num": 22,
+        "price":23800
+    },
+    {   
+        "number":"43",
+        "title":"【基础】Java开发基础之面向对象的多态的魅力",
+        "img": "../img/list-43.jpg",
+        "num": 676,
+        "price":0
+    },
+    {   
+        "number":"44",
+        "title":"【进阶】走进大数据之Hive企业级实战 数据管理与统计分析",
+        "img": "../img/list-44.jpg",
+        "num": 322,
+        "price":0
+    },
+    {   
+        "number":"45",
+        "title":"【基础】Java开发基础之探究Java集合结构体系",
+        "img": "../img/list-45.jpg",
+        "num": 848,
+        "price":0
+    },
+    {   
+        "number":"46",
+        "title":"【科普】Python+人工智能 追赶编程开发新趋势",
+        "img": "../img/list-46.jpg",
+        "num": 1666,
+        "price":0
+    },
+    {   
+        "number":"47",
+        "title":"【基础】微信搜索优化策略大讲堂",
+        "img": "../img/list-47.jpg",
+        "num": 11,
+        "price":9.9
+    },
+    {   
+        "number":"48",
+        "title":"【系统】SEM实战系统班-广告基础投放及优化策略",
+        "img": "../img/list-48.jpg",
+        "num": 28,
+        "price":1499
+    }   
 ]

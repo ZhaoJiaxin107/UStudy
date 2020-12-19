@@ -337,7 +337,7 @@ window.onload = function(){
     
     // 4.Readlization of online courses
     // 4.1 Ajax request data
-    ajax('get','./data/lessonContent_new.json','',function(res){
+    ajax('get','./data/lessonContent.json','',function(res){
         // console.log(res);
         var transRes = JSON.parse(res);
         // goodLesson
