@@ -46,7 +46,6 @@ window.onload = function () {
         // search icon displays
         searchIcon.style.visibility = 'visible';
     }
-    
 
     // When click bottom up arrow, the page goes to the top
     // Get top arrow element
@@ -73,6 +72,25 @@ window.onload = function () {
     }
 
 
-    
+    /* 
+        When mouse enter pricerange, display ul list
+        When mouse leave ullist, ullist disappears
+    */
+    // get pricerange a ul element
+    var priceRange = document.getElementById('pricerange');
+    var priceLink = priceRange.querySelector('a');
+    var priceList = priceRange.querySelector('ul');
+    // console.log(priceRange,priceLink, priceList);
+    // When mouse enter priceLink, display priceList
+    priceLink.onmouseenter =  function(){
+        priceList.style.display = 'block';
+    }
+    // When mouse leave priceList, priceList disappears
+    priceList.onmouseleave = function(){
+        priceList.style.display = 'none';
+    }
+
+
+
 
 }
