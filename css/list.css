@@ -129,7 +129,7 @@
 
 main {
     width: 100%;
-    height: 1800px;
+    height: 1400px;
 }
 
 main .container>h3 {
@@ -190,9 +190,12 @@ main .container .optionnav span, main .container .optionnav .pricerange a {
     font: 16px/45px "微软雅黑";
     color: #7B7B7B;
 }
-
+main .container .optionnav span > i{
+    color: #B7B7B7;
+}
 main .container .optionnav span.active {
     color: #FF5003;
+    background-color: #ffffff;
 }
 
 main .container .optionnav .pricerange {
@@ -209,6 +212,7 @@ main .container .optionnav .pricerange ul {
     border: 1px solid #F0F0F0;
     z-index: 10;
     display: none;
+    background-color: #ffffff;
 }
 
 main .container .optionnav .pricerange ul li {
@@ -279,13 +283,21 @@ main .container .courselist li h3{
     padding-left: 7.5px;
     font-size: 16px;
     cursor: pointer;
+    /* 溢出显示省略号 
+    1.盒子溢出隐藏*/
+    overflow: hidden;
+    /* 2.强制不换行 */
+    white-space: nowrap;
+    /* 3.文字溢出显示省略号 */
+    text-overflow: ellipsis;
 }
 main .container .courselist li h3:hover{
     text-decoration: underline;
 }
 main .container .courselist li p{
-    padding-left: 7.5px;
+    padding-left: 8px;
     color: #999999;
+    font-size: 14px;
 }
 main .container .courselist li p em{
     color: #F0F3F8;
@@ -296,7 +308,8 @@ main .container .courselist li p span{
 main .container .pagenav{
     margin-top: 40px;
 }
-main .container .pagenav span{
+main .container .pagenav span,
+main .container .pagenav .pagesequence span{
     padding: 12px 15px;
     color: #9999B3; 
     font-size: 14px;
@@ -305,12 +318,13 @@ main .container .pagenav span{
     border-radius: 4px;
     margin: 0 5px;
 }
-main .container .pagenav span.active{
+main .container .pagenav .pagesequence span.active{
     color: #ffffff;
     background-color: #188EEE;
     box-sizing: border-box;
 }
-main .container .pagenav span:hover{
+main .container .pagenav span:hover,
+main .container .pagenav .pagesequence span:hover{
     color: #ffffff;
     background-color: #188EEE;
     box-sizing: border-box;
