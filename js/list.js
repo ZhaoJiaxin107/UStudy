@@ -119,10 +119,42 @@ window.onload = function () {
         // console.log(pageNav, pageSeq);
         createPageSeq();
         // The default page is one
-
+        // give current page active class
+        var pageSpan = pageSeq.getElementsByTagName('span');
+        var currentPage = pageSpan[pageNum];
+        currentPage.className = 'active';
         // Rendering course to the page
         getCourse();
 
+        /* 
+            Next Page funtion, when click next page button 
+            the page turns to the next page
+
+            Previous page funciton, when click previous button,
+            the page turns to the previous page
+        */
+        var previous = pageNav.querySelector('#pre');
+        var next = pageNav.querySelector('#next');
+        // console.log(previous, next);
+
+        next.onclick = function(){
+            pageNum++;
+            shiftPage();     
+        }
+
+        previous.onclick = function(){
+            pageNum--;
+            shiftPage(); 
+        }
+        
+        function createPageSeq() {
+            var sequence = '';
+            for (var i = 0; i < maxPage; i++) {
+                sequence += '<span>' + (i + 1) + '</span>';
+            }
+            // give content to the pageSeq
+            pageSeq.innerHTML = sequence;
+        }
         function getCourse() {
             // Rendering data to course list
             // get element courselist
@@ -154,18 +186,27 @@ window.onload = function () {
             courseList.innerHTML = html;
         }
 
-        function createPageSeq() {
-            var sequence = '';
-            for (var i = 0; i < maxPage; i++) {
-                sequence += '<span>' + (i + 1) + '</span>';
+        function shiftPage(){
+            // if page arrives at max page, stay in the max page
+            if(pageNum >= maxPage){
+                alert('已经到达最后一页');
+                // stay in the last page
+                pageNum = maxPage - 1;
             }
-            // give content to the pageSeq
-            pageSeq.innerHTML = sequence;
-            // give first page active class
-            var firstPage = pageSeq.getElementsByTagName('span')[0];
-            //console.log(firstPage);
-            firstPage.className = 'active';
+
+            // if page arrives at the first page. stay in the first page
+            if(pageNum < 0){
+                alert('已经是第一页!');
+                pageNum = 0;
+            }
+            getCourse();
+            for(var k = 0; k < pageSpan.length; k++){
+                pageSpan[k].className = '';
+            }
+            currentPage = pageSpan[pageNum];
+            currentPage.className = 'active';
         }
+        
 
 
 
