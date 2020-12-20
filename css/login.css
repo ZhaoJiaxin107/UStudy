@@ -1,28 +1,33 @@
 @charset 'utf-8';
-body, html{
+body, html {
     width: 100%;
     height: 100%;
 }
-.container{
+
+.container {
     width: calc(100% - 83px * 2);
     margin: 0 auto;
     /* border: 1rem solid #333; */
 }
-.topnav{
+
+.topnav {
     height: .6rem;
-    line-height: .6rem; 
+    line-height: .6rem;
     width: 100%;
     border: .01rem solid #e6e6e6;
 }
-.topnav .container .logo > img{
+
+.topnav .container .logo>img {
     width: 2.2rem;
     height: .32rem;
     vertical-align: middle;
 }
-.topnav .container .ulleft{
+
+.topnav .container .ulleft {
     margin-left: .2em;
 }
-.topnav .container .ulleft > li{
+
+.topnav .container .ulleft>li {
     float: left;
     width: .85rem;
     height: .3rem;
@@ -31,10 +36,12 @@ body, html{
     margin-top: .2rem;
     border-radius: .05rem;
 }
-.topnav .container .ulleft > li:nth-of-type(2){
+
+.topnav .container .ulleft>li:nth-of-type(2) {
     position: relative;
 }
-.topnav .container .ulleft .coursetype{
+
+.topnav .container .ulleft .coursetype {
     width: .85rem;
     height: .6rem;
     position: absolute;
@@ -45,101 +52,120 @@ body, html{
     z-index: 10;
     transition: 2s linear;
 }
-.topnav .container .ulleft .coursetype > li{
+
+.topnav .container .ulleft .coursetype>li {
     width: .85rem;
     height: .3rem;
     line-height: .3rem;
     text-align: center;
 }
-.topnav .container .ulleft > li > a,
-.topnav .container .ulleft .coursetype> li > a{
-    color:#333333;
+
+.topnav .container .ulleft>li>a, .topnav .container .ulleft .coursetype>li>a {
+    color: #333333;
     font-size: .16rem;
 }
 
-.topnav .container .ulleft > li > a > i{
+.topnav .container .ulleft>li>a>i {
     font-size: .12rem;
 }
-.topnav .container .ulleft .app{
+
+.topnav .container .ulleft .app {
     border: .01rem solid #ff4905;
 }
-.topnav .container .ulleft .app > a{
-    color:#ff4905;
+
+.topnav .container .ulleft .app>a {
+    color: #ff4905;
 }
-.topnav .container .ulleft > li:hover a{
-    color:#ff4905;
+
+.topnav .container .ulleft>li:hover a {
+    color: #ff4905;
 }
-.topnav .container .ulleft li:nth-of-type(2):hover .coursetype li a{
-    color:#333333;
+
+.topnav .container .ulleft li:nth-of-type(2):hover .coursetype li a {
+    color: #333333;
 }
-.topnav .container .ulleft li:nth-of-type(2) .coursetype> li:hover a{
-    color:#ff4905;
+
+.topnav .container .ulleft li:nth-of-type(2) .coursetype>li:hover a {
+    color: #ff4905;
 }
-.topnav .container .ulright > li{
+
+.topnav .container .ulright>li {
     float: left;
     height: .3rem;
     line-height: .3rem;
-    margin:.2rem .2rem 0 0;
+    margin: .2rem .2rem 0 0;
 }
-.topnav .container .ulright #search{
-    border:.01rem solid #E6E6E6;
+
+.topnav .container .ulright #search {
+    border: .01rem solid #E6E6E6;
     width: 1.45rem;
     border-radius: .15rem;
     margin-top: .18rem;
-    visibility: hidden; 
+    visibility: hidden;
 }
-.topnav .container .ulright #search > input{
+
+.topnav .container .ulright #search>input {
     width: 1.2rem;
     height: 0.3rem;
     text-indent: .15rem;
-    visibility: hidden; 
+    visibility: hidden;
 }
-.topnav .container .ulright #search #searchIcon{
-    visibility:visible;
-} 
-.topnav .container .ulright li a{
+
+.topnav .container .ulright #search #searchIcon {
+    visibility: visible;
+}
+
+.topnav .container .ulright li a {
     color: #AFAFAF;
     font-size: .18rem;
 }
-.topnav .container .ulright li .font{
+
+.topnav .container .ulright li .font {
     font-size: .12rem;
     color: #666666;
 }
-.topnav .container .ulright li .font:hover{
+
+.topnav .container .ulright li .font:hover {
     text-decoration: underline;
-} 
-main{
+}
+
+main {
     width: 100%;
     height: calc(100% - 1.55rem - .6rem);
     overflow: hidden;
 }
-main .leftpanel{
+
+main .leftpanel {
     display: inline-block;
     width: 5.3rem;
     height: 3.5rem;
-    border-right: .01rem  solid #E7E7E7;
+    border-right: .01rem solid #E7E7E7;
     margin: .6rem 0 0 1.8rem;
 }
-main .leftpanel > form > div{
+
+main .leftpanel>form>div {
     padding-bottom: .15rem;
 }
-main .leftpanel > form > div > span{
+
+main .leftpanel>form>div>span {
     display: inline-block;
     width: .7rem;
     height: .16rem;
-    font:.14rem/.16rem "宋体";
+    font: .14rem/.16rem "宋体";
     text-align: right;
 }
-main .leftpanel > form > div > input{
+
+main .leftpanel>form>div>input {
     width: 2.6rem;
     height: .35rem;
     box-sizing: border-box;
-    border:.01rem solid #E7E7E7;
+    border: .01rem solid #E7E7E7;
     margin: 0 .07rem;
     text-indent: .03rem;
-    color:#9999B3;
+    color: #9999B3;
 }
-main .leftpanel > form > #login{
+
+main .leftpanel>form>#login {
     width: 2.6rem;
     height: .4rem;
     color: #ffffff;
@@ -148,26 +174,32 @@ main .leftpanel > form > #login{
     cursor: pointer;
     font-weight: bold;
 }
-main .leftpanel > form .hint{
+
+main .leftpanel>form .hint {
     margin: .15rem 0 0 2.5rem;
 }
-main .leftpanel > form .hint > a{
+
+main .leftpanel>form .hint>a {
     font: 12px/1 "宋体";
-    color:#333333;
+    color: #333333;
 }
-main .leftpanel > form .hint > a:hover{
+
+main .leftpanel>form .hint>a:hover {
     text-decoration: underline;
     color: #FF4A00;
 }
-main .desc{
+
+main .desc {
     font: .14rem/.3rem "宋体";
     margin: .6rem 0 0 1.1rem;
     color: #666666;
 }
-main .desc > h4{
+
+main .desc>h4 {
     color: #333333;
 }
-main .desc .iconlist li{
+
+main .desc .iconlist li {
     float: left;
     width: .4rem;
     height: .4rem;
@@ -175,35 +207,42 @@ main .desc .iconlist li{
     font-size: .3rem;
     text-align: center;
     border-radius: 50%;
-    border:.01rem solid #333;
+    border: .01rem solid #333;
     margin: .2rem .35rem .3rem 0;
     cursor: pointer;
 }
-main .desc .iconlist li:nth-of-type(1){
-    border:.01rem solid #39B8EF;
+
+main .desc .iconlist li:nth-of-type(1) {
+    border: .01rem solid #39B8EF;
     color: #39B8EF;
 }
-main .desc .iconlist li:nth-of-type(1):hover{
+
+main .desc .iconlist li:nth-of-type(1):hover {
     color: #ffffff;
     background-color: #39B8EF;
 }
-main .desc .iconlist li:nth-of-type(2){
-    border:.01rem solid #71C50F;
+
+main .desc .iconlist li:nth-of-type(2) {
+    border: .01rem solid #71C50F;
     color: #71C50F;
 }
-main .desc .iconlist li:nth-of-type(2):hover{
+
+main .desc .iconlist li:nth-of-type(2):hover {
     color: #ffffff;
     background-color: #71C50F;
 }
-main .desc .iconlist li:nth-of-type(3){
-    border:.01rem solid #F77A66;
+
+main .desc .iconlist li:nth-of-type(3) {
+    border: .01rem solid #F77A66;
     color: #F77A66;
 }
-main .desc .iconlist li:nth-of-type(3):hover{
+
+main .desc .iconlist li:nth-of-type(3):hover {
     color: #ffffff;
     background-color: #F77A66;
 }
-footer{
+
+footer {
     width: 100%;
     height: 1.55rem;
     background-color: #404144;
@@ -212,31 +251,37 @@ footer{
     overflow: hidden;
     position: relative;
 }
-footer p{
+
+footer p {
     margin-top: .3rem;
     font: .13rem/.3rem "宋体";
 }
-footer > p > a{
+
+footer>p>a {
     font: .13rem/.3rem "宋体";
     color: #999999;
     padding: 0 .02rem;
 }
-footer > p > a:hover{
+
+footer>p>a:hover {
     color: #FF4A00;
 }
-footer > p > img{
+
+footer>p>img {
     width: .2rem;
     height: .2rem;
     vertical-align: middle;
     cursor: pointer;
 }
-footer .verification{
+
+footer .verification {
     position: absolute;
     top: .7rem;
     right: 1.4rem;
     cursor: pointer;
 }
-footer .verification > a > img{
+
+footer .verification>a>img {
     width: .83rem;
     height: .3rem;
 }

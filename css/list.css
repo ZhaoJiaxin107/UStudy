@@ -190,9 +190,11 @@ main .container .optionnav span, main .container .optionnav .pricerange a {
     font: 16px/45px "微软雅黑";
     color: #7B7B7B;
 }
-main .container .optionnav span > i{
+
+main .container .optionnav span>i {
     color: #B7B7B7;
 }
+
 main .container .optionnav span.active {
     color: #FF5003;
     background-color: #ffffff;
@@ -247,37 +249,42 @@ main .container .optionnav label input[type="checkbox"]:checked {
     background: url("../img/checked.jpg") no-repeat center center;
 }
 
-main .container .courselist{
+main .container .courselist {
     width: 1200px;
     margin-top: 20px;
 }
-main .container .courselist li{
+
+main .container .courselist li {
     width: 300px;
     height: 255px;
     /* border: 1px solid #333; */
     float: left;
     overflow: hidden;
 }
-main .container .courselist li .img{
+
+main .container .courselist li .img {
     display: block;
     width: 285px;
     height: 161px;
     margin: 10px 7.5px 15px 7.5px;
     overflow: hidden;
-    
 }
-main .container .courselist li .img img{
+
+main .container .courselist li .img img {
     width: 285px;
     height: 161px;
     transition: .3s linear;
 }
-main .container .courselist li:hover{
+
+main .container .courselist li:hover {
     box-shadow: 0px 0px 10px #9377A9;
 }
-main .container .courselist li:hover .img img{
+
+main .container .courselist li:hover .img img {
     transform: scale(1.2);
 }
-main .container .courselist li h3{
+
+main .container .courselist li h3 {
     width: 280px;
     height: 35px;
     padding-left: 7.5px;
@@ -291,44 +298,51 @@ main .container .courselist li h3{
     /* 3.文字溢出显示省略号 */
     text-overflow: ellipsis;
 }
-main .container .courselist li h3:hover{
+
+main .container .courselist li h3:hover {
     text-decoration: underline;
 }
-main .container .courselist li p{
+
+main .container .courselist li p {
     padding-left: 8px;
     color: #999999;
     font-size: 14px;
 }
-main .container .courselist li p em{
+
+main .container .courselist li p em {
     color: #F0F3F8;
 }
-main .container .courselist li p span{
+
+main .container .courselist li p span {
     color: #FF6600;
 }
-main .container .pagenav{
+
+main .container .pagenav {
     margin-top: 40px;
 }
-main .container .pagenav span,
-main .container .pagenav .pagesequence span{
+
+main .container .pagenav span, main .container .pagenav .pagesequence span {
     padding: 12px 15px;
-    color: #9999B3; 
+    color: #9999B3;
     font-size: 14px;
     cursor: pointer;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     margin: 0 5px;
 }
-main .container .pagenav .pagesequence span.active{
+
+main .container .pagenav .pagesequence span.active {
     color: #ffffff;
     background-color: #188EEE;
     box-sizing: border-box;
 }
-main .container .pagenav span:hover,
-main .container .pagenav .pagesequence span:hover{
+
+main .container .pagenav span:hover, main .container .pagenav .pagesequence span:hover {
     color: #ffffff;
     background-color: #188EEE;
     box-sizing: border-box;
 }
+
 .consult {
     display: block;
     width: 35px;

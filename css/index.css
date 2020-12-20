@@ -1,5 +1,4 @@
 @charset 'utf-8';
-
 .background {
     background-color: #F5F5F5;
 }
@@ -40,6 +39,7 @@
 .topnav .container .ulleft>li:nth-of-type(2) {
     position: relative;
 }
+
 .topnav .container .ulleft .coursetype {
     width: 85px;
     height: 60px;
@@ -50,12 +50,14 @@
     z-index: 20;
     background: #ffffff;
 }
+
 .topnav .container .ulleft .coursetype>li {
     width: 85px;
     height: 30px;
     line-height: 30px;
     text-align: center;
 }
+
 .topnav .container .ulleft>li>a, .topnav .container .ulleft .coursetype>li>a {
     color: #333333;
     font-size: 16px;
@@ -124,83 +126,95 @@
 .topnav .container .ulright li .font:hover {
     text-decoration: underline;
 }
-.classificationnav{
+
+.classificationnav {
     overflow: hidden;
     position: relative;
     height: 530px;
 }
-.classificationnav .sidenav{
+
+.classificationnav .sidenav {
     width: 240px;
     height: 530px;
-    background-color:rgba(222,61,39,.7); 
+    background-color: rgba(222, 61, 39, .7);
     border-right: 3px solid #ffd700;
     position: absolute;
     left: 83px;
     top: 0;
     z-index: 10;
 }
-.classificationnav .sidenav > dt,
-.classificationnav .sidenav > dd{
+
+.classificationnav .sidenav>dt, .classificationnav .sidenav>dd {
     padding-left: 15px;
 }
-.classificationnav .sidenav > dt{
+
+.classificationnav .sidenav>dt {
     margin-top: 25px;
 }
-.classificationnav .sidenav > dt > a{
+
+.classificationnav .sidenav>dt>a {
     font: 18px/35px "微软雅黑";
-    color:#ffffff;
-    
+    color: #ffffff;
 }
-.classificationnav .sidenav > dd > a{
+
+.classificationnav .sidenav>dd>a {
     font: 13px/24px "微软雅黑";
-    color:#ffffff;
+    color: #ffffff;
     margin-right: 16px;
 }
-.classificationnav .sidenav > dt > a:hover,
-.classificationnav .sidenav > dd > a:hover{
+
+.classificationnav .sidenav>dt>a:hover, .classificationnav .sidenav>dd>a:hover {
     text-decoration: underline;
 }
-.classificationnav #banner{
+
+.classificationnav #banner {
     width: 1366px;
     height: 393px;
     cursor: pointer;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
 }
-.classificationnav #banner .bannerlist{
+
+.classificationnav #banner .bannerlist {
     width: 8196px;
     height: 393px;
     position: absolute;
     left: 0;
     top: 0;
 }
-.classificationnav #banner .bannerlist > li{
+
+.classificationnav #banner .bannerlist>li {
     width: 1366px;
     height: 393px;
     float: left;
 }
-.classificationnav #banner .bannerlist > li > img{
+
+.classificationnav #banner .bannerlist>li>img {
     width: 1366px;
     height: 393px;
 }
-.classificationnav #banner .shiftlist{
+
+.classificationnav #banner .shiftlist {
     width: 100%;
     height: 5px;
     position: absolute;
     bottom: 25px;
     text-align: center;
 }
-.classificationnav #banner .shiftlist span{
+
+.classificationnav #banner .shiftlist span {
     width: 50px;
     height: 100%;
     background-color: #cccccc;
     display: inline-block;
     margin-right: 5px;
 }
-.classificationnav #banner .shiftlist span.active{
+
+.classificationnav #banner .shiftlist span.active {
     background-color: #ff4400;
 }
-.classificationnav #banner > button{
+
+.classificationnav #banner>button {
     width: 50px;
     height: 100px;
     line-height: 100px;
@@ -210,88 +224,90 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    display: none; 
+    display: none;
 }
-.classificationnav #banner > .left{
+
+.classificationnav #banner>.left {
     left: 323px;
 }
-.classificationnav #banner > .right{
+
+.classificationnav #banner>.right {
     right: 210px;
 }
-.classificationnav .study{
+
+.classificationnav .study {
     margin: 15px 0 0 350px;
     /* border: 1px solid #333; */
 }
-.classificationnav .study > li{
+
+.classificationnav .study>li {
     float: left;
     width: 235px;
     height: 120px;
     line-height: 120px;
     background-color: #ffffff;
 }
-.classificationnav .study > li > a > img{
+
+.classificationnav .study>li>a>img {
     width: 190px;
     height: 82px;
     vertical-align: middle;
     padding: 0 8px 0 35px;
     border-right: 1px dashed #cccccc;
 }
-.container .hotlive{
+
+.container .hotlive {
     padding-top: 50px;
     width: 100%;
     height: 400px;
 }
-.container .hotlive > h3,
-.container .onlinecourse > h3,
-.container .freecourse > h3,
-.container .jobcourse > h3{
+
+.container .hotlive>h3, .container .onlinecourse>h3, .container .freecourse>h3, .container .jobcourse>h3 {
     font-size: 24px;
     font-weight: bold;
     width: 130px;
     height: 45px;
     cursor: pointer;
 }
-.container .hotlive .more{
+
+.container .hotlive .more {
     margin-top: 20px;
 }
-.container .hotlive .more > a,
-.container .onlinecourse .more > a,
-.container .freecourse .more > a,
-.container .jobcourse .more > a{
+
+.container .hotlive .more>a, .container .onlinecourse .more>a, .container .freecourse .more>a, .container .jobcourse .more>a {
     font: 13px/1 "微软雅黑";
-    color:#A8A8A8;
+    color: #A8A8A8;
 }
-.container .hotlive .more > a:hover,
-.container .onlinecourse .more > a:hover,
-.container .freecourse .more > a:hover,
-.container .jobcourse .more > a:hover{
+
+.container .hotlive .more>a:hover, .container .onlinecourse .more>a:hover, .container .freecourse .more>a:hover, .container .jobcourse .more>a:hover {
     color: #FB4B00;
     text-decoration: underline;
 }
-.container .hotlive .more > i,
-.container .onlinecourse .more > i,
-.container .freecourse .more > i,
-.container .jobcourse .more > i{
+
+.container .hotlive .more>i, .container .onlinecourse .more>i, .container .freecourse .more>i, .container .jobcourse .more>i {
     font-size: 15px;
     font-weight: bold;
     color: #FB4B00;
     vertical-align: top;
 }
-.container .hotlive .hotcontent{
+
+.container .hotlive .hotcontent {
     position: relative;
 }
-.container .hotlive .hotcontent .hotimg{
+
+.container .hotlive .hotcontent .hotimg {
     width: 620px;
     height: 349px;
     position: absolute;
     left: 0;
     top: 0;
-    display: none; 
+    display: none;
 }
-.container .hotlive .hotcontent .sequence{
+
+.container .hotlive .hotcontent .sequence {
     width: 600px;
     height: 40px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -301,14 +317,17 @@
     padding-left: 20px;
     display: none;
 }
-.container .hotlive .hotcontent .active{
+
+.container .hotlive .hotcontent .active {
     display: block;
 }
-.container .hotlive .hotcontent > .hotimg > img{
+
+.container .hotlive .hotcontent>.hotimg>img {
     width: 620px;
     height: 349px;
 }
-.container .hotlive .hotcontent .notstart{
+
+.container .hotlive .hotcontent .notstart {
     width: 130px;
     height: 50px;
     font: 18px/50px "微软雅黑";
@@ -318,30 +337,34 @@
     position: absolute;
     left: 245px;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     z-index: 20;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
-.container .hotlive .hotcontent .notstart > i{
+
+.container .hotlive .hotcontent .notstart>i {
     font-size: 20px;
     vertical-align: top;
 }
-.container .hotlive .hotcontent .hotdesc{
+
+.container .hotlive .hotcontent .hotdesc {
     width: 580px;
     height: 339px;
     padding: 5px 0;
-    background: url(../img/ujyx_24.jpg) #ffffff repeat-y 43px top; 
-
+    background: url(../img/ujyx_24.jpg) #ffffff repeat-y 43px top;
 }
-.container .hotlive .hotcontent .hotdesc li{
+
+.container .hotlive .hotcontent .hotdesc li {
     width: 580px;
     height: 66px;
     cursor: pointer;
 }
+
 /* .container .hotlive .hotcontent .hotdesc li:hover{
     background-color: #FFF7F3;
 } */
-.container .hotlive .hotcontent .hotdesc li .time{
+
+.container .hotlive .hotcontent .hotdesc li .time {
     width: 112px;
     height: 66px;
     float: left;
@@ -350,250 +373,259 @@
     font: 12px/20px "微软雅黑";
     color: #8896B5;
 }
-.container .hotlive .hotcontent .hotdesc li .time > span{
+
+.container .hotlive .hotcontent .hotdesc li .time>span {
     display: inline-block;
     margin: 15px 0 0 30px;
 }
-.container .hotlive .hotcontent .hotdesc li h3{
+
+.container .hotlive .hotcontent .hotdesc li h3 {
     height: 66px;
     line-height: 66px;
     float: left;
 }
-.container .hotlive .hotcontent .hotdesc li h3 > a{
+
+.container .hotlive .hotcontent .hotdesc li h3>a {
     font: 17px/1 "微软雅黑";
     color: #28334B;
 }
-.container .hotlive .hotcontent .hotdesc li h3 > a:hover{
-    color:#FF4D00;
+
+.container .hotlive .hotcontent .hotdesc li h3>a:hover {
+    color: #FF4D00;
 }
-.container .onlinecourse,
-.container .freecourse,
-.container .jobcourse{
+
+.container .onlinecourse, .container .freecourse, .container .jobcourse {
     margin-top: 50px;
     position: relative;
     width: 100%;
     height: 566px;
 }
-.container .freecourse,
-.container .jobcourse{
+
+.container .freecourse, .container .jobcourse {
     height: 280px;
 }
-.container .onlinecourse > h3,
-.container .freecourse > h3,
-.container .jobcourse > h3{
+
+.container .onlinecourse>h3, .container .freecourse>h3, .container .jobcourse>h3 {
     height: 25px;
 }
-.container .onlinecourse .type,
-.container .freecourse .type,
-.container .jobcourse .type{
+
+.container .onlinecourse .type, .container .freecourse .type, .container .jobcourse .type {
     margin-left: 57px;
 }
-.container .onlinecourse .type li,
-.container .freecourse .type li,
-.container .jobcourse .type li{
+
+.container .onlinecourse .type li, .container .freecourse .type li, .container .jobcourse .type li {
     float: left;
     margin: 5px 25px 0 0;
     padding-bottom: 5px;
-    
 }
-.container .onlinecourse .type li > a,
-.container .freecourse .type li > a,
-.container .jobcourse .type li > a{
+
+.container .onlinecourse .type li>a, .container .freecourse .type li>a, .container .jobcourse .type li>a {
     font: 16px/1 "微软雅黑";
     color: #333333;
     display: inline-block;
 }
+
 /* .container .onlinecourse .type li:hover{
     border-bottom: 1px solid #FD5843;
 }*/
-.container .onlinecourse .type li:hover a,
-.container .freecourse .type li:hover a,
-.container .jobcourse .type li:hover a{
+
+.container .onlinecourse .type li:hover a, .container .freecourse .type li:hover a, .container .jobcourse .type li:hover a {
     color: #FD5843;
-} 
-.container .onlinecourse .more,
-.container .freecourse .more,
-.container .jobcourse .more{
+}
+
+.container .onlinecourse .more, .container .freecourse .more, .container .jobcourse .more {
     margin-top: 8px;
 }
-.container .onlinecourse .onlinecontent,
-.container .freecourse .freecontent,
-.container .jobcourse .jobcontent{
+
+.container .onlinecourse .onlinecontent, .container .freecourse .freecontent, .container .jobcourse .jobcontent {
     width: 100%;
     height: 560px;
     position: absolute;
     left: 0;
-    top: 25px; 
+    top: 25px;
     /* border: 1px solid #333; */
     display: none;
 }
-.container .freecourse .freecontent,
-.container .jobcourse .jobcontent{
+
+.container .freecourse .freecontent, .container .jobcourse .jobcontent {
     height: 280px;
 }
-.container .onlinecourse .active,
-.container .freecourse .active,
-.container .jobcourse .active{
+
+.container .onlinecourse .active, .container .freecourse .active, .container .jobcourse .active {
     display: block;
 }
-.container .onlinecourse .onlinecontent li,
-.container .freecourse .freecontent li,
-.container .jobcourse .jobcontent li{
+
+.container .onlinecourse .onlinecontent li, .container .freecourse .freecontent li, .container .jobcourse .jobcontent li {
     width: 285px;
     height: 260px;
     background-color: #ffffff;
     margin: 20px 15px 0 0;
     float: left;
 }
-.container .onlinecourse .onlinecontent li:hover,
-.container .freecourse .freecontent li:hover,
-.container .jobcourse .jobcontent li:hover{
+
+.container .onlinecourse .onlinecontent li:hover, .container .freecourse .freecontent li:hover, .container .jobcourse .jobcontent li:hover {
     transform: translateY(-3px);
 }
-.container .onlinecourse .onlinecontent li a > img,
-.container .freecourse .freecontent li a > img,
-.container .jobcourse .jobcontent li a > img{
+
+.container .onlinecourse .onlinecontent li a>img, .container .freecourse .freecontent li a>img, .container .jobcourse .jobcontent li a>img {
     width: 285px;
     height: 161px;
 }
-.container .onlinecourse .onlinecontent li .desc,
-.container .freecourse .freecontent li .desc,
-.container .jobcourse .jobcontent li .desc{
+
+.container .onlinecourse .onlinecontent li .desc, .container .freecourse .freecontent li .desc, .container .jobcourse .jobcontent li .desc {
     display: block;
     margin: 15px 0 0 5px;
     text-indent: 3px;
-    font:14px/1 "微软雅黑";
+    font: 14px/1 "微软雅黑";
     color: #333333;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.container .onlinecourse .onlinecontent li .desc:hover,
-.container .freecourse .freecontent li .desc:hover,
-.container .jobcourse .jobcontent li .desc:hover{
+
+.container .onlinecourse .onlinecontent li .desc:hover, .container .freecourse .freecontent li .desc:hover, .container .jobcourse .jobcontent li .desc:hover {
     text-decoration: underline;
 }
-.container .onlinecourse .onlinecontent li .detail,
-.container .freecourse .freecontent li .detail,
-.container .jobcourse .jobcontent li .detail{
-    margin: 23px  0 0 8px;
+
+.container .onlinecourse .onlinecontent li .detail, .container .freecourse .freecontent li .detail, .container .jobcourse .jobcontent li .detail {
+    margin: 23px 0 0 8px;
 }
-.container .onlinecourse .onlinecontent li .detail .price,
-.container .freecourse .freecontent li .detail .price,
-.container .jobcourse .jobcontent li .detail .price{
+
+.container .onlinecourse .onlinecontent li .detail .price, .container .freecourse .freecontent li .detail .price, .container .jobcourse .jobcontent li .detail .price {
     font: 20px/1 "微软雅黑";
     color: #FF4D00;
 }
-.container .onlinecourse .onlinecontent li .detail .price > b,
-.container .freecourse .freecontent li .detail .price > b,
-.container .jobcourse .jobcontent li .detail .price > b{
+
+.container .onlinecourse .onlinecontent li .detail .price>b, .container .freecourse .freecontent li .detail .price>b, .container .jobcourse .jobcontent li .detail .price>b {
     font-size: 15px;
 }
-.container .onlinecourse .onlinecontent li .detail .length,
-.container .freecourse .freecontent li .detail .length,
-.container .jobcourse .jobcontent li .detail .length{
+
+.container .onlinecourse .onlinecontent li .detail .length, .container .freecourse .freecontent li .detail .length, .container .jobcourse .jobcontent li .detail .length {
     width: 55px;
     height: 25px;
     text-align: center;
     display: inline-block;
     background-color: #FFEFE8;
-    font:12px/25px "微软雅黑";
+    font: 12px/25px "微软雅黑";
     color: #FB8C23;
     margin-right: 12px;
 }
-.container .multiplatform{
+
+.container .multiplatform {
     margin-top: 80px;
 }
-.container .multiplatform > h3{
+
+.container .multiplatform>h3 {
     background: url('../img/ujyx_11.jpg') no-repeat left -15px;
     width: 100%;
     height: 50px;
     text-align: center;
-    font:23px/50px "微软雅黑";
+    font: 23px/50px "微软雅黑";
 }
-.container .multiplatform .platform{
+
+.container .multiplatform .platform {
     width: 383px;
     height: 136px;
     background-color: #ffffff;
     margin: 30px 13px 0 0;
     overflow: hidden;
 }
-.container .multiplatform .platform .img > img{
+
+.container .multiplatform .platform .img>img {
     width: 88px;
     height: 88px;
     padding: 20px 0 0 10px;
 }
-.container .multiplatform .platform .desc{
+
+.container .multiplatform .platform .desc {
     margin: 25px 0 0 12px;
-    font:14px/30px "微软雅黑";
+    font: 14px/30px "微软雅黑";
     color: #888888;
 }
-.container .multiplatform .platform .desc > h3{
+
+.container .multiplatform .platform .desc>h3 {
     font: 16px/1 "微软雅黑";
     padding-bottom: 12px;
 }
-.container .multiplatform .platform:nth-of-type(1) .desc > h3{
+
+.container .multiplatform .platform:nth-of-type(1) .desc>h3 {
     color: #FB4E38;
 }
-.container .multiplatform .platform:nth-of-type(2) .desc > h3{
+
+.container .multiplatform .platform:nth-of-type(2) .desc>h3 {
     color: #1A84F0;
 }
-.container .multiplatform .platform:nth-of-type(3) .desc > h3{
+
+.container .multiplatform .platform:nth-of-type(3) .desc>h3 {
     color: #9750F8;
 }
-.container .multiplatform .platform:nth-of-type(1):hover{
+
+.container .multiplatform .platform:nth-of-type(1):hover {
     border: 1px solid #FB4E38;
 }
-.container .multiplatform .platform:nth-of-type(2):hover{
+
+.container .multiplatform .platform:nth-of-type(2):hover {
     border: 1px solid #1A84F0;
 }
-.container .multiplatform .platform:nth-of-type(3):hover{
+
+.container .multiplatform .platform:nth-of-type(3):hover {
     border: 1px solid #9750F8;
 }
-.container .timebanner{
+
+.container .timebanner {
     margin-top: 40px;
     width: 100%;
     height: 196px;
     background: url(../img/ujyx_12.jpg) no-repeat left top;
 }
-.container .timebanner .QRCode{
+
+.container .timebanner .QRCode {
     width: 240px;
     height: 110px;
     margin: 50px 50px 0 0;
 }
-.container .timebanner .QRCode > img{
+
+.container .timebanner .QRCode>img {
     width: 110px;
     height: 110px;
 }
-.container .timebanner .QRCode > h3{
+
+.container .timebanner .QRCode>h3 {
     display: inline-block;
     font: 16px/30px "微软雅黑";
     padding: 20px 0 0 10px;
 }
-.container .footlink{
+
+.container .footlink {
     width: 100%;
     height: 170px;
     margin-top: 50px;
 }
-.container .footlink > a{
-    font:bold 16px/60px "微软雅黑";
+
+.container .footlink>a {
+    font: bold 16px/60px "微软雅黑";
     color: #404144;
 }
-.container .footlink > p{
+
+.container .footlink>p {
     display: none;
 }
-.container .footlink > p > a{
-    font:15px/30px "微软雅黑";
+
+.container .footlink>p>a {
+    font: 15px/30px "微软雅黑";
     color: #666666;
     padding-right: 35px;
 }
-.container .footlink > p > a:hover{
+
+.container .footlink>p>a:hover {
     text-decoration: underline;
 }
-.container .footlink .active{
+
+.container .footlink .active {
     display: block;
 }
-.consult{
+
+.consult {
     display: block;
     width: 35px;
     height: 103px;
@@ -602,47 +634,56 @@
     position: fixed;
     top: 145px;
     right: 0;
-    color:#ffffff;
+    color: #ffffff;
     font: 14px/18px "微软雅黑";
     padding-top: 17px;
     border-radius: 7px 0 0 7px;
 }
-.iconlist > li{
+
+.iconlist>li {
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    position:fixed;
+    position: fixed;
 }
-.iconlist > li:nth-of-type(1){
+
+.iconlist>li:nth-of-type(1) {
     top: 320px;
     right: 10px;
     border: 1px solid #95D372;
 }
-.iconlist > li:nth-of-type(2){
+
+.iconlist>li:nth-of-type(2) {
     top: 370px;
     right: 10px;
     border: 1px solid #EF868B;
 }
-.iconlist > li:nth-of-type(3){
+
+.iconlist>li:nth-of-type(3) {
     top: 430px;
     right: 10px;
     border: 1px solid #74BDEE;
 }
-.iconlist > li > a{
+
+.iconlist>li>a {
     font-size: 25px;
 }
-.iconlist > li:nth-child(1) > a{
+
+.iconlist>li:nth-child(1)>a {
     color: #95D372;
 }
-.iconlist > li:nth-child(2) > a{
+
+.iconlist>li:nth-child(2)>a {
     color: #EF868B;
 }
-.iconlist > li:nth-child(3) > a{
-    color:  #74BDEE;
+
+.iconlist>li:nth-child(3)>a {
+    color: #74BDEE;
 }
-footer{
+
+footer {
     width: 100%;
     height: 155px;
     background-color: #404144;
@@ -651,53 +692,60 @@ footer{
     overflow: hidden;
     position: relative;
 }
-footer p{
+
+footer p {
     margin-top: 30px;
     font: 13px/30px "宋体";
 }
-footer > p > a{
+
+footer>p>a {
     font: 13px/30px "宋体";
     color: #999999;
     padding: 0 2px;
 }
-footer > p > a:hover{
+
+footer>p>a:hover {
     color: #FF4A00;
 }
-footer > p > img{
+
+footer>p>img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
     cursor: pointer;
 }
-footer .verification{
+
+footer .verification {
     position: absolute;
     top: 70px;
     right: 250px;
     cursor: pointer;
 }
-footer .verification > a > img{
+
+footer .verification>a>img {
     width: 83px;
     height: 30px;
 }
-footer .toparrow{
+
+footer .toparrow {
     width: 40px;
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
     color: #379CEE;
-    border:1px solid #379CEE;
+    border: 1px solid #379CEE;
     position: fixed;
     right: 10px;
     bottom: 10px;
     cursor: pointer;
 }
-footer .toparrow:hover{
+
+footer .toparrow:hover {
     background-color: #379CEE;
     color: #ffffff;
 }
-footer .toparrow > i{
+
+footer .toparrow>i {
     vertical-align: middle;
     font-size: 20px;
 }
-
-
