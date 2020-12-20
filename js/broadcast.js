@@ -197,6 +197,13 @@ window.onload = function () {
         mode.tag = 0; // tag = 0 default night mode tag =1 day mode
         nightMode();
 
+        // Background turns to black
+        playlistLis[0].style.backgroundColor = '#000000';
+        // Color turns to orange
+        content[0].style.color = '#EF7407';
+        label[0].style.color = '#EF7407';
+
+
         mode.onclick = function () {
             // if it is night mode, change to day mode
             if (this.tag == 0) {
