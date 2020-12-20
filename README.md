@@ -2,9 +2,9 @@
 
 优学在线是使用HTML、CSS和Javascript的制作的网站<br>
 
-数据存储在6个不同的json文件中，我们通过Ajax获取数据。<br>
+数据存储在6个不同的json文件中，我们通过Ajax获取数据<br>
 
-我们在这个项目中不使用数据库。<br>
+我们在这个项目中不使用数据库<br>
 
 用户的登录注册信息存储在localStorage中
 
@@ -16,7 +16,6 @@
 
 * 搜索部分：当鼠标移动到放大镜时，出现搜索框，当用户单击页面的空白时，搜索框消失。
 
-* 如果没有登录, 则显示登录注册, 如果登录则显示个人中心和退出
 
 #### 首页
 
@@ -27,6 +26,8 @@
 * 精品网课/免费课程/就业面授班：鼠标滑入到不同的选项，显示相应的课程。(选项卡功能)
 
 * 返回顶部
+
+* 判断本地缓存的手机号和密码是否都存在, 如果都存在显示已经登录和显示个人中心; 如果其中有一项不存在则状态为未登录, 显示登录注册按钮
 
 #### 注册页
 
@@ -44,7 +45,11 @@
 
 * 如果所有条件通过则注册
 
-* 注册的时候, 在缓存中有一个数组 ，存储当前创建的账户信息
+* 注册的时候，在缓存中有一个数组，存储当前创建的账户信息
+
+#### 登录页
+
+* 获取存在于缓存中的用户信息数组， 验证对象是否在数组中存在
 
 ###  UStudy
 
@@ -56,9 +61,7 @@ We do not use database in this project.
 #### All pages
 * Top navigation section: The drop-down list appears when the mouse move into the excellent course and disappears when mouse leave.
 
-* Search section: When the mouse moves into the magnifying glass, the search box appears, and the search box disappears when user click the blank of the page.
-
-* If the user does not login, display login and registration, otherwise display personal center and logout.(localStorage) 
+* Search section: When the mouse moves into the magnifying glass, the search box appears, and the search box disappears when user click the blank of the page. 
 
 #### Index Page
 * Rotation Chart: Click the left arrow |right arrow |small box below to switch to the corresponding images
@@ -68,6 +71,8 @@ We do not use database in this project.
 * Online courses | Free Courses | Job Courses: the mouse slides to different options, the section displays corresponding courses.
 
 * Go back to top
+
+* Judge whether the phone number and password of the local storage exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login and registration will be displayed
 
 #### Registration page
 
@@ -86,4 +91,7 @@ We do not use database in this project.
 * Register if all conditions pass
 
 * When registering, there is an array in the cache to store and the account information can be created.
+
+#### Login page
+* Get the user information array in the cache and verify whether the object exists in the array
 
