@@ -79,6 +79,8 @@
 
 * 判断本地缓存的手机号和密码是否都存在, 如果都存在显示已经登录和显示个人中心; 如果其中有一项不存在则状态为未登录, 显示登录注册按钮
 
+* 返回顶部
+
 ###  UStudy
 
 UStudy web pages using HTML, CSS and Javascript<br>
@@ -152,3 +154,5 @@ We do not use database in this project
 * Filter courses with different price ranges
 
 * Judge whether the phone number and password of the local cache exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login registration button will be displayed
+
+* Go back to the top
