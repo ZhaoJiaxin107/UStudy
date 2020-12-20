@@ -309,7 +309,7 @@ window.onload = function () {
 
         function shiftVideo(index) {
             video.src = playList[index].src;
-            title.innerHTML = playList[index].title;
+            title.innerHTML = playList[index].title + '<a href="../index.html">&lt;返回主页</a>';
         }
     });
 
