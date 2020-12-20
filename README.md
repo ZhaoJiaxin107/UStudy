@@ -65,6 +65,8 @@
 
 * 判断用户是否登录，如果登录，则可以添加评论，否则先登录
 
+* 添加评论可以实名评论和匿名评论
+
 * 判断本地缓存的手机号和密码是否都存在, 如果都存在显示已经登录和显示个人中心; 如果其中有一项不存在则状态为未登录, 显示登录注册按钮
 
 #### 列表页
@@ -135,7 +137,9 @@ We do not use database in this project
 
 * Display comments, shift between the previous page and the next page, input the number of pages, and jump to the corresponding page
 
-* Judge whether the user is logged in. If so, you can add comments. Otherwise, log in firs
+* Judge whether the user is logged in. If so, you can add comments. Otherwise, log in first
+
+* Comments can be real name comments and anonymous comments
 
 * Judge whether the phone number and password of the local cache exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login registration button will be displayed
 
