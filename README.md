@@ -51,24 +51,40 @@
 
 * 获取存在于缓存中的用户信息数组， 验证对象是否在数组中存在
 
+#### 播放页
+
+* 视频显示
+
+* 点击视频列表，切换到对应视频，设置相应样式
+
+* 白天模式与黑夜模式切换
+
+* 倍速播放
+
+* 显示评论，上一页、下一页切换，输入页数，跳转到对应页面
+
+* 判断用户是否登录，如果登录，则可以添加评论，否则先登录
+
+* 判断本地缓存的手机号和密码是否都存在, 如果都存在显示已经登录和显示个人中心; 如果其中有一项不存在则状态为未登录, 显示登录注册按钮
+
 ###  UStudy
 
 UStudy web pages using HTML, CSS and Javascript<br>
-Data is stored in 6 different json files and we get data by Ajax.<br>
-We do not use database in this project.
+Data is stored in 6 different json files and we get data by Ajax<br>
+We do not use database in this project
 
 ### Functions 
 #### All pages
-* Top navigation section: The drop-down list appears when the mouse move into the excellent course and disappears when mouse leave.
+* Top navigation section: The drop-down list appears when the mouse move into the excellent course and disappears when mouse leave
 
-* Search section: When the mouse moves into the magnifying glass, the search box appears, and the search box disappears when user click the blank of the page. 
+* Search section: When the mouse moves into the magnifying glass, the search box appears, and the search box disappears when user click the blank of the page
 
 #### Index Page
 * Rotation Chart: Click the left arrow |right arrow |small box below to switch to the corresponding images
 
 * Hot live broadcast: the mouse slides into different titles and the switches to different pictures
 
-* Online courses | Free Courses | Job Courses: the mouse slides to different options, the section displays corresponding courses.
+* Online courses | Free Courses | Job Courses: the mouse slides to different options, the section displays corresponding courses
 
 * Go back to top
 
@@ -90,8 +106,25 @@ We do not use database in this project.
 
 * Register if all conditions pass
 
-* When registering, there is an array in the cache to store and the account information can be created.
+* When registering, there is an array in the cache to store and the account information can be created
 
 #### Login page
+
 * Get the user information array in the cache and verify whether the object exists in the array
 
+
+#### Broadcast page
+
+* Video display
+
+* Click the video list to switch to the corresponding video and set the corresponding style
+
+* Switch between day mode and night mode
+
+* Double speed playback
+
+* Display comments, shift between the previous page and the next page, input the number of pages, and jump to the corresponding page
+
+* Judge whether the user is logged in. If so, you can add comments. Otherwise, log in firs
+
+* Judge whether the mobile phone number and password of the local cache exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login registration button will be displayed
