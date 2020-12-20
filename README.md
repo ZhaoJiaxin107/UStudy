@@ -71,7 +71,7 @@
 
 #### 列表页
 
-* 分页显示所有课程信息
+* 分页显示所有课程信息, 并可以切换上一页，下一页，首页，尾页和不同页码
 
 * 筛选免费课程和付费课程
 
@@ -147,7 +147,7 @@ We do not use database in this project
 
 #### List page
 
-* Pagination display all course information
+* Pagination display all course information which can switch the previous page, the next page, the first page, the last page and different page numbers
 
 * Filter free and paid courses
 
