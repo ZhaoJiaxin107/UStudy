@@ -209,18 +209,38 @@ window.onload = function () {
             pageNum = maxPage - 1;
             shiftPage();
         }
-
-        /* 
+         /* 
             Click page number, jump to corresponding page
         */
-        for (var i = 0; i < pageSpan.length; i++) {
-            // save index
-            pageSpan[i].index = i;
-            pageSpan[i].onclick = function () {
-                pageNum = this.index;
-                shiftPage();
+        clickEveryPage();
+       
+        // Add click event to the label
+        label[0].onclick = function () {
+
+            // If free is checked, charge should not be checked
+            chargeCheck.checked = freeCheck.checked ? false : chargeCheck.checked;
+
+            console.log(freeCheck.checked);
+
+            if (freeCheck.checked) {
+                // filter data
+                newCourseUrl = courseUrl.filter(function (v, i) {
+                    // console.log(v, i);
+                    return v.price == 0;
+                });
+            } else {
+                newCourseUrl = courseUrl;
             }
+            getCourse(newCourseUrl);
+
+            // update page number
+            total = newCourseUrl.length;
+            // console.log(newTotal);
+            maxPage = Math.ceil(total / lenPerPage);
+            createPageSeq();
+            clickEveryPage();
         }
+
         function createPageSeq() {
             var sequence = '';
             for (var i = 0; i < maxPage; i++) {
@@ -235,7 +255,7 @@ window.onload = function () {
             var currentPage = pageSpan[pageNum];
             currentPage.className = 'active';
         }
-        
+
         function getCourse(url) {
             // Rendering data to course list
             // show data we want to 
@@ -284,6 +304,17 @@ window.onload = function () {
             }
             currentPage = pageSpan[pageNum];
             currentPage.className = 'active';
+        }
+
+        function clickEveryPage() {
+            for (var i = 0; i < pageSpan.length; i++) {
+                // save index
+                pageSpan[i].index = i;
+                pageSpan[i].onclick = function () {
+                    pageNum = this.index;
+                    shiftPage();
+                }
+            }
         }
     });
 }
