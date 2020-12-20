@@ -1,9 +1,43 @@
-###  UStudy
-UStudy web page using HTML, CSS and Javascript
+### 优学在线
 
-* 1. index.html  css  js  data  img media  common
-* 2. 5个页面  2.1 首页  2.2 登录  2.3 注册 2.4 列表(filter)  2.5 播放
-* 3. img  data--数据  数据说明
-* 4. 首页布局(布局  轮播图)  登录、注册 布局 + js
-* 5. 三分离: 结构html 表现css 行为js
-* 6. 每一个外链的js  window.onload = function(){}
+优学在线是使用HTML、CSS和Javascript的制作的网站<br>
+
+数据存储在6个不同的json文件中，我们通过Ajax获取数据。<br>
+
+我们在这个项目中不使用数据库。
+
+### 功能
+
+#### 所有页面
+
+* 顶部导航部分：当鼠标移动到精品课程时出现下拉列表，当鼠标离开时, 下拉列表消失。
+
+* 搜索部分：当鼠标移动到放大镜时，出现搜索框，当用户单击页面的空白时，搜索框消失。
+
+#### 首页
+
+* 轮播图：点击，切换到对应的图片
+
+* 热门直播：鼠标滑入不同的标题，切换到不同的图片
+
+* 精品网课/免费课程/就业面授班：鼠标滑入到不同的选项，显示相应的课程。(选项卡功能)
+
+* 返回顶部
+
+###  UStudy
+UStudy web pages using HTML, CSS and Javascript<br>
+Data is stored in 6 different json files and we get data by Ajax.<br>
+We do not use database in this project.
+
+### Functions 
+#### All pages
+* Top navigation section: The drop-down list appears when the mouse move into the excellent course and disappears when mouse leave.
+
+* Search section: When the mouse moves into the magnifying glass, the search box appears, and the search box disappears when user click the blank of the page.
+
+#### Index Page
+* Rotation Chart: Click the left arrow |right arrow |small box below to switch to the corresponding images
+* Hot live broadcast: the mouse slides into different titles and the switches to different pictures
+* Online courses | Free Courses | Job Courses: the mouse slides to different options, the section displays corresponding courses.
+* Go back to top
+
