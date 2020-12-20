@@ -348,5 +348,75 @@
         "img": "../img/list-50.jpg",
         "num": 184,
         "price":99
-    }    
+    },
+    {   
+        "number":"51",
+        "title":"【进阶】Linux服务自动化管理-企业中服务器的管理及运维",
+        "img": "../img/list-51.jpg",
+        "num": 123,
+        "price":599
+    },
+    {   
+        "number":"52",
+        "title":"【进阶】Python3开发高级进阶课程",
+        "img": "../img/list-52.jpg",
+        "num": 302,
+        "price":599
+    },
+    {   
+        "number":"53",
+        "title":"【基础】零基础玩转3DS MAX 教你创建集合模型体",
+        "img": "../img/list-53.jpg",
+        "num": 233,
+        "price":0
+    },
+    {   
+        "number":"54",
+        "title":"【基础】CAD基础操作-20节课带你入行室内设计",
+        "img": "../img/list-54.jpg",
+        "num": 45,
+        "price":599
+    },
+    {   
+        "number":"55",
+        "title":"【进阶】AutoCAD高效绘图",
+        "img": "../img/list-55.jpg",
+        "num": 68,
+        "price":599
+    },
+    {   
+        "number":"56",
+        "title":"【录播】软考中级-网络工程师【基础提升班】",
+        "img": "../img/list-56.jpg",
+        "num": 157,
+        "price":2680
+    },
+    {   
+        "number":"57",
+        "title":"【录播】软考中级-系管【基础提升班】",
+        "img": "../img/list-57.jpg",
+        "num": 190,
+        "price":2680
+    },
+    {   
+        "number":"58",
+        "title":"【面授】软考中级-系管实战精品班",
+        "img": "../img/list-58.jpg",
+        "num": 139,
+        "price":4080
+    },
+    {   
+        "number":"59",
+        "title":"【面授】软考高级-信管实战精品课",
+        "img": "../img/list-59.jpg",
+        "num": 113,
+        "price":4280
+    },
+    {   
+        "number":"60",
+        "title":"【录播】软考中级-软件设计师【基础提升班】",
+        "img": "../img/list-60.jpg",
+        "num": 135,
+        "price":1200
+    }       
 ]

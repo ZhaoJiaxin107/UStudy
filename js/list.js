@@ -154,14 +154,6 @@ window.onload = function () {
         var pageNum = 0;
         var lenPerPage = 16;
 
-
-        // calculate number of course 
-        var total = newCourseUrl.length;
-        console.log(total);
-        // Get maximum page
-        var maxPage = Math.ceil(total / lenPerPage);
-        // console.log(maxPage);
-
         // Rendering page nav
         // Geting element pagenav, span page
         var pageNav = document.getElementById('pagenav');
@@ -169,14 +161,17 @@ window.onload = function () {
 
         // console.log(pageNav, pageSeq);
         var pageSpan;
+        var total, maxPage; 
         // get firstPage and last page
         var firstBtn = pageNav.querySelector('#first');
         var lastBtn = pageNav.querySelector('#last');
         // console.log(firstBtn, lastBtn);
-        createPageSeq();
 
         // Rendering course to the page
         getCourse(newCourseUrl);
+
+        // updatePageSeq()
+        updatePageSeq();
 
         /* 
             Next Page funtion, when click next page button 
@@ -209,18 +204,14 @@ window.onload = function () {
             pageNum = maxPage - 1;
             shiftPage();
         }
-         /* 
-            Click page number, jump to corresponding page
-        */
-        clickEveryPage();
        
-        // Add click event to the label
+        // Add click event to the free label
         label[0].onclick = function () {
 
             // If free is checked, charge should not be checked
             chargeCheck.checked = freeCheck.checked ? false : chargeCheck.checked;
 
-            console.log(freeCheck.checked);
+            // console.log(freeCheck.checked);
 
             if (freeCheck.checked) {
                 // filter data
@@ -234,12 +225,38 @@ window.onload = function () {
             getCourse(newCourseUrl);
 
             // update page number
+            updatePageSeq();
+        }
+
+        // add click event to the charge label
+        label[1].onclick = function () {
+            // if charge is checked, free should not be checked
+            freeCheck.checked = chargeCheck.checked ? false : freeCheck.checked;
+
+            if (chargeCheck.checked) {
+                newCourseUrl = courseUrl.filter(function (v, i) {
+                    return v.price > 0;
+                });
+            } else {
+                newCourseUrl = courseUrl;
+            }
+            // console.log(newCourseUrl);
+            // Rendering data for the page
+            getCourse(newCourseUrl);
+
+            updatePageSeq();
+            
+        }
+
+        function updatePageSeq(){
+            // update page number
             total = newCourseUrl.length;
             // console.log(newTotal);
             maxPage = Math.ceil(total / lenPerPage);
             createPageSeq();
             clickEveryPage();
         }
+
 
         function createPageSeq() {
             var sequence = '';
