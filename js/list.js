@@ -131,11 +131,22 @@ window.onload = function () {
         // console.log(res)
         // Transform to js data
         var courseUrl = JSON.parse(res);
+        // save filter data 
+        var newCourseUrl = courseUrl;
         // console.log(courseUrl);
         // get element courselist
         var courseList = document.getElementById('courselist');
-        // calculate number of course 
-        var total = courseUrl.length;
+
+        // Click free or charge, filter corresponding
+        // courses
+
+        // get label, freeCheck and chargeCheck
+        var label = document.getElementsByTagName('label');
+        // console.log(label);
+        var freeCheck = document.getElementById('free');
+        var chargeCheck = document.getElementById('charge');
+
+
         // console.log(total);
 
         // Rendering default page
@@ -143,6 +154,10 @@ window.onload = function () {
         var pageNum = 0;
         var lenPerPage = 16;
 
+
+        // calculate number of course 
+        var total = newCourseUrl.length;
+        console.log(total);
         // Get maximum page
         var maxPage = Math.ceil(total / lenPerPage);
         // console.log(maxPage);
@@ -161,7 +176,7 @@ window.onload = function () {
         createPageSeq();
 
         // Rendering course to the page
-        getCourse();
+        getCourse(newCourseUrl);
 
         /* 
             Next Page funtion, when click next page button 
@@ -220,14 +235,15 @@ window.onload = function () {
             var currentPage = pageSpan[pageNum];
             currentPage.className = 'active';
         }
-        function getCourse() {
+        
+        function getCourse(url) {
             // Rendering data to course list
             // show data we want to 
             // slice(startIndex, lastIndex)
             // 0 - 15  16- 31 32 - 48
             // startIndex: pageNum * lenPerPage
             // lastIndex: (pageNum+1) * lenPerPage
-            var showCourse = courseUrl.slice(pageNum * lenPerPage, (pageNum + 1) * lenPerPage);
+            var showCourse = url.slice(pageNum * lenPerPage, (pageNum + 1) * lenPerPage);
             // console.log(showCourse);
             var html = '';
             for (var i = 0; i < showCourse.length; i++) {
@@ -261,7 +277,7 @@ window.onload = function () {
                 pageNum = 0;
             }
 
-            getCourse();
+            getCourse(newCourseUrl);
 
             for (var k = 0; k < pageSpan.length; k++) {
                 pageSpan[k].className = '';

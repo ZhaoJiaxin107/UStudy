@@ -334,5 +334,19 @@
         "img": "../img/list-48.jpg",
         "num": 28,
         "price":1499
-    }   
+    },
+    {   
+        "number":"49",
+        "title":"【进阶】App自动化测试工具monkey使用Appium示例讲解",
+        "img": "../img/list-49.jpg",
+        "num": 405,
+        "price":99
+    },
+    {   
+        "number":"50",
+        "title":"【进阶】Web自动化测试工具及环境搭建",
+        "img": "../img/list-50.jpg",
+        "num": 184,
+        "price":99
+    }    
 ]
