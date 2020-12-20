@@ -161,11 +161,15 @@ window.onload = function () {
 
         // console.log(pageNav, pageSeq);
         var pageSpan;
-        var total, maxPage; 
+        var total, maxPage;
         // get firstPage and last page
         var firstBtn = pageNav.querySelector('#first');
         var lastBtn = pageNav.querySelector('#last');
         // console.log(firstBtn, lastBtn);
+
+        // get different price range from priceList we have defined before
+        var priceLis = priceList.getElementsByTagName('li');
+        // console.log(priceLis);
 
         // Rendering course to the page
         getCourse(newCourseUrl);
@@ -204,7 +208,7 @@ window.onload = function () {
             pageNum = maxPage - 1;
             shiftPage();
         }
-       
+
         // Add click event to the free label
         label[0].onclick = function () {
 
@@ -245,18 +249,17 @@ window.onload = function () {
             getCourse(newCourseUrl);
 
             updatePageSeq();
-            
-        }
 
-        function updatePageSeq(){
-            // update page number
-            total = newCourseUrl.length;
-            // console.log(newTotal);
-            maxPage = Math.ceil(total / lenPerPage);
-            createPageSeq();
-            clickEveryPage();
         }
-
+        // choose different price ranges, the page show course
+        // which price is in the right range
+        
+        choosePriceRange(0, 0, 99999);
+        choosePriceRange(1, 1, 99);
+        choosePriceRange(2, 100, 499);
+        choosePriceRange(3, 500, 999);
+        choosePriceRange(4, 1000, 9999);
+        choosePriceRange(5, 10000, 99999);
 
         function createPageSeq() {
             var sequence = '';
@@ -332,6 +335,31 @@ window.onload = function () {
                     shiftPage();
                 }
             }
+        }
+
+        // add click event to priceLis 
+        function choosePriceRange(index, startPrice, endPrice) {
+            priceLis[index].onclick = function () {
+                // fiter price from 1 to 99
+                newCourseUrl = courseUrl.filter(function (v, i) {
+                    return (v.price >= startPrice && v.price <= endPrice)
+                });
+                //console.log(newCourseUrl);
+                // Rendering data for the page
+                getCourse(newCourseUrl);
+
+                updatePageSeq();
+            }
+        }
+
+
+        function updatePageSeq() {
+            // update page number
+            total = newCourseUrl.length;
+            // console.log(newTotal);
+            maxPage = Math.ceil(total / lenPerPage);
+            createPageSeq();
+            clickEveryPage();
         }
     });
 }

@@ -418,5 +418,33 @@
         "img": "../img/list-60.jpg",
         "num": 135,
         "price":1200
-    }       
+    },
+    {   
+        "number":"61",
+        "title":"【基础】UI训练营-14天悬系设计知识技能",
+        "img": "../img/list-61.jpg",
+        "num": 315,
+        "price":299
+    },
+    {   
+        "number":"62",
+        "title":"【基础】XD软件实操",
+        "img": "../img/list-62.jpg",
+        "num": 18,
+        "price":99
+    },
+    {   
+        "number":"63",
+        "title":"【进阶】UI/UE项目实战-移动app界面设计",
+        "img": "../img/list-63.jpg",
+        "num": 243,
+        "price":399
+    },
+    {   
+        "number":"64",
+        "title":"【培优】名企项目实战进阶",
+        "img": "../img/list-64.jpg",
+        "num": 237,
+        "price":4999
+    }      
 ]
