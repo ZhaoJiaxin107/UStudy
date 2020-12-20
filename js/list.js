@@ -253,7 +253,7 @@ window.onload = function () {
         }
         // choose different price ranges, the page show course
         // which price is in the right range
-        
+
         choosePriceRange(0, 0, 99999);
         choosePriceRange(1, 1, 99);
         choosePriceRange(2, 100, 499);

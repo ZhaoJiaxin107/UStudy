@@ -258,7 +258,7 @@ function ajax(type, url, data, fn) {
         // 4. 发送请求 send(请求参数);
         ajax.send(data);
     } else {
-        ajax.open(type, url+ '?' + data, true);
+        ajax.open(type, url + '?' + data, true);
         // 3. 发送请求
         ajax.send();
     }

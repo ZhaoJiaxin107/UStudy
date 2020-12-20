@@ -179,10 +179,10 @@ window.onload = function () {
     // console.log(registerButton);
 
 
-    registerForm.onsubmit = function(){
+    registerForm.onsubmit = function () {
         // If all the verification passes, user info correct
         // console.log(flag);
-        if(!flag) {
+        if (!flag) {
             alert('注册失败!');
             return false;
         }
@@ -200,9 +200,9 @@ window.onload = function () {
 
         // judge whether the user has registered
         // Traverse array to find whether to register
-        for(var i = 0; i < userArr.length; i++){
+        for (var i = 0; i < userArr.length; i++) {
             // console.log(userArr[i]);
-            if(userArr[i].username == userInfo.username){
+            if (userArr[i].username == userInfo.username) {
                 alert('用户已注册, 请直接登录! 如果忘记密码, 请修改密码!');
                 window.location = './login.html';
                 return false;

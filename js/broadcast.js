@@ -47,14 +47,14 @@ window.onload = function () {
         courseType.style.opacity = 1;
     }
     courseType.onmouseleave = function () {
-        
+
         this.style.opacity = 0;
     }
 
-     /* 
-        Slide the mouse into the search icon to 
-        display the entire search box
-    */
+    /* 
+       Slide the mouse into the search icon to 
+       display the entire search box
+   */
     // get the search icon, search course and search box element
     var searchIcon = document.getElementById('searchIcon');
     var searchCourse = document.getElementById('searchCourse');
@@ -210,7 +210,7 @@ window.onload = function () {
                 // change to day mode
                 // label change
                 this.innerHTML = '<img src="../img/nightmode.png" alt=""> &nbsp;黑夜模式';
-                
+
                 dayMode();
                 // console.log(num);
                 playlistLis[num].style.backgroundColor = '#ffffff';
@@ -218,7 +218,7 @@ window.onload = function () {
                 this.tag = 1;
             } else {
                 this.innerHTML = '<img src="../img/daymode.png" alt="">&nbsp;白天模式';
-                
+
                 nightMode();
                 // console.log(num);
                 playlistLis[num].style.backgroundColor = '#333333';
@@ -426,11 +426,11 @@ window.onload = function () {
                 // get corresponding input userinfo avatar time
                 // console.log(anonymous.checked);
                 var newComment = {
-                        "name":anonymous.checked ? "匿名用户": localStorage.username,
-                        "time":new Date().toLocaleString(),
-                        "src":anonymous.checked ? "../img/avatar-7.jpg" :"../img/avatar-4.jpg",
-                        "comment":textarea.value,
-                        "line":"3"
+                    "name": anonymous.checked ? "匿名用户" : localStorage.username,
+                    "time": new Date().toLocaleString(),
+                    "src": anonymous.checked ? "../img/avatar-7.jpg" : "../img/avatar-4.jpg",
+                    "comment": textarea.value,
+                    "line": "3"
                 };
                 //console.log(newComment);
                 // put newObj into commentUrl
