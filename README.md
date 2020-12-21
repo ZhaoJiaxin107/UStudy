@@ -147,7 +147,7 @@ We do not use database in this project
 
 #### List page
 
-* Pagination display all course information which can switch the previous page, the next page, the first page, the last page and different page numbers
+* Pagination display all course information which can be switched by the previous page, the next page, the first page, the last page and different page numbers
 
 * Filter free and paid courses
 
