@@ -165,7 +165,7 @@ window.onload = function () {
 
     var userArr = [];
     if (!localStorage.userArr) {
-        // use not exist, create userArr in cache
+        // user not exist, create userArr in cache
         localStorage.userArr = JSON.stringify(userArr);
     } else {
         // user exists, save existed user information
