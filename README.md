@@ -102,13 +102,13 @@ We do not use database in this project
 
 * Go back to top
 
-* Judge whether the phone number and password of the local storage exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login and registration will be displayed
+* Judge whether the phone number and password of the local storage exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will not be logged in and the login and registration will be displayed
 
 #### Registration page
 
-* If the input box is empty, you will be prompted to enter the corresponding content
+* If the input box is empty, user will be prompted to enter the corresponding content
 
-* Regular judgment mobile phone number, if wrong, alert format is not correct, otherwise alert correct
+* Regular judgment phone number, if it is wrong, alert format is not correct, otherwise alert correct
 
 * The password is divided into three levels: low, medium and high. If it is wrong, alert format is incorrect, and if it is correct, alert low, medium and high
 
@@ -147,12 +147,12 @@ We do not use database in this project
 
 #### List page
 
-* Pagination display all course information which can be switched by the previous page, the next page, the first page, the last page and different page numbers
+* Pagination displays all course information which can be switched by the button of previous page, the next page, the first page, the last page and different page numbers
 
 * Filter free and paid courses
 
 * Filter courses with different price ranges
 
-* Judge whether the phone number and password of the local cache exist. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login registration button will be displayed
+* Judge whether the phone number and password of the local cache exists. If both of them exist, it will display the login and personal center; if one of them does not exist, the status will be not logged in and the login registration button will be displayed
 
 * Go back to the top
