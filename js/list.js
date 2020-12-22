@@ -86,24 +86,39 @@ window.onload = function () {
     var topArrow = document.getElementById('toparrow');
     //console.log(topArrow);
     // Add click event in window onscroll function
-    window.onscroll = function () {
-        // Get the distance the mouse has scrolled
-        var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
-        // console.log(scrollDistance);
-        // When scroll distance > 500, display top arrow, else hide top arrow
-        if (scrollDistance >= 500) {
-            topArrow.style.display = 'block';
-        } else {
-            topArrow.style.display = 'none';
-        }
-        // Add click event to topArrow
-        topArrow.onclick = function () {
-            // Make the page back to the top
-            document.documentElement.scrollTop = 0;
-            // Consider compatible
-            document.body.scrollTop = 0;
-        }
-    }
+     // whether it is at top
+     var isTop = true;
+     window.onscroll = function () {
+         // Get the distance the mouse has scrolled
+         var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
+         // console.log(scrollDistance);
+         // When scroll distance > 500, display top arrow, else hide top arrow
+         if (scrollDistance >= 500) {
+             topArrow.style.display = 'block';
+         } else {
+             topArrow.style.display = 'none';
+         }
+         if (!isTop) {
+             clearInterval(topArrow.timer);
+         }
+         isTop = false;
+     }
+ 
+     topArrow.onclick = function () {
+         this.timer = setInterval(function () {
+             // Get the scroll distance to the top
+             var scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
+             // set speed
+             var speed = Math.floor(-scrollDistance / 6);
+             document.documentElement.scrollTop = document.body.scrollTop = scrollDistance + speed;
+ 
+             isTop = true; // set the state of flag
+ 
+             if (scrollDistance == 0) {
+                 clearInterval(this.timer);
+             }
+         }, 50);
+     }
 
 
     /* 
