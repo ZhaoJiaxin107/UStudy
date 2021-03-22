@@ -1,6 +1,6 @@
-### 优学在线
+### 学而优在线平台
 
-优学在线是使用HTML、CSS和Javascript的制作的网站<br>
+学而优在线平台是使用HTML、CSS和Javascript的制作的网站<br>
 
 数据存储在6个不同的json文件中，我们通过Ajax获取数据<br>
 
